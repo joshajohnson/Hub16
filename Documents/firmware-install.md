@@ -13,14 +13,13 @@ Precompiled binaries are available at `Firmware/binaries` for the keyboard if yo
 
 To build the firmware from source: 
 
-* Git clone or download `https://github.com/qmk/qmk_firmware`
-* Copy `Firmware/hub16` into the keyboards folder.
+* `git clone` or download `https://github.com/qmk/qmk_firmware`
 * Follow the [build instructions](https://docs.qmk.fm/#/getting_started_build_tools) for your OS to install the toolchain.
 
 To confirm all keys / encoders work, we will flash test firmware which allows for testing of all functionality. 
-* Connect you keyboard and run `make hub16:test:flash`, or flash `hub16_test.bin` with QMK Toolbox.
-* Follow the on screen prompts to reset your keyboard when required for the device to be flashed- the reset button is located on the back of the PCB. 
+* Connect your keyboard and run `make hub16:test:flash`, or flash `hub16_test.bin` with QMK Toolbox.
+* Follow the on screen prompts to reset your keyboard when required for the device to be flashed - the reset button is located on the back of the PCB. 
 * You can now use something conductive (tweezers, paperclip) to short out the keyswitch and encoder switch contacts to ensure all keys work, along with pressing a rotary encoder against its three pins to check its function. 
 * You should see each switch / encoder type a unique letter, if there are duplicates or no text, look for bad solder joints on the PCB, in particular the microcontroller pins and small resistor packs labelled RN. 
 * If all of the keys work, flash the real firmware with `make hub16:default:flash` (or `hub16_default.bin` for QMK Toolbox), and your keyboard should be good to go. 
-* If desired, check out the [Test Procedue](test-procedure.md) to confirm everything works as plnned, and the head to the [mechanical assembly](enclosure-design.md) instructions to finish your build.
+* If desired, check out the [Test Procedue](test-procedure.md) to confirm everything works as plnned, and the head to the [mechanical assembly](Documents/enclosure-manufacturing.md) instructions to finish your build.

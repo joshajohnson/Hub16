@@ -12,7 +12,7 @@ All design files required to manufacture the board and enclosure are available, 
 * 16 Cherry MX compatible switches, along with two switches in the encoders. 
 * Two rotary encoders, bringing an intuitive interface for many controls such as volume and music playback.
 * Four port USB 2.0 hub with Type-C connectors, allowing connection to other keyboards, memory sticks, wireless receivers and more! 
-* Designed to interface with host computer to provide a level of interaction / macro control not available on standard keyboards, with examples for Windows and Linux. 
+* Designed to interface with host computer to provide a level of interaction / macro control not available on standard keyboards, with examples provided for Windows and Linux. 
 * Various case designs, allowing the Hub16 to fit in on any desk. 
 * 11 individually addressable RGB LEDs for the bling factor. 
 * Full QMK programmability and customisation. 

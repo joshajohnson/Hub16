@@ -8,7 +8,7 @@ This procedure is used to ensure bringup and functionality of a freshly baked PC
 * Using an AVR programmer, flash the Arduino bootloader through the ISP header J2.
 	* If unable, common causes are:
 		* Software issues - check if programming a known good device works.
-		* Poor connection - ensure your connections to J2 are good, and pogo pins operate freely. 
+		* Poor connection - ensure your connections to J2 are good, and if using pogo pins that they operate freely. 
 		* Power / Reset correct - ensure all power pins have 5V on the physical pin (not nearest capacitor) and that the reset line is high. 
 		* Crystal - ensure Y1 is soldered down correctly and is 16 MHz.
 * With bootlader installed, connect to computer and flash the test firmware. 
