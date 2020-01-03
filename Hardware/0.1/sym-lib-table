@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name keyboard)(type Legacy)(uri ${KIPRJMOD}/Libraries/keyboard.lib)(options "")(descr ""))
+  (lib (name Hub16-rescue)(type Legacy)(uri ${KIPRJMOD}/Hub16-rescue.lib)(options "")(descr ""))
+)

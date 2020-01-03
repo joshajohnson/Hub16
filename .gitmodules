@@ -1,0 +1,3 @@
+[submodule "josh-kicad-lib"]
+	path = josh-kicad-lib
+	url = git@github.com:joshajohnson/josh-kicad-lib.git
