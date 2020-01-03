@@ -9,7 +9,7 @@
         "triggerInside": false
     }, 
     "modes": [], 
-    "title": "autokey-macro-keyboard", 
+    "title": "macro-keyboard-autokey", 
     "hotkey": {
         "hotKey": null, 
         "modifiers": []

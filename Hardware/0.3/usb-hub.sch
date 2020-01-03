@@ -23,6 +23,8 @@ F 2 "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm_ThermalVias" H 5000 1
 F 3 "https://www.cypress.com/file/114101/download" H 5000 1575 100 0001 C CNN
 F 4 "CY7C65632-28LTXCT" H 5000 1575 50  0001 C CNN "MPN"
 F 5 "C466886" H 5000 1575 50  0001 C CNN "LCSC PN"
+F 6 "428-3156-1-ND" H 5000 1575 50  0001 C CNN "Digikey PN"
+F 7 "N" H 5000 1575 50  0001 C CNN "Substitue Allowed?"
 	1    5000 1575
 	1    0    0    -1  
 $EndComp
@@ -131,6 +133,8 @@ F 2 "josh-passives-smt:Ferrite_Bead_0603" H 1600 6680 50  0001 C CNN
 F 3 "~" V 1600 6750 50  0001 C CNN
 F 4 "C19330" H 1600 6750 50  0001 C CNN "LCSC PN"
 F 5 "BLM18AG601SN1D" H 1600 6750 50  0001 C CNN "MPN"
+F 6 "490-1014-1-ND" H 1600 6750 50  0001 C CNN "Digikey PN"
+F 7 "Y" H 1600 6750 50  0001 C CNN "Substitue Allowed?"
 	1    1600 6750
 	-1   0    0    1   
 $EndComp
@@ -151,6 +155,9 @@ F 0 "C12" H 1415 7096 50  0000 L CNN
 F 1 "100n" H 1415 7005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1338 6900 50  0001 C CNN
 F 3 "~" H 1300 7050 50  0001 C CNN
+F 4 "1276-1000-1-ND" H 1300 7050 50  0001 C CNN "Digikey PN"
+F 5 "CL10B104KB8NNNC" H 1300 7050 50  0001 C CNN "MPN"
+F 6 "Y" H 1300 7050 50  0001 C CNN "Substitue Allowed?"
 	1    1300 7050
 	1    0    0    -1  
 $EndComp
@@ -167,6 +174,9 @@ F 0 "C13" H 1965 7096 50  0000 L CNN
 F 1 "10u" H 1965 7005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1888 6900 50  0001 C CNN
 F 3 "~" H 1850 7050 50  0001 C CNN
+F 4 "1276-1871-1-ND " H 1850 7050 50  0001 C CNN "Digikey PN"
+F 5 "CL10A106MP8NNNC " H 1850 7050 50  0001 C CNN "MPN"
+F 6 "Y" H 1850 7050 50  0001 C CNN "Substitue Allowed?"
 	1    1850 7050
 	1    0    0    -1  
 $EndComp
@@ -222,6 +232,9 @@ F 0 "C14" H 2440 6971 50  0000 L CNN
 F 1 "100n" H 2440 6880 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2363 6775 50  0001 C CNN
 F 3 "~" H 2325 6925 50  0001 C CNN
+F 4 "1276-1000-1-ND" H 2325 6925 50  0001 C CNN "Digikey PN"
+F 5 "CL10B104KB8NNNC" H 2325 6925 50  0001 C CNN "MPN"
+F 6 "Y" H 2325 6925 50  0001 C CNN "Substitue Allowed?"
 	1    2325 6925
 	1    0    0    -1  
 $EndComp
@@ -233,6 +246,9 @@ F 0 "C15" H 2865 6971 50  0000 L CNN
 F 1 "100n" H 2865 6880 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2788 6775 50  0001 C CNN
 F 3 "~" H 2750 6925 50  0001 C CNN
+F 4 "1276-1000-1-ND" H 2750 6925 50  0001 C CNN "Digikey PN"
+F 5 "CL10B104KB8NNNC" H 2750 6925 50  0001 C CNN "MPN"
+F 6 "Y" H 2750 6925 50  0001 C CNN "Substitue Allowed?"
 	1    2750 6925
 	1    0    0    -1  
 $EndComp
@@ -248,6 +264,9 @@ F 0 "C16" H 3290 6971 50  0000 L CNN
 F 1 "100n" H 3290 6880 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3213 6775 50  0001 C CNN
 F 3 "~" H 3175 6925 50  0001 C CNN
+F 4 "1276-1000-1-ND" H 3175 6925 50  0001 C CNN "Digikey PN"
+F 5 "CL10B104KB8NNNC" H 3175 6925 50  0001 C CNN "MPN"
+F 6 "Y" H 3175 6925 50  0001 C CNN "Substitue Allowed?"
 	1    3175 6925
 	1    0    0    -1  
 $EndComp
@@ -263,6 +282,9 @@ F 0 "C19" H 3715 6971 50  0000 L CNN
 F 1 "1u" H 3715 6880 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3638 6775 50  0001 C CNN
 F 3 "~" H 3600 6925 50  0001 C CNN
+F 4 "1276-1866-1-ND " H 3600 6925 50  0001 C CNN "Digikey PN"
+F 5 "CL10A105MP8NNNC " H 3600 6925 50  0001 C CNN "MPN"
+F 6 "Y" H 3600 6925 50  0001 C CNN "Substitue Allowed?"
 	1    3600 6925
 	1    0    0    -1  
 $EndComp
@@ -278,6 +300,9 @@ F 0 "C20" H 4090 6971 50  0000 L CNN
 F 1 "1u" H 4090 6880 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4013 6775 50  0001 C CNN
 F 3 "~" H 3975 6925 50  0001 C CNN
+F 4 "1276-1866-1-ND " H 3975 6925 50  0001 C CNN "Digikey PN"
+F 5 "CL10A105MP8NNNC " H 3975 6925 50  0001 C CNN "MPN"
+F 6 "Y" H 3975 6925 50  0001 C CNN "Substitue Allowed?"
 	1    3975 6925
 	1    0    0    -1  
 $EndComp
@@ -336,6 +361,9 @@ F 0 "C21" H 4490 6971 50  0000 L CNN
 F 1 "100n" H 4490 6880 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4413 6775 50  0001 C CNN
 F 3 "~" H 4375 6925 50  0001 C CNN
+F 4 "1276-1000-1-ND" H 4375 6925 50  0001 C CNN "Digikey PN"
+F 5 "CL10B104KB8NNNC" H 4375 6925 50  0001 C CNN "MPN"
+F 6 "Y" H 4375 6925 50  0001 C CNN "Substitue Allowed?"
 	1    4375 6925
 	1    0    0    -1  
 $EndComp
@@ -347,6 +375,9 @@ F 0 "C22" H 4940 6971 50  0000 L CNN
 F 1 "1u" H 4940 6880 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4863 6775 50  0001 C CNN
 F 3 "~" H 4825 6925 50  0001 C CNN
+F 4 "1276-1866-1-ND " H 4825 6925 50  0001 C CNN "Digikey PN"
+F 5 "CL10A105MP8NNNC " H 4825 6925 50  0001 C CNN "MPN"
+F 6 "Y" H 4825 6925 50  0001 C CNN "Substitue Allowed?"
 	1    4825 6925
 	1    0    0    -1  
 $EndComp
@@ -402,6 +433,9 @@ F 0 "R12" V 4625 2875 50  0000 C CNN
 F 1 "10K" V 4675 3125 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4605 3125 50  0001 C CNN
 F 3 "~" H 4675 3125 50  0001 C CNN
+F 4 "CR0603-JW-103ELFCT-ND  " H 4675 3125 50  0001 C CNN "Digikey PN"
+F 5 "CR0603-JW-103ELF " H 4675 3125 50  0001 C CNN "MPN"
+F 6 "Y" H 4675 3125 50  0001 C CNN "Substitue Allowed?"
 	1    4675 3125
 	0    1    1    0   
 $EndComp
@@ -430,6 +464,9 @@ F 0 "C18" V 3125 2875 50  0000 C CNN
 F 1 "22p" V 3425 2875 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3313 2725 50  0001 C CNN
 F 3 "~" H 3275 2875 50  0001 C CNN
+F 4 "1276-2228-1-ND  " H 3275 2875 50  0001 C CNN "Digikey PN"
+F 5 "CL10C220JB8NFNC " H 3275 2875 50  0001 C CNN "MPN"
+F 6 "Y" H 3275 2875 50  0001 C CNN "Substitue Allowed?"
 	1    3275 2875
 	0    1    1    0   
 $EndComp
@@ -443,6 +480,9 @@ F 0 "C17" V 3125 2475 50  0000 C CNN
 F 1 "22p" V 3425 2475 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3313 2325 50  0001 C CNN
 F 3 "~" H 3275 2475 50  0001 C CNN
+F 4 "1276-2228-1-ND  " H 3275 2475 50  0001 C CNN "Digikey PN"
+F 5 "CL10C220JB8NFNC " H 3275 2475 50  0001 C CNN "MPN"
+F 6 "Y" H 3275 2475 50  0001 C CNN "Substitue Allowed?"
 	1    3275 2475
 	0    1    1    0   
 $EndComp
@@ -494,6 +534,8 @@ F 2 "josh-oscillators:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 3675 2675 50  0001 C CN
 F 3 "~" H 3675 2675 50  0001 C CNN
 F 4 "C276421" H 3675 2675 50  0001 C CNN "LCSC PN"
 F 5 "ABM8-12.000MHZ-B2-T" H 3675 2675 50  0001 C CNN "MPN"
+F 6 "535-9826-1-ND" H 3675 2675 50  0001 C CNN "Digikey PN"
+F 7 "Y" H 3675 2675 50  0001 C CNN "Substitue Allowed?"
 	1    3675 2675
 	0    1    1    0   
 $EndComp
@@ -537,6 +579,9 @@ F 0 "R13" V 4625 2975 50  0000 C CNN
 F 1 "100K" V 4675 3225 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4605 3225 50  0001 C CNN
 F 3 "~" H 4675 3225 50  0001 C CNN
+F 4 "CR0603-JW-104ELFCT-ND " H 4675 3225 50  0001 C CNN "Digikey PN"
+F 5 "CR0603-JW-104ELF " H 4675 3225 50  0001 C CNN "MPN"
+F 6 "Y" H 4675 3225 50  0001 C CNN "Substitue Allowed?"
 	1    4675 3225
 	0    1    1    0   
 $EndComp
@@ -555,6 +600,10 @@ F 0 "R14" H 4820 3671 50  0000 L CNN
 F 1 "649R" H 4820 3580 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4680 3625 50  0001 C CNN
 F 3 "~" H 4750 3625 50  0001 C CNN
+F 4 "RHM649CFCT-ND  " H 4750 3625 50  0001 C CNN "Digikey PN"
+F 5 "MCR03ERTF6490 " H 4750 3625 50  0001 C CNN "MPN"
+F 6 "Cannot source from LCSC, no substitutes available " H 4750 3625 50  0001 C CNN "Notes"
+F 7 "Y" H 4750 3625 50  0001 C CNN "Substitue Allowed?"
 	1    4750 3625
 	1    0    0    -1  
 $EndComp
@@ -584,6 +633,9 @@ F 1 "100K" H 3875 3400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3655 3400 50  0001 C CNN
 F 3 "~" H 3725 3400 50  0001 C CNN
 F 4 "DNP" H 3850 3325 50  0000 C CNN "DNP"
+F 5 "CR0603-JW-104ELFCT-ND " H 3725 3400 50  0001 C CNN "Digikey PN"
+F 6 "CR0603-JW-104ELF " H 3725 3400 50  0001 C CNN "MPN"
+F 7 "Y" H 3725 3400 50  0001 C CNN "Substitue Allowed?"
 	1    3725 3400
 	1    0    0    -1  
 $EndComp
@@ -596,6 +648,9 @@ F 1 "100K" H 3875 3750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3655 3750 50  0001 C CNN
 F 3 "~" H 3725 3750 50  0001 C CNN
 F 4 "" H 3850 3675 50  0000 C CNN "DNP"
+F 5 "CR0603-JW-104ELFCT-ND " H 3725 3750 50  0001 C CNN "Digikey PN"
+F 6 "CR0603-JW-104ELF " H 3725 3750 50  0001 C CNN "MPN"
+F 7 "Y" H 3725 3750 50  0001 C CNN "Substitue Allowed?"
 	1    3725 3750
 	1    0    0    -1  
 $EndComp
@@ -664,6 +719,9 @@ F 0 "RN5" V 5658 7050 50  0000 C CNN
 F 1 "10K" V 5749 7050 50  0000 C CNN
 F 2 "Resistor_SMD:R_Array_Convex_4x0402" V 6350 7050 50  0001 C CNN
 F 3 "~" H 6075 7050 50  0001 C CNN
+F 4 "RAVF104DJT10K0CT-ND" H 6075 7050 50  0001 C CNN "Digikey PN"
+F 5 "RAVF104DJT10K0" H 6075 7050 50  0001 C CNN "MPN"
+F 6 "Y" H 6075 7050 50  0001 C CNN "Substitue Allowed?"
 	1    6075 7050
 	0    1    1    0   
 $EndComp
@@ -830,6 +888,8 @@ F 2 "josh-connectors:USB_C_Receptacle_GT-USB-7010" H 10425 2375 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10425 2375 50  0001 C CNN
 F 4 "C319148" H 10275 2375 50  0001 C CNN "LCSC PN"
 F 5 "U262-161N-4BVC11" H 10275 2375 50  0001 C CNN "MPN"
+F 6 "Cannot source from Digikey, available on AliExpress: https://www.aliexpress.com/item/33045191307.html" H 10275 2375 50  0001 C CNN "Notes"
+F 7 "N" H 10275 2375 50  0001 C CNN "Substitue Allowed?"
 	1    10275 2375
 	-1   0    0    -1  
 $EndComp
@@ -897,6 +957,8 @@ F 2 "josh-connectors:USB_C_Receptacle_GT-USB-7010" H 8325 2350 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 8325 2350 50  0001 C CNN
 F 4 "C319148" H 8175 2350 50  0001 C CNN "LCSC PN"
 F 5 "U262-161N-4BVC11" H 8175 2350 50  0001 C CNN "MPN"
+F 6 "Cannot source from Digikey, available on AliExpress: https://www.aliexpress.com/item/33045191307.html" H 8175 2350 50  0001 C CNN "Notes"
+F 7 "N" H 8175 2350 50  0001 C CNN "Substitue Allowed?"
 	1    8175 2350
 	-1   0    0    -1  
 $EndComp
@@ -977,6 +1039,8 @@ F 2 "josh-connectors:USB_C_Receptacle_GT-USB-7010" H 10475 4575 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10475 4575 50  0001 C CNN
 F 4 "C319148" H 10325 4575 50  0001 C CNN "LCSC PN"
 F 5 "U262-161N-4BVC11" H 10325 4575 50  0001 C CNN "MPN"
+F 6 "Cannot source from Digikey, available on AliExpress: https://www.aliexpress.com/item/33045191307.html" H 10325 4575 50  0001 C CNN "Notes"
+F 7 "N" H 10325 4575 50  0001 C CNN "Substitue Allowed?"
 	1    10325 4575
 	-1   0    0    -1  
 $EndComp
@@ -990,6 +1054,8 @@ F 2 "josh-passives-smt:Ferrite_Bead_0603" H 9375 3905 50  0001 C CNN
 F 3 "~" V 9375 3975 50  0001 C CNN
 F 4 "C19330" H 9375 3975 50  0001 C CNN "LCSC PN"
 F 5 "BLM18AG601SN1D" H 9375 3975 50  0001 C CNN "MPN"
+F 6 "490-1014-1-ND" H 9375 3975 50  0001 C CNN "Digikey PN"
+F 7 "Y" H 9375 3975 50  0001 C CNN "Substitue Allowed?"
 	1    9375 3975
 	-1   0    0    1   
 $EndComp
@@ -1022,6 +1088,8 @@ F 2 "josh-passives-smt:Ferrite_Bead_0603" H 7325 1680 50  0001 C CNN
 F 3 "~" V 7325 1750 50  0001 C CNN
 F 4 "C19330" H 7325 1750 50  0001 C CNN "LCSC PN"
 F 5 "BLM18AG601SN1D" H 7325 1750 50  0001 C CNN "MPN"
+F 6 "490-1014-1-ND" H 7325 1750 50  0001 C CNN "Digikey PN"
+F 7 "Y" H 7325 1750 50  0001 C CNN "Substitue Allowed?"
 	1    7325 1750
 	-1   0    0    1   
 $EndComp
@@ -1052,6 +1120,8 @@ F 2 "josh-passives-smt:Ferrite_Bead_0603" H 9425 1705 50  0001 C CNN
 F 3 "~" V 9425 1775 50  0001 C CNN
 F 4 "C19330" H 9425 1775 50  0001 C CNN "LCSC PN"
 F 5 "BLM18AG601SN1D" H 9425 1775 50  0001 C CNN "MPN"
+F 6 "490-1014-1-ND" H 9425 1775 50  0001 C CNN "Digikey PN"
+F 7 "Y" H 9425 1775 50  0001 C CNN "Substitue Allowed?"
 	1    9425 1775
 	-1   0    0    1   
 $EndComp
@@ -1086,6 +1156,8 @@ F 2 "Package_TO_SOT_SMD:SOT-23-6" H 1325 1800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tpd2s017.pdf" H 2075 2150 50  0001 C CNN
 F 4 "296-25216-1-ND " H 2075 2150 50  0001 C CNN "Digikey PN"
 F 5 "TPD2S017DBVR" H 2075 2150 50  0001 C CNN "MPN"
+F 6 "Cannot source from LCSC, no substitutes available " H 2075 2150 50  0001 C CNN "Notes"
+F 7 "N" H 2075 2150 50  0001 C CNN "Substitue Allowed?"
 	1    2075 2150
 	1    0    0    -1  
 $EndComp

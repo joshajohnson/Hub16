@@ -1,11 +1,11 @@
 {
     "type": "script",
-    "description": "key-14",
+    "description": "key-16",
     "store": {},
     "modes": [
         3
     ],
-    "usageCount": 2,
+    "usageCount": 6,
     "prompt": false,
     "omitTrigger": false,
     "showInTrayMenu": false,
@@ -21,7 +21,7 @@
         "modifiers": [
             "<hyper>"
         ],
-        "hotKey": "n"
+        "hotKey": "p"
     },
     "filter": {
         "regex": null,

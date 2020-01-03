@@ -14,11 +14,11 @@ When you press a key on the Hub16, it first presses and holds down a modifier ke
 | a   b   c   d  |  ENC1:Button: s
 | e   f   g   h  |  ENC2:Clockwise: t
 | i   j   k   l  |  ENC2:Anticlockwise: u
-| m   n   p      |  ENC2:Button: v
+| m   n   o      |  ENC2:Button: v
 ------------------
 ```
 
-The default configuration is shown above, with all but the bottom right key sending keys to the computer, as the missing key can be double tapped to bring up a second layer of control for LEDs and the software reset button, which is shown below. 
+The default configuration is shown above, with all but the bottom right key sending keys to the computer, as the missing key can be double tapped to bring up a second layer of control for LEDs. For some reason I can't get a single tap on the missing key to send wrapped in `F24`, so is has been omitted. If you can get it working please send a pull request. 
 
 ```
 _______, RGB_MOD, RGB_RMOD, RGB_TOG,

@@ -24,7 +24,7 @@ All design files required to manufacture the board and enclosure are available, 
 ### Assembling the board from design files? 
 * [PCB SMT Assembly Guide](Documents/smt-assembly.md)
 * [Firmware Flashing Instructions](Documents/firmware-install.md)
-* [Enclosure Manufacturing](enclosure-design.md)
+* [Enclosure Manufacturing](Documents/enclosure-manufacturing.md)
 
 If you have any questions or comments please get in touch. I can be found on Discord `_joshajohnson#9451`, [Twitter](https://twitter.com/_joshajohnson), and [r/mk](https://www.reddit.com/user/_joshajohnson). 
 

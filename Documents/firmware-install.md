@@ -1,4 +1,4 @@
-### Flashing Firmware
+# Flashing Firmware
 
 These instructions are for those who are either building their own board from scratch, or have bricked their board and need to bring it back to life. 
 

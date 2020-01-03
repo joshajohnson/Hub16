@@ -12,9 +12,8 @@ SendMode Input
 ; | a   b   c   d  |
 ; | e   f   g   h  |
 ; | i   j   k   l  |
-; | m   n   p      |
+; | m   n   o      |
 ; ------------------
-; Yes, we jump from n to p, and miss bottom right (there are reasons for this!)
 
 ; Run the below if F24 is pressed, and KiCad is open.
 #if (getKeyState("F24", "P")) and if WinActive("ahk_exe kicad.exe")
@@ -38,7 +37,7 @@ l::^r  ; Move relative
 ; Row 4
 ; m::
 ; n::
-; p::
+; o::
 
 ; Encoder 1
 ; Clockwise
@@ -77,7 +76,7 @@ h::RButton
 ; Row 4
 ; m::
 ; n::
-; p::
+; o::
 
 ; Encoder 1
 ; Clockwise
