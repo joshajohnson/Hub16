@@ -16,7 +16,7 @@
 #include QMK_KEYBOARD_H
 
 // Allow reading of encoder switch
-#define readButton(port, pin) (((*(&port - 2)) & (1 << pin)) ? 1 : 0)
+#define readInput(port, pin) (((*(&port - 2)) & (1 << pin)) ? 1 : 0)
 #define SWITCH_1 PF7
 #define SWITCH_1_PORT PORTF
 #define SWITCH_2 PD7
@@ -102,14 +102,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 void matrix_init_user(void) {
     // Set encoder switches as inputs
-    (DDRF) &= ~(SWITCH_1);
-    (DDRD) &= ~(SWITCH_2);
+    setPinInput(SWITCH_1);
+    setPinInput(SWITCH_2);
 }
 
 void matrix_scan_user(void) {
     /* Below is a hack to make up for a mistake in hardware.
      * I did not connect the encoder buttons in the matrix, and could not
      * get it working as a DIRECT_PINS in conjunction with the matrix.
+     * readPin from quantum.h also didn't work, so implemented my own read macro
      * Not proud or happy with the below, but it works.
      */
 
@@ -120,8 +121,8 @@ void matrix_scan_user(void) {
     uint8_t        btn_2_rising;
     btn_1_array <<= 1;
     btn_2_array <<= 1;
-    btn_1_array |= readButton(SWITCH_1_PORT, SWITCH_1);
-    btn_2_array |= readButton(SWITCH_2_PORT, SWITCH_2);
+    btn_1_array |= readInput(SWITCH_1_PORT, SWITCH_1);
+    btn_2_array |= readInput(SWITCH_2_PORT, SWITCH_2);
     (btn_1_array == 0b01111111) ? (btn_1_rising = 1) : (btn_1_rising = 0);
     (btn_2_array == 0b01111111) ? (btn_2_rising = 1) : (btn_2_rising = 0);
 

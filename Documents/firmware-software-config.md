@@ -36,6 +36,8 @@ To build your new configuration, you will need to do the following:
 * `git clone` or download `https://github.com/qmk/qmk_firmware`
 * Follow the [build instructions](https://docs.qmk.fm/#/getting_started_build_tools) for your OS to install the toolchain.
 
+QMK configurator is not supported due to rotary encoders [not yet being supported.](https://github.com/qmk/qmk_configurator/issues/468)
+
 The important sections of the code are oulined below:
 
 | Line(s) | Description |  
