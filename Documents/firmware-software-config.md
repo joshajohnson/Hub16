@@ -33,7 +33,7 @@ If the above configuration is not to your liking, you can alter the code in `Fir
 
 To build your new configuration, you will need to do the following:
 
-* `git clone` or download `https://github.com/qmk/qmk_firmware`
+* Download QMK: `git clone https://github.com/qmk/qmk_firmware --recursive`
 * Follow the [build instructions](https://docs.qmk.fm/#/getting_started_build_tools) for your OS to install the toolchain.
 
 QMK configurator is not supported due to rotary encoders [not yet being supported.](https://github.com/qmk/qmk_configurator/issues/468)
@@ -49,9 +49,11 @@ The important sections of the code are oulined below:
 
 If you want to use it without all the strange modifier key stuff, I'd suggest modifying the `test` keymap, as it has all of the modifier code removed. 
 
+If you are wondering how all the layouts / layers / code stuff works, I highly recommend the [QMK Documentation](https://docs.qmk.fm/#/).
+
 ## Software Configuration 
 
-Use of the software requires the understanding of whatever scripting language is being used, such as AutoHotKey, or Python if AutoKey is being used on Linux. I don't know enough to teach how it works, but there are plenty of guides and documentation on the line which can help you out. I have provided my current scripts as inspiration, and am more than happy to answer questions on its function if there are any outstanding questions. 
+Use of the software requires the understanding of whatever scripting language is being used, such as AutoHotKey, or Python if AutoKey is being used on Linux. I don't know enough to teach how it works, but there are plenty of guides and documentation on the line which can help you out. I have provided my current scripts as inspiration, and am more than happy to answer questions on its function if there are any issues. 
 
 Taran from Linus Tech Tips has a great [video](https://youtu.be/GZEoss4XIgc?t=346) which covers the whole process, from building the firmware from source to his uniquely designed macros. 
 

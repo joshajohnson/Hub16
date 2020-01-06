@@ -2,7 +2,7 @@
 
 A macro pad with 16 keys, two rotary encoders, a four port USB hub, and plenty of LEDs!
 
-This project started as I wanted to utilise rotary encoders to change the grid and trace size in KiCad, and then thought wouldn't it be cool to run a short cable between the macro pad and  keyboard instead of having two cables snaking along the desk, so a hub was added! 
+This project started as I wanted to utilise rotary encoders to change the grid and trace size in KiCad, and then thought wouldn't it be cool to run a cable between the macro pad and keyboard, so a hub was added! 
 
 It is designed to work with software on the host computer to enable powerful, context aware macros to be run, ensuring you never have to press a strange sequence of keys ever again. 
 
