@@ -49,48 +49,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 void encoder_update_user(uint8_t index, bool clockwise) {
     if (index == 0) { /* Left Encoder */
         if (clockwise) {
-            register_code(KC_WRAP);
             tap_code(KC_R);
-            unregister_code(KC_WRAP);
         } else {
-            register_code(KC_WRAP);
             tap_code(KC_Q);
-            unregister_code(KC_WRAP);
         }
     } else if (index == 1) { /* Right Encoder */
         if (clockwise) {
-            register_code(KC_WRAP);
             tap_code(KC_U);
-            unregister_code(KC_WRAP);
         } else {
-            register_code(KC_WRAP);
             tap_code(KC_T);
-            unregister_code(KC_WRAP);
         }
     }
-}
-
-// Below stolen from TaranVH (https://github.com/TaranVH/2nd-keyboard/blob/master/HASU_USB/F24/keymap.c)
-// Shoutout to drashna on the QMK discord for basically writing this for me.... :P
-
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    static uint8_t f24_tracker;
-    switch (keycode) {
-        case KC_A ... KC_F23:
-        case KC_EXECUTE ... KC_EXSEL:
-            if (record->event.pressed) {
-                register_code(KC_WRAP);
-                f24_tracker++;
-                register_code(keycode);
-            } else {
-                unregister_code(keycode);
-                f24_tracker--;
-                if (!f24_tracker) {
-                    unregister_code(KC_WRAP);
-                }
-            }
-            return false;
-            break;
-    }
-    return true;
 }

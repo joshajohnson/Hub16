@@ -42,11 +42,10 @@ The important sections of the code are oulined below:
 
 | Line(s) | Description |  
 | --- | ----------- |  
-| 26 | Default modifier key |  
-| 37:38 | Single tap behaviour of layer shift key |  
-| 41:55| Keyboard layout and layers|  
-| 63,67,73,77| Encoder rotation behaviour|  
-|139, 147| Encoder button behaviour|
+| 19 | Default modifier key |  
+| 26:27 | Behaviour of layer shift key |  
+| 31:43| Keyboard layout and layers|  
+| 53, 57, 63, 67| Encoder rotation behaviour|  
 
 If you want to use it without all the strange modifier key stuff, I'd suggest modifying the `test` keymap, as it has all of the modifier code removed. 
 
