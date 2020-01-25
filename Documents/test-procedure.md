@@ -12,10 +12,11 @@ This procedure is used to ensure bringup and functionality of a freshly baked PC
 		* Poor connection - ensure your connections to J2 are good, and if using pogo pins that they operate freely. 
 		* Power / Reset correct - ensure all power pins have 5V on the physical pin (not nearest capacitor) and that the reset line is high. 
 		* Crystal - ensure Y1 is soldered down correctly and is 16 MHz.
-* With bootlader installed, connect to computer and flash the test firmware. 
+* With bootlader installed, connect to computer and flash the no_mod firmware. 
 	* If unable to detect keyboard, confirm that USB hub and ATmega are being detected through `lsusb` and / or `dmesg -w` on Linux, or device manager on Windows. 
 	* Inspect U3 for any shorts between pins, along with crystal and surrounding passives being connected correctly. 
-* Using tweezers, short pin connections and ensure all keys print a unique key to the computer.
+* Using tweezers, short pin connections and ensure all keys EXCEPT K19 (bottom right) print a unique key to the computer.
+	* To check K19, double tap it followed by a single tap on K16, and the LEDs should turn off.
 * Also test the rotary encoder connections by placing an encoder against the three pins near RN1 and RN5 and rotating in both directions.
 	* Common issues are with the diodes being installed incorrectly, and resistor networks being shorted. 
 * Flash default firmware and confirm all LEDs light up red. Double tap bottom right key (K19) and then K11 do cycle through LEDs and confirm they all function. 
