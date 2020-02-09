@@ -52,4 +52,24 @@ X 4 4 0 125 50 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# RN-josh-passive
+#
+DEF RN-josh-passive RN 0 0 N Y 4 F N
+F0 "RN" 0 70 50 H V C CNN
+F1 "RN-josh-passive" 0 0 50 H V C CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+DRAW
+S -100 -40 100 40 0 1 0 N
+X ~ 4 -200 0 100 R 50 50 1 1 P
+X ~ 5 200 0 100 L 50 50 1 1 P
+X ~ 3 -200 0 100 R 50 50 2 1 P
+X ~ 6 200 0 100 L 50 50 2 1 P
+X ~ 2 -200 0 100 R 50 50 3 1 P
+X ~ 7 200 0 100 L 50 50 3 1 P
+X ~ 1 -200 0 100 R 50 50 4 1 P
+X ~ 8 200 0 100 L 50 50 4 1 P
+ENDDRAW
+ENDDEF
+#
 #End Library

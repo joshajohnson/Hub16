@@ -2414,7 +2414,7 @@ F 7 "N" H 6000 2550 50  0001 C CNN "Substitue Allowed?"
 $EndComp
 NoConn ~ 6650 3450
 $Comp
-L josh-passive:RN RN1
+L Hub16-rescue:RN-josh-passive RN1
 U 1 1 5DE76473
 P 4925 6875
 F 0 "RN1" H 4925 6950 50  0000 C CNN
@@ -2428,7 +2428,7 @@ F 6 "Y" H 4925 6875 50  0001 C CNN "Substitue Allowed?"
 	1    0    0    -1  
 $EndComp
 $Comp
-L josh-passive:RN RN1
+L Hub16-rescue:RN-josh-passive RN1
 U 2 1 5DE77B57
 P 5175 6575
 F 0 "RN1" V 5125 6425 50  0000 C CNN
@@ -2442,7 +2442,7 @@ F 6 "Y" H 5175 6575 50  0001 C CNN "Substitue Allowed?"
 	0    1    1    0   
 $EndComp
 $Comp
-L josh-passive:RN RN1
+L Hub16-rescue:RN-josh-passive RN1
 U 3 1 5DE7C32C
 P 5475 6575
 F 0 "RN1" V 5425 6425 50  0000 C CNN
@@ -2460,7 +2460,7 @@ Wire Wire Line
 Wire Wire Line
 	5475 6350 5475 6375
 $Comp
-L josh-passive:RN RN3
+L Hub16-rescue:RN-josh-passive RN3
 U 2 1 5E2FAA67
 P 2025 6600
 F 0 "RN3" V 1975 6750 50  0000 C CNN
@@ -2474,7 +2474,7 @@ F 6 "Y" H 2025 6600 50  0001 C CNN "Substitue Allowed?"
 	0    1    1    0   
 $EndComp
 $Comp
-L josh-passive:RN RN3
+L Hub16-rescue:RN-josh-passive RN3
 U 3 1 5E2FAA6D
 P 2325 6600
 F 0 "RN3" V 2275 6750 50  0000 C CNN
@@ -2488,7 +2488,7 @@ F 6 "Y" H 2325 6600 50  0001 C CNN "Substitue Allowed?"
 	0    1    1    0   
 $EndComp
 $Comp
-L josh-passive:RN RN3
+L Hub16-rescue:RN-josh-passive RN3
 U 1 1 5E3B16E5
 P 1775 6900
 F 0 "RN3" H 1775 7000 50  0000 C CNN
@@ -2839,7 +2839,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 850  2400 950 
 $Comp
-L josh-passive:RN RN3
+L Hub16-rescue:RN-josh-passive RN3
 U 4 1 5DFFA8CC
 P 1775 7100
 F 0 "RN3" H 1775 7175 50  0000 C CNN
@@ -2853,7 +2853,7 @@ F 6 "Y" H 1775 7100 50  0001 C CNN "Substitue Allowed?"
 	1    0    0    -1  
 $EndComp
 $Comp
-L josh-passive:RN RN1
+L Hub16-rescue:RN-josh-passive RN1
 U 4 1 5E037CE5
 P 4925 7075
 F 0 "RN1" H 4925 7150 50  0000 C CNN

@@ -1,5 +1,7 @@
 # Hub16
 
+![Hub16 assembled](Documents/imgs/nice-1.JPG)
+
 A macro pad with 16 keys, two rotary encoders, a four port USB hub, and plenty of LEDs!
 
 This project started as I wanted to utilise rotary encoders to change the grid and trace size in KiCad, and then thought wouldn't it be cool to run a cable between the macro pad and keyboard, so a hub was added! 
