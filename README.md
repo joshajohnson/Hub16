@@ -28,6 +28,10 @@ All design files required to manufacture the board and enclosure are available, 
 * [Firmware Flashing Instructions](Documents/firmware-install.md)
 * [Enclosure Manufacturing](Documents/enclosure-manufacturing.md)
 
+### Errata
+* There was an issue with the manufacturing files for V0.3 which was not caught until the boards were assembled, and resulted in a small section of the PCB near the USB hub requiring rework. This can be seen with a small cut in the backside copper of the PCB, which is not visible after assembly and does not impact performance. This only affects boards purchased from Josh, not any gerbers downloaded for manufacture at home.
+* Some rotary encoders output flipped signals (clockwise instead of counterclockwise), if after assembly your encoders appear to be sending the wrong signals, change the position of pins from line 87 to 89 (and vice-versa) in [config.h](Firmware/hub16/config.h), or alter the setting in your [software](Software).
+
 If you have any questions or comments please get in touch. I can be found on Discord as `_joshajohnson#9451`, [Twitter](https://twitter.com/_joshajohnson), and [r/mk](https://www.reddit.com/user/_joshajohnson). 
 
 Happy typing!
