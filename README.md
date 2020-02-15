@@ -8,7 +8,7 @@ This project started as I wanted to utilise rotary encoders to change the grid a
 
 It is designed to work with software on the host computer to enable powerful, context aware macros to be run, ensuring you never have to press a strange sequence of keys ever again. 
 
-All design files required to manufacture the board and enclosure are available, along with a small production run currently in the works to make it easier and cheaper to get your hands on a board. Stay tuned... 
+All design files required to manufacture the board and enclosure are available, along with assembled and tested boards being available from [Tindie](https://www.tindie.com/products/joshajohnson/hub16-programmable-macro-keyboard/) 
 
 ## Key Features
 * 16 Cherry MX compatible switches, along with two switches in the encoders. 
