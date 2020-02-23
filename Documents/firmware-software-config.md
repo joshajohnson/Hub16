@@ -14,11 +14,13 @@ When you press a key on the Hub16, it first presses and holds down a modifier ke
 | a   b   c   d  |  ENC1:Button: s
 | e   f   g   h  |  ENC2:Clockwise: t
 | i   j   k   l  |  ENC2:Anticlockwise: u
-| m   n   o      |  ENC2:Button: v
+| m   n   o   p  |  ENC2:Button: v
 ------------------
 ```
 
-The default configuration is shown above, with all but the bottom right key sending keys to the computer, as the missing key can be double tapped to bring up a second layer of control for LEDs, which is shown below. For some reason I can't get a single tap on the missing key to send a character wrapped in `F24`, but if you get it working please send a pull request.  
+The default configuration is shown above, with double tapping the bottom right key resulting in a layer change to below, where keyboard reset, along with LED control is located. You can return to the base layer by double tapping the bottom right key for a second time. 
+
+__NOTE__ some rotary encoders output flipped signals (clockwise instead of counterclockwise), if after assembly your encoders appear to be sending the wrong signals, change the position of pins from line 87 to 89 (and vice-versa) in [config.h](../Firmware/hub16/config.h), or alter the setting in your [software](../Software).
 
 ```
 _______, RGB_MOD, RGB_RMOD, RGB_TOG,
@@ -84,10 +86,15 @@ Taran from Linus Tech Tips has a great [video](https://youtu.be/GZEoss4XIgc?t=34
 * For volume and media control as configured in my example code, [playerctl](https://github.com/altdesktop/playerctl) and ```alsa-utils``` must be installed
 
 * Bugs / Strange behaviour
-	* As mentioned above, I have been unable to get it working at boot, so you need to open a new shell every time the computer is turned on. 
-	* It also appears that you have to update xmodmap after the keyboard is plugged in / reset, so keep that in mind if it does not work as planned after flashing firmware / connecting it. 
+	* As mentioned above, I have been unable to get it working at boot, so you need to open a new shell every time the computer is turned on, or a USB HID device is plugged / unplugged. 
 	* If the last thing done on the computer is using your normal keyboard before the Hub16, you will need to either press the macro twice, or click on your screen before running it. 
 	* I don't understand why any of these occur, if you know / have a fix please let me know or send a pull request. 
+
+* Alternate solution
+	* If the above bugs are too annoying, you can simply hard code the key presses into the keyboard which skips the software layer, but at the trade off of not being able to dynamically switch between keys depending on the active window. 
+		* To do this, uncomment the commented ```process_record_user``` function in `Firmware/hub16/keymaps/no_mod/keymap.c`, and place your required key combinations in that function. 
+		* By using layers on the keyboard (similar to the LED control layer) you could have different layers on the keyboard for different applications each sending different key combinations, which would allow you to manually alter the keyboard behaviour as you move between software applications. 
+		* If you have any questions or issues with getting this to work, please reach out and I'll lend a hand. 
 
 ### Mac
 I don't have a Mac so can't test any programs on it, however [Karabiner](https://pqrs.org/osx/karabiner/) looks like it has the required functionality. Feel free to submit a pull request if you get a script working on OSX.

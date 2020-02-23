@@ -19,12 +19,13 @@ U 1 1 5E6B05F8
 P 5000 1575
 F 0 "U3" H 5400 1650 50  0000 C CNN
 F 1 "CY7C65632-28LTXCT" H 5400 1559 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm_ThermalVias" H 5000 1575 100 0001 C CNN
+F 2 "josh-dfn-qfn:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm_ThermalVias" H 5000 1575 100 0001 C CNN
 F 3 "https://www.cypress.com/file/114101/download" H 5000 1575 100 0001 C CNN
 F 4 "CY7C65632-28LTXCT" H 5000 1575 50  0001 C CNN "MPN"
 F 5 "C466886" H 5000 1575 50  0001 C CNN "LCSC"
 F 6 "428-3156-1-ND" H 5000 1575 50  0001 C CNN "DigiKey"
 F 7 "N" H 5000 1575 50  0001 C CNN "Substitue Allowed?"
+F 8 "Cypress Semiconductor" H 5000 1575 50  0001 C CNN "Manufacturer"
 	1    5000 1575
 	1    0    0    -1  
 $EndComp
@@ -127,6 +128,8 @@ $Comp
 L josh-passive:Ferrite_Bead_PWR FB1
 U 1 1 5E7397D3
 P 1600 6750
+AR Path="/5E7397D3" Ref="FB1"  Part="1" 
+AR Path="/5E5406D9/5E7397D3" Ref="FB1"  Part="1" 
 F 0 "FB1" H 1600 6600 50  0000 C CNN
 F 1 "600R" H 1600 6925 50  0000 C CNN
 F 2 "josh-passives-smt:Ferrite_Bead_0603" H 1600 6680 50  0001 C CNN
@@ -135,8 +138,9 @@ F 4 "C19330" H 1600 6750 50  0001 C CNN "LCSC"
 F 5 "BLM18AG601SN1D" H 1600 6750 50  0001 C CNN "MPN"
 F 6 "490-1014-1-ND" H 1600 6750 50  0001 C CNN "DigiKey"
 F 7 "Y" H 1600 6750 50  0001 C CNN "Substitue Allowed?"
+F 8 "Murata" H 1600 6750 50  0001 C CNN "Manufacturer"
 	1    1600 6750
-	-1   0    0    1   
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	775  6750 1300 6750
@@ -159,6 +163,7 @@ F 4 "1276-1000-1-ND" H 1300 7050 50  0001 C CNN "DigiKey"
 F 5 "CL10B104KB8NNNC" H 1300 7050 50  0001 C CNN "MPN"
 F 6 "Y" H 1300 7050 50  0001 C CNN "Substitue Allowed?"
 F 7 "C1591" H 1300 7050 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 1300 7050 50  0001 C CNN "Manufacturer"
 	1    1300 7050
 	1    0    0    -1  
 $EndComp
@@ -179,6 +184,7 @@ F 4 "1276-1871-1-ND " H 1850 7050 50  0001 C CNN "DigiKey"
 F 5 "CL10A106MP8NNNC " H 1850 7050 50  0001 C CNN "MPN"
 F 6 "Y" H 1850 7050 50  0001 C CNN "Substitue Allowed?"
 F 7 "C85713" H 1850 7050 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 1850 7050 50  0001 C CNN "Manufacturer"
 	1    1850 7050
 	1    0    0    -1  
 $EndComp
@@ -238,6 +244,7 @@ F 4 "1276-1000-1-ND" H 2325 6925 50  0001 C CNN "DigiKey"
 F 5 "CL10B104KB8NNNC" H 2325 6925 50  0001 C CNN "MPN"
 F 6 "Y" H 2325 6925 50  0001 C CNN "Substitue Allowed?"
 F 7 "C1591" H 2325 6925 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 2325 6925 50  0001 C CNN "Manufacturer"
 	1    2325 6925
 	1    0    0    -1  
 $EndComp
@@ -253,6 +260,7 @@ F 4 "1276-1000-1-ND" H 2750 6925 50  0001 C CNN "DigiKey"
 F 5 "CL10B104KB8NNNC" H 2750 6925 50  0001 C CNN "MPN"
 F 6 "Y" H 2750 6925 50  0001 C CNN "Substitue Allowed?"
 F 7 "C1591" H 2750 6925 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 2750 6925 50  0001 C CNN "Manufacturer"
 	1    2750 6925
 	1    0    0    -1  
 $EndComp
@@ -272,6 +280,7 @@ F 4 "1276-1000-1-ND" H 3175 6925 50  0001 C CNN "DigiKey"
 F 5 "CL10B104KB8NNNC" H 3175 6925 50  0001 C CNN "MPN"
 F 6 "Y" H 3175 6925 50  0001 C CNN "Substitue Allowed?"
 F 7 "C1591" H 3175 6925 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 3175 6925 50  0001 C CNN "Manufacturer"
 	1    3175 6925
 	1    0    0    -1  
 $EndComp
@@ -291,6 +300,7 @@ F 4 "1276-1866-1-ND " H 3600 6925 50  0001 C CNN "DigiKey"
 F 5 "CL10A105MP8NNNC " H 3600 6925 50  0001 C CNN "MPN"
 F 6 "Y" H 3600 6925 50  0001 C CNN "Substitue Allowed?"
 F 7 "C29936" H 3600 6925 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 3600 6925 50  0001 C CNN "Manufacturer"
 	1    3600 6925
 	1    0    0    -1  
 $EndComp
@@ -310,6 +320,7 @@ F 4 "1276-1866-1-ND " H 3975 6925 50  0001 C CNN "DigiKey"
 F 5 "CL10A105MP8NNNC " H 3975 6925 50  0001 C CNN "MPN"
 F 6 "Y" H 3975 6925 50  0001 C CNN "Substitue Allowed?"
 F 7 "C29936" H 3975 6925 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 3975 6925 50  0001 C CNN "Manufacturer"
 	1    3975 6925
 	1    0    0    -1  
 $EndComp
@@ -372,6 +383,7 @@ F 4 "1276-1000-1-ND" H 4375 6925 50  0001 C CNN "DigiKey"
 F 5 "CL10B104KB8NNNC" H 4375 6925 50  0001 C CNN "MPN"
 F 6 "Y" H 4375 6925 50  0001 C CNN "Substitue Allowed?"
 F 7 "C1591" H 4375 6925 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 4375 6925 50  0001 C CNN "Manufacturer"
 	1    4375 6925
 	1    0    0    -1  
 $EndComp
@@ -387,6 +399,7 @@ F 4 "1276-1866-1-ND " H 4825 6925 50  0001 C CNN "DigiKey"
 F 5 "CL10A105MP8NNNC " H 4825 6925 50  0001 C CNN "MPN"
 F 6 "Y" H 4825 6925 50  0001 C CNN "Substitue Allowed?"
 F 7 "C29936" H 4825 6925 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 4825 6925 50  0001 C CNN "Manufacturer"
 	1    4825 6925
 	1    0    0    -1  
 $EndComp
@@ -446,6 +459,8 @@ F 4 "CR0603-JW-103ELFCT-ND  " H 4675 3125 50  0001 C CNN "DigiKey"
 F 5 "CR0603-JW-103ELF " H 4675 3125 50  0001 C CNN "MPN"
 F 6 "Y" H 4675 3125 50  0001 C CNN "Substitue Allowed?"
 F 7 "C144116" H 4675 3125 50  0001 C CNN "LCSC"
+F 8 "Bourns" H 4675 3125 50  0001 C CNN "Manufacturer"
+F 9 "LCSC: Substitute PN" H 4675 3125 50  0001 C CNN "Notes"
 	1    4675 3125
 	0    1    1    0   
 $EndComp
@@ -478,6 +493,7 @@ F 4 "1276-2228-1-ND  " H 3275 2875 50  0001 C CNN "DigiKey"
 F 5 "CL10C220JB8NFNC " H 3275 2875 50  0001 C CNN "MPN"
 F 6 "Y" H 3275 2875 50  0001 C CNN "Substitue Allowed?"
 F 7 "C1653" H 3275 2875 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 3275 2875 50  0001 C CNN "Manufacturer"
 	1    3275 2875
 	0    1    1    0   
 $EndComp
@@ -495,6 +511,7 @@ F 4 "1276-2228-1-ND  " H 3275 2475 50  0001 C CNN "DigiKey"
 F 5 "CL10C220JB8NFNC " H 3275 2475 50  0001 C CNN "MPN"
 F 6 "Y" H 3275 2475 50  0001 C CNN "Substitue Allowed?"
 F 7 "C1653" H 3275 2475 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 3275 2475 50  0001 C CNN "Manufacturer"
 	1    3275 2475
 	0    1    1    0   
 $EndComp
@@ -534,34 +551,13 @@ Wire Wire Line
 Wire Wire Line
 	4175 2475 4175 2625
 Connection ~ 3025 2875
-$Comp
-L Hub16-rescue:Crystal_GND24_Small-Device-Hub16-rescue Y?
-U 1 1 5E805CF9
-P 3675 2675
-AR Path="/5E805CF9" Ref="Y?"  Part="1" 
-AR Path="/5E5406D9/5E805CF9" Ref="Y2"  Part="1" 
-F 0 "Y2" V 3575 2700 50  0000 L CNN
-F 1 "12MHz" V 3775 2675 50  0000 L CNN
-F 2 "josh-oscillators:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 3675 2675 50  0001 C CNN
-F 3 "~" H 3675 2675 50  0001 C CNN
-F 4 "C276421" H 3675 2675 50  0001 C CNN "LCSC"
-F 5 "ABM8-12.000MHZ-B2-T" H 3675 2675 50  0001 C CNN "MPN"
-F 6 "535-9826-1-ND" H 3675 2675 50  0001 C CNN "DigiKey"
-F 7 "Y" H 3675 2675 50  0001 C CNN "Substitue Allowed?"
-	1    3675 2675
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3675 2475 3675 2575
 Wire Wire Line
 	3675 2775 3675 2875
-Wire Wire Line
-	3550 2675 3025 2675
 Connection ~ 3025 2675
 Wire Wire Line
 	3025 2675 3025 2875
-Wire Wire Line
-	3800 2675 3850 2675
 $Comp
 L power:GND #PWR?
 U 1 1 5E805D05
@@ -595,6 +591,8 @@ F 4 "CR0603-JW-104ELFCT-ND " H 4675 3225 50  0001 C CNN "DigiKey"
 F 5 "CR0603-JW-104ELF " H 4675 3225 50  0001 C CNN "MPN"
 F 6 "Y" H 4675 3225 50  0001 C CNN "Substitue Allowed?"
 F 7 "C203223" H 4675 3225 50  0001 C CNN "LCSC"
+F 8 "Bourns" H 4675 3225 50  0001 C CNN "Manufacturer"
+F 9 "LCSC: Substitute PN" H 4675 3225 50  0001 C CNN "Notes"
 	1    4675 3225
 	0    1    1    0   
 $EndComp
@@ -608,24 +606,23 @@ Wire Wire Line
 $Comp
 L Device:R R14
 U 1 1 5E8EECCD
-P 4750 3625
-F 0 "R14" H 4820 3671 50  0000 L CNN
-F 1 "649R" H 4820 3580 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4680 3625 50  0001 C CNN
-F 3 "~" H 4750 3625 50  0001 C CNN
-F 4 "RHM649CFCT-ND  " H 4750 3625 50  0001 C CNN "DigiKey"
-F 5 "MCR03ERTF6490 " H 4750 3625 50  0001 C CNN "MPN"
-F 6 "Cannot source from LCSC, no substitutes available " H 4750 3625 50  0001 C CNN "Notes"
-F 7 "Y" H 4750 3625 50  0001 C CNN "Substitue Allowed?"
-	1    4750 3625
+P 4750 3575
+F 0 "R14" H 4820 3621 50  0000 L CNN
+F 1 "649R" H 4820 3530 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4680 3575 50  0001 C CNN
+F 3 "~" H 4750 3575 50  0001 C CNN
+F 4 "RHM649CFCT-ND  " H 4750 3575 50  0001 C CNN "DigiKey"
+F 5 "MCR03ERTF6490 " H 4750 3575 50  0001 C CNN "MPN"
+F 6 "Cannot source from LCSC" H 4750 3575 50  0001 C CNN "Notes"
+F 7 "Y" H 4750 3575 50  0001 C CNN "Substitue Allowed?"
+F 8 "Rohm Semiconductor" H 4750 3575 50  0001 C CNN "Manufacturer"
+	1    4750 3575
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 3475 4750 3425
-Wire Wire Line
 	4750 3425 4900 3425
 Wire Wire Line
-	4750 3775 4750 3825
+	4750 3725 4750 3825
 $Comp
 L power:GND #PWR0130
 U 1 1 5E8F5E15
@@ -637,79 +634,8 @@ F 3 "" H 4750 3825 50  0001 C CNN
 	1    4750 3825
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R9
-U 1 1 5E8F77E5
-P 3725 3400
-F 0 "R9" H 3825 3475 50  0000 C CNN
-F 1 "100K" H 3875 3400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3655 3400 50  0001 C CNN
-F 3 "~" H 3725 3400 50  0001 C CNN
-F 4 "DNP" H 3850 3325 50  0000 C CNN "DNP"
-F 5 "CR0603-JW-104ELFCT-ND " H 3725 3400 50  0001 C CNN "DigiKey"
-F 6 "CR0603-JW-104ELF " H 3725 3400 50  0001 C CNN "MPN"
-F 7 "Y" H 3725 3400 50  0001 C CNN "Substitue Allowed?"
-F 8 "C203223" H 3725 3400 50  0001 C CNN "LCSC"
-	1    3725 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R10
-U 1 1 5E9014C2
-P 3725 3750
-F 0 "R10" H 3825 3825 50  0000 C CNN
-F 1 "100K" H 3875 3750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3655 3750 50  0001 C CNN
-F 3 "~" H 3725 3750 50  0001 C CNN
-F 4 "" H 3850 3675 50  0000 C CNN "DNP"
-F 5 "CR0603-JW-104ELFCT-ND " H 3725 3750 50  0001 C CNN "DigiKey"
-F 6 "CR0603-JW-104ELF " H 3725 3750 50  0001 C CNN "MPN"
-F 7 "Y" H 3725 3750 50  0001 C CNN "Substitue Allowed?"
-F 8 "C203223" H 3725 3750 50  0001 C CNN "LCSC"
-	1    3725 3750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3725 3600 3725 3575
-Wire Wire Line
-	3725 3575 4450 3575
-Wire Wire Line
-	4450 3325 4900 3325
-Connection ~ 3725 3575
-Wire Wire Line
-	3725 3575 3725 3550
-$Comp
-L power:+3.3V #PWR0131
-U 1 1 5E90E003
-P 3725 3225
-F 0 "#PWR0131" H 3725 3075 50  0001 C CNN
-F 1 "+3.3V" H 3740 3398 50  0000 C CNN
-F 2 "" H 3725 3225 50  0001 C CNN
-F 3 "" H 3725 3225 50  0001 C CNN
-	1    3725 3225
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3725 3225 3725 3250
-Wire Wire Line
-	3725 3900 3725 3950
-$Comp
-L power:GND #PWR0132
-U 1 1 5E912B50
-P 3725 3950
-F 0 "#PWR0132" H 3725 3700 50  0001 C CNN
-F 1 "GND" H 3730 3777 50  0000 C CNN
-F 2 "" H 3725 3950 50  0001 C CNN
-F 3 "" H 3725 3950 50  0001 C CNN
-	1    3725 3950
-	1    0    0    -1  
-$EndComp
-Text Label 4200 3575 0    50   ~ 0
-GANG
-Wire Wire Line
-	4450 3325 4450 3575
-Text Notes 4000 3800 0    50   ~ 0
-Figure out which\none to place
+	4425 3325 4900 3325
 Text Label 6250 1925 2    50   ~ 0
 nOVR_1
 Wire Wire Line
@@ -732,12 +658,14 @@ U 1 1 5E97BC1C
 P 6075 7050
 F 0 "RN5" V 5658 7050 50  0000 C CNN
 F 1 "10K" V 5749 7050 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0402" V 6350 7050 50  0001 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 6350 7050 50  0001 C CNN
 F 3 "~" H 6075 7050 50  0001 C CNN
 F 4 "RAVF104DJT10K0CT-ND" H 6075 7050 50  0001 C CNN "DigiKey"
 F 5 "RAVF104DJT10K0" H 6075 7050 50  0001 C CNN "MPN"
 F 6 "Y" H 6075 7050 50  0001 C CNN "Substitue Allowed?"
 F 7 "C136853" H 6075 7050 50  0001 C CNN "LCSC"
+F 8 "Bourns" H 6075 7050 50  0001 C CNN "Manufacturer"
+F 9 "LCSC: Substitute PN" H 6075 7050 50  0001 C CNN "Notes"
 	1    6075 7050
 	0    1    1    0   
 $EndComp
@@ -900,12 +828,13 @@ U 1 1 5E96570C
 P 10275 2375
 F 0 "J4" H 10675 3200 50  0000 R CNN
 F 1 "USB_C_Receptacle_USB2.0" H 10675 3125 50  0000 R CNN
-F 2 "josh-connectors:USB_C_Receptacle_GT-USB-7010" H 10425 2375 50  0001 C CNN
+F 2 "josh-connectors:USB_C_U262-161N-4BVC11" H 10425 2375 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10425 2375 50  0001 C CNN
 F 4 "C319148" H 10275 2375 50  0001 C CNN "LCSC"
 F 5 "U262-161N-4BVC11" H 10275 2375 50  0001 C CNN "MPN"
-F 6 "Cannot source from Digikey, available on AliExpress: https://www.aliexpress.com/item/33045191307.html" H 10275 2375 50  0001 C CNN "Notes"
-F 7 "N" H 10275 2375 50  0001 C CNN "Substitue Allowed?"
+F 6 "Cannot source from DigiKey" H 10275 2375 50  0001 C CNN "Notes"
+F 7 "Y" H 10275 2375 50  0001 C CNN "Substitue Allowed?"
+F 8 "XKB Enterprise" H 10275 2375 50  0001 C CNN "Manufacturer"
 	1    10275 2375
 	-1   0    0    -1  
 $EndComp
@@ -969,12 +898,13 @@ U 1 1 5EA6196A
 P 8175 2350
 F 0 "J3" H 8575 3175 50  0000 R CNN
 F 1 "USB_C_Receptacle_USB2.0" H 8575 3100 50  0000 R CNN
-F 2 "josh-connectors:USB_C_Receptacle_GT-USB-7010" H 8325 2350 50  0001 C CNN
+F 2 "josh-connectors:USB_C_U262-161N-4BVC11" H 8325 2350 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 8325 2350 50  0001 C CNN
 F 4 "C319148" H 8175 2350 50  0001 C CNN "LCSC"
 F 5 "U262-161N-4BVC11" H 8175 2350 50  0001 C CNN "MPN"
-F 6 "Cannot source from Digikey, available on AliExpress: https://www.aliexpress.com/item/33045191307.html" H 8175 2350 50  0001 C CNN "Notes"
-F 7 "N" H 8175 2350 50  0001 C CNN "Substitue Allowed?"
+F 6 "Cannot source from DigiKey" H 8175 2350 50  0001 C CNN "Notes"
+F 7 "Y" H 8175 2350 50  0001 C CNN "Substitue Allowed?"
+F 8 "XKB Enterprise" H 8175 2350 50  0001 C CNN "Manufacturer"
 	1    8175 2350
 	-1   0    0    -1  
 $EndComp
@@ -1051,12 +981,13 @@ U 1 1 5EA9199F
 P 10325 4575
 F 0 "J5" H 10725 5400 50  0000 R CNN
 F 1 "USB_C_Receptacle_USB2.0" H 10725 5325 50  0000 R CNN
-F 2 "josh-connectors:USB_C_Receptacle_GT-USB-7010" H 10475 4575 50  0001 C CNN
+F 2 "josh-connectors:USB_C_U262-161N-4BVC11" H 10475 4575 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10475 4575 50  0001 C CNN
 F 4 "C319148" H 10325 4575 50  0001 C CNN "LCSC"
 F 5 "U262-161N-4BVC11" H 10325 4575 50  0001 C CNN "MPN"
-F 6 "Cannot source from Digikey, available on AliExpress: https://www.aliexpress.com/item/33045191307.html" H 10325 4575 50  0001 C CNN "Notes"
-F 7 "N" H 10325 4575 50  0001 C CNN "Substitue Allowed?"
+F 6 "Cannot source from DigiKey" H 10325 4575 50  0001 C CNN "Notes"
+F 7 "Y" H 10325 4575 50  0001 C CNN "Substitue Allowed?"
+F 8 "XKB Enterprise" H 10325 4575 50  0001 C CNN "Manufacturer"
 	1    10325 4575
 	-1   0    0    -1  
 $EndComp
@@ -1064,6 +995,8 @@ $Comp
 L josh-passive:Ferrite_Bead_PWR FB3
 U 1 1 5EAA61A4
 P 9375 3975
+AR Path="/5EAA61A4" Ref="FB3"  Part="1" 
+AR Path="/5E5406D9/5EAA61A4" Ref="FB3"  Part="1" 
 F 0 "FB3" H 9375 3825 50  0000 C CNN
 F 1 "600R" H 9375 4150 50  0000 C CNN
 F 2 "josh-passives-smt:Ferrite_Bead_0603" H 9375 3905 50  0001 C CNN
@@ -1072,8 +1005,9 @@ F 4 "C19330" H 9375 3975 50  0001 C CNN "LCSC"
 F 5 "BLM18AG601SN1D" H 9375 3975 50  0001 C CNN "MPN"
 F 6 "490-1014-1-ND" H 9375 3975 50  0001 C CNN "DigiKey"
 F 7 "Y" H 9375 3975 50  0001 C CNN "Substitue Allowed?"
+F 8 "Murata" H 9375 3975 50  0001 C CNN "Manufacturer"
 	1    9375 3975
-	-1   0    0    1   
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	9150 3975 9225 3975
@@ -1098,6 +1032,8 @@ $Comp
 L josh-passive:Ferrite_Bead_PWR FB2
 U 1 1 5EACFE3B
 P 7325 1750
+AR Path="/5EACFE3B" Ref="FB2"  Part="1" 
+AR Path="/5E5406D9/5EACFE3B" Ref="FB2"  Part="1" 
 F 0 "FB2" H 7325 1600 50  0000 C CNN
 F 1 "600R" H 7325 1925 50  0000 C CNN
 F 2 "josh-passives-smt:Ferrite_Bead_0603" H 7325 1680 50  0001 C CNN
@@ -1106,8 +1042,9 @@ F 4 "C19330" H 7325 1750 50  0001 C CNN "LCSC"
 F 5 "BLM18AG601SN1D" H 7325 1750 50  0001 C CNN "MPN"
 F 6 "490-1014-1-ND" H 7325 1750 50  0001 C CNN "DigiKey"
 F 7 "Y" H 7325 1750 50  0001 C CNN "Substitue Allowed?"
+F 8 "Murata" H 7325 1750 50  0001 C CNN "Manufacturer"
 	1    7325 1750
-	-1   0    0    1   
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	7100 1750 7175 1750
@@ -1130,6 +1067,8 @@ $Comp
 L josh-passive:Ferrite_Bead_PWR FB4
 U 1 1 5EAD8DBC
 P 9425 1775
+AR Path="/5EAD8DBC" Ref="FB4"  Part="1" 
+AR Path="/5E5406D9/5EAD8DBC" Ref="FB4"  Part="1" 
 F 0 "FB4" H 9425 1625 50  0000 C CNN
 F 1 "600R" H 9425 1950 50  0000 C CNN
 F 2 "josh-passives-smt:Ferrite_Bead_0603" H 9425 1705 50  0001 C CNN
@@ -1138,8 +1077,9 @@ F 4 "C19330" H 9425 1775 50  0001 C CNN "LCSC"
 F 5 "BLM18AG601SN1D" H 9425 1775 50  0001 C CNN "MPN"
 F 6 "490-1014-1-ND" H 9425 1775 50  0001 C CNN "DigiKey"
 F 7 "Y" H 9425 1775 50  0001 C CNN "Substitue Allowed?"
+F 8 "Murata" H 9425 1775 50  0001 C CNN "Manufacturer"
 	1    9425 1775
-	-1   0    0    1   
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	9200 1775 9275 1775
@@ -1161,25 +1101,6 @@ $EndComp
 Wire Wire Line
 	2075 1650 2075 1525
 $Comp
-L Power_Protection:TPD2S017 U?
-U 1 1 5E571CFA
-P 2075 2150
-AR Path="/5E571CFA" Ref="U?"  Part="1" 
-AR Path="/5E5406D9/5E571CFA" Ref="U1"  Part="1" 
-F 0 "U1" H 1925 2500 50  0000 C CNN
-F 1 "TPD2S017" H 2375 2500 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 1325 1800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tpd2s017.pdf" H 2075 2150 50  0001 C CNN
-F 4 "296-25216-1-ND " H 2075 2150 50  0001 C CNN "DigiKey"
-F 5 "TPD2S017DBVR" H 2075 2150 50  0001 C CNN "MPN"
-F 6 "Cannot source from LCSC, no substitutes available " H 2075 2150 50  0001 C CNN "Notes"
-F 7 "N" H 2075 2150 50  0001 C CNN "Substitue Allowed?"
-	1    2075 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2075 2650 2075 2700
-$Comp
 L power:GND #PWR?
 U 1 1 5E571CE9
 P 2075 2700
@@ -1197,23 +1118,95 @@ Wire Wire Line
 Wire Wire Line
 	4225 2475 4900 2475
 Wire Wire Line
-	2575 2250 4225 2250
-Wire Wire Line
 	4350 2375 4350 2050
 Wire Wire Line
 	4350 2375 4900 2375
-Wire Wire Line
-	2575 2050 4350 2050
 Text HLabel 1475 2250 0    50   Input ~ 0
 USB_UP_D+
 Text HLabel 1475 2050 0    50   Input ~ 0
 USB_UP_D-
-Wire Wire Line
-	1475 2250 1575 2250
-Wire Wire Line
-	1475 2050 1575 2050
 Text Notes 1100 1175 0    100  ~ 0
 From Upstream USB Port
 Text Notes 6325 2875 0    50   ~ 0
 To 32u4
+$Comp
+L josh-ic:USBLC6-2SC6 U1
+U 1 1 5E4C0398
+P 2075 2150
+F 0 "U1" H 1900 2450 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 2375 2450 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 1325 2550 50  0001 C CNN
+F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 2275 2500 50  0001 C CNN
+F 4 "497-5235-1-ND " H 2075 2150 50  0001 C CNN "DigiKey"
+F 5 "C7519" H 2075 2150 50  0001 C CNN "LCSC"
+F 6 "USBLC6-2SC6" H 2075 2150 50  0001 C CNN "MPN"
+F 7 "STmicroelectronics" H 2075 2150 50  0001 C CNN "Manufacturer"
+	1    2075 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2475 2050 4350 2050
+Wire Wire Line
+	2475 2250 4225 2250
+Wire Wire Line
+	2075 2600 2075 2700
+Wire Wire Line
+	1475 2250 1675 2250
+Wire Wire Line
+	1475 2050 1675 2050
+$Comp
+L Device:Crystal_GND24_Small Y?
+U 1 1 5E805CF9
+P 3675 2675
+AR Path="/5E805CF9" Ref="Y?"  Part="1" 
+AR Path="/5E5406D9/5E805CF9" Ref="Y2"  Part="1" 
+F 0 "Y2" V 3575 2700 50  0000 L CNN
+F 1 "12MHz" V 3775 2675 50  0000 L CNN
+F 2 "josh-oscillators:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 3675 2675 50  0001 C CNN
+F 3 "~" H 3675 2675 50  0001 C CNN
+F 4 "C276421" H 3675 2675 50  0001 C CNN "LCSC"
+F 5 "ABM8-12.000MHZ-B2-T" H 3675 2675 50  0001 C CNN "MPN"
+F 6 "535-9826-1-ND" H 3675 2675 50  0001 C CNN "DigiKey"
+F 7 "Y" H 3675 2675 50  0001 C CNN "Substitue Allowed?"
+F 8 "Abracon LLC" H 3675 2675 50  0001 C CNN "Manufacturer"
+	1    3675 2675
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3775 2675 3850 2675
+Wire Wire Line
+	3025 2675 3575 2675
+$Comp
+L Device:R R9
+U 1 1 5E6ABC35
+P 4425 3600
+F 0 "R9" H 4525 3650 50  0000 C CNN
+F 1 "100K" H 4575 3575 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4355 3600 50  0001 C CNN
+F 3 "~" H 4425 3600 50  0001 C CNN
+F 4 "" H 4550 3525 50  0001 C CNN "DNP"
+F 5 "CR0603-JW-104ELFCT-ND " H 4425 3600 50  0001 C CNN "DigiKey"
+F 6 "CR0603-JW-104ELF " H 4425 3600 50  0001 C CNN "MPN"
+F 7 "Y" H 4425 3600 50  0001 C CNN "Substitue Allowed?"
+F 8 "C203223" H 4425 3600 50  0001 C CNN "LCSC"
+F 9 "Bourns" H 4425 3600 50  0001 C CNN "Manufacturer"
+F 10 "LCSC: Substitute PN" H 4425 3600 50  0001 C CNN "Notes"
+	1    4425 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4425 3825 4425 3750
+$Comp
+L power:GND #PWR0131
+U 1 1 5E6BA7E1
+P 4425 3825
+F 0 "#PWR0131" H 4425 3575 50  0001 C CNN
+F 1 "GND" H 4430 3652 50  0000 C CNN
+F 2 "" H 4425 3825 50  0001 C CNN
+F 3 "" H 4425 3825 50  0001 C CNN
+	1    4425 3825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4425 3325 4425 3450
 $EndSCHEMATC
