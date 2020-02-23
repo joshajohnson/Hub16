@@ -38,6 +38,7 @@ l::^r  ; Move relative
 ; m::
 ; n::
 ; o::
+; p::
 
 ; Encoder 1
 ; Clockwise
