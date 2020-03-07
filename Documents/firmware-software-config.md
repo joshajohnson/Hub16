@@ -45,11 +45,11 @@ The important sections of the code are oulined below:
 | Line(s) | Description |  
 | --- | ----------- |  
 | 19 | Default modifier key |  
-| 26:27 | Behaviour of layer shift key |  
-| 31:43| Keyboard layout and layers|  
-| 53, 57, 63, 67| Encoder rotation behaviour|  
+| 32:33 | Behaviour of layer shift key |  
+| 35:51| Keyboard layout and layers|  
+| 56:74| Encoder rotation behaviour|  
 
-If you want to use it without all the strange modifier key stuff, I'd suggest modifying the `test` keymap, as it has all of the modifier code removed. 
+If you want to use it without all the strange modifier key stuff, I'd suggest modifying the `no_mod` keymap, as it has all of the modifier code removed. 
 
 If you are wondering how all the layouts / layers / code stuff works, I highly recommend the [QMK Documentation](https://docs.qmk.fm/#/).
 
