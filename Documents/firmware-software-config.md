@@ -97,4 +97,6 @@ Taran from Linus Tech Tips has a great [video](https://youtu.be/GZEoss4XIgc?t=34
 		* If you have any questions or issues with getting this to work, please reach out and I'll lend a hand. 
 
 ### Mac
-I don't have a Mac so can't test any programs on it, however [Karabiner](https://pqrs.org/osx/karabiner/) looks like it has the required functionality. Feel free to submit a pull request if you get a script working on OSX.
+* Install [Brew](https://brew.sh/).
+* Open Terminal and install [Karabiner-Elements](https://karabiner-elements.pqrs.org/) with ```brew cask install karabiner-elements```.
+  * Use "Simple modifications" to bind basic/media keys. For application-specific layout use "Complex modifications".
