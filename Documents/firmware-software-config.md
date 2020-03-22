@@ -96,7 +96,7 @@ Taran from Linus Tech Tips has a great [video](https://youtu.be/GZEoss4XIgc?t=34
 		* By using layers on the keyboard (similar to the LED control layer) you could have different layers on the keyboard for different applications each sending different key combinations, which would allow you to manually alter the keyboard behaviour as you move between software applications. 
 		* If you have any questions or issues with getting this to work, please reach out and I'll lend a hand. 
 
-### Mac
+### macOS
 * Install [Brew](https://brew.sh/).
 * Open Terminal and install [Karabiner-Elements](https://karabiner-elements.pqrs.org/) with ```brew cask install karabiner-elements```.
   * Use "Simple modifications" to bind basic/media keys. For application-specific layout use "Complex modifications".
