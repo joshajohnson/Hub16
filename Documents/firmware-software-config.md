@@ -63,7 +63,7 @@ Taran from Linus Tech Tips has a great [video](https://youtu.be/GZEoss4XIgc?t=34
 
 ### Windows
 * Install [AHK](https://www.autohotkey.com/)
-    * Copy the example script from `Firmware/hub16.ahk` into a folder of your choice. 
+    * Copy the example script from `Software/hub16.ahk` into a folder of your choice. 
     	* I highly recommend placing a shortcut to that file in `%APPDATA%/Roaming/Microsoft/Windows/Start Menu/Programs/Start-up` to ensure it runs at boot.
     * Customise the script to your hearts content! 
 
