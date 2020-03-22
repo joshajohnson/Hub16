@@ -63,7 +63,7 @@ Taran from Linus Tech Tips has a great [video](https://youtu.be/GZEoss4XIgc?t=34
 
 ### Windows
 * Install [AHK](https://www.autohotkey.com/)
-    * Copy the example script from `Firmware/hub16.ahk` into a folder of your choice. 
+    * Copy the example script from `Software/hub16.ahk` into a folder of your choice. 
     	* I highly recommend placing a shortcut to that file in `%APPDATA%/Roaming/Microsoft/Windows/Start Menu/Programs/Start-up` to ensure it runs at boot.
     * Customise the script to your hearts content! 
 
@@ -96,5 +96,7 @@ Taran from Linus Tech Tips has a great [video](https://youtu.be/GZEoss4XIgc?t=34
 		* By using layers on the keyboard (similar to the LED control layer) you could have different layers on the keyboard for different applications each sending different key combinations, which would allow you to manually alter the keyboard behaviour as you move between software applications. 
 		* If you have any questions or issues with getting this to work, please reach out and I'll lend a hand. 
 
-### Mac
-I don't have a Mac so can't test any programs on it, however [Karabiner](https://pqrs.org/osx/karabiner/) looks like it has the required functionality. Feel free to submit a pull request if you get a script working on OSX.
+### macOS
+* Install [Brew](https://brew.sh/).
+* Open Terminal and install [Karabiner-Elements](https://karabiner-elements.pqrs.org/) with ```brew cask install karabiner-elements```.
+  * Use "Simple modifications" to bind basic/media keys. For application-specific layout use "Complex modifications".
