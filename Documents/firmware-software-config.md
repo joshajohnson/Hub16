@@ -99,4 +99,4 @@ Taran from Linus Tech Tips has a great [video](https://youtu.be/GZEoss4XIgc?t=34
 ### macOS
 * Install [Brew](https://brew.sh/).
 * Open Terminal and install [Karabiner-Elements](https://karabiner-elements.pqrs.org/) with ```brew cask install karabiner-elements```.
-  * Use "Simple modifications" to bind basic/media keys. For application-specific layout use "Complex modifications" (you can import the template to get you started by searching `Hub16 apps` rule from the menu). 
+  * Place example config `Software/karabiner.json` in your local `~.config/karabiner` folder.
