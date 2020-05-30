@@ -13,8 +13,7 @@ Precompiled binaries are available at `Firmware/binaries` for the keyboard if yo
 
 To build the firmware from source: 
 
-* `git clone` or download `https://github.com/qmk/qmk_firmware`
-* Follow the [build instructions](https://docs.qmk.fm/#/getting_started_build_tools) for your OS to install the toolchain.
+* Follow the [Getting Started Guide](https://docs.qmk.fm/#/newbs_getting_started) for your OS to install the toolchain and required files.
 
 To confirm all keys / encoders work, we will flash test firmware which does not mask key presses first. 
 * Connect your keyboard and run `make hub16:test:flash`, or flash `hub16_test.bin` with QMK Toolbox.
