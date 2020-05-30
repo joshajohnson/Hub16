@@ -47,7 +47,7 @@ Then insert all switches ensuring that they click in to position. If you have 5 
 Before soldering the keys, ensure that all pins poke through the main PCB and are not bent or damaged. It is much easier to fix it before soldering the pins in. Once everything looks good, solder all of the key switches into position. 
 ![Check all switches](imgs/assm-5-annotated.jpg)
 
-Insert the rotary encoders, noting that you may need to bend the pins inward / straighten them up to make everything fit nicely. This step can be a bit finicky, I find that placing the three pins into position first allows the others to fit easier. As with the switches, ensure all pins are poking through the main PCB and that the encoder is perpindicular to the main PCB before soldering everything into position.
+Insert the rotary encoders, noting that you may need to bend the pins inward / straighten them up to make everything fit nicely. This step can be a bit finicky, I find that placing the three pins into position first allows the others to fit easier. As with the switches, ensure all pins are poking through the main PCB and that the encoder is perpindicular to the main PCB before soldering everything into place.
 ![Check encoders](imgs/assm-6-annotated.jpg)
 
 Add the other acrylic spacer, ensuring the missing edge is lined up with the USB connectors, along with placing the bottom plate such that the small hole lines up with the reset switch. 

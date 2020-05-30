@@ -1,0 +1,34 @@
+Qty,Reference(s),Value,Footprint,MPN,DigiKey,LCSC,Manufacturer,DNP,Notes
+2,"C1, C13",10u,Capacitor_SMD:C_0603_1608Metric,CL10A106MP8NNNC ,1276-1871-1-ND ,C85713,Samsung Electro-Mechanics,,
+11,"C10, C11, C12, C14, C15, C16, C21, C6, C7, C8, C9",100n,Capacitor_SMD:C_0603_1608Metric,CL10B104KB8NNNC,1276-1000-1-ND,C1591,Samsung Electro-Mechanics,,
+4,"C17, C18, C2, C3",22p,Capacitor_SMD:C_0603_1608Metric,CL10C220JB8NFNC ,1276-2228-1-ND  ,C1653,Samsung Electro-Mechanics,,
+5,"C19, C20, C22, C4, C5",1u,Capacitor_SMD:C_0603_1608Metric,CL10A105MP8NNNC ,1276-1866-1-ND ,C29936,Samsung Electro-Mechanics,,
+1,D1,LED,LED_SMD:LED_0603_1608Metric,150060VS75000,732-4980-1-ND  ,C364559,Wurth Electronik,,LCSC: Substutite PN
+11,"D10, D16, D2, D22, D23, D29, D3, D30, D31, D32, D4",WS2812B,LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm,WS2812B,1528-1104-ND,C114586,Worldsemi,,Please ensure white package
+16,"D11, D12, D13, D14, D17, D18, D19, D20, D24, D25, D26, D27, D5, D6, D7, D8",D,Diode_SMD:D_SOD-123,1N4148W-7-F,1N4148W-FDICT-ND,C83528,Diodes Inc,,
+1,F1,500mA,josh-passives-smt:Fuse_0805_2012Metric,0ZCK0050FF2E,507-1813-1-ND,C181350,Bel Fuse,,LCSC: Substitute PN
+4,"FB1, FB2, FB3, FB4",600R,josh-passives-smt:Ferrite_Bead_0603,BLM18AG601SN1D,490-1014-1-ND,C19330,Murata,,
+4,"H1, H2, H3, H4",MH-M3,MountingHole:MountingHole_3.2mm_M3_ISO14580,,,,,DNP,
+4,"J1, J3, J4, J5",USB_C_Receptacle_USB2.0,josh-connectors:USB_C_U262-161N-4BVC11,U262-161N-4BVC11,,C319148,XKB Enterprise,,Cannot source from DigiKey
+1,J2,AVR-ISP-6,josh-connectors:AVR_PROG_2.54_SMT,,,,,DNP,
+1,JP11,LED_ON,Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm,,,,,DNP,
+16,"K1, K11, K12, K13, K14, K16, K17, K18, K19, K2, K3, K4, K6, K7, K8, K9",KEYSW,josh-keyboard:MX_KEYSWITCH,,,,,DNP,
+1,LOGO1,Josh-Logo,josh-logos:josh-johnson-logo-11x2,,,,,DNP,
+1,LOGO2,Josh-Details,josh-logos:josh-details,,,,,DNP,
+1,LOGO3,Board-Details,josh-logos:board-title,,,,,DNP,
+1,LOGO4,Logo_Open_Hardware_Small,josh-logos:OSHW_Logo_3.6x3.6_F.Mask,,,,,DNP,
+1,R1,2K2,Resistor_SMD:R_0603_1608Metric,CR0603-JW-222ELF ,CR0603-JW-222ELFCT-ND  ,C113303,Bourns,,LCSC: Substitute PN
+5,"R11, R12, R2, R5, R8",10K,Resistor_SMD:R_0603_1608Metric,CR0603-JW-103ELF ,CR0603-JW-103ELFCT-ND  ,C144116,Bourns,,LCSC: Substitute PN
+2,"R13, R9",100K,Resistor_SMD:R_0603_1608Metric,CR0603-JW-104ELF ,CR0603-JW-104ELFCT-ND ,C203223,Bourns,,LCSC: Substitute PN
+1,R14,649R,Resistor_SMD:R_0603_1608Metric,MCR03ERTF6490 ,RHM649CFCT-ND  ,C403314,Rohm Semiconductor,,LCSC: Substitute PN
+2,"R3, R4",5K1,Resistor_SMD:R_0603_1608Metric,CR0603-JW-512ELF ,118-CR0603-JW-512ELFCT-ND ,C14677,Bourns,,LCSC: Substitute PN
+2,"R6, R7",22R,Resistor_SMD:R_0603_1608Metric,CR0603-JW-220ELF ,CR0603-JW-220ELFCT-ND  ,C203424,Bourns,,LCSC: Substitute PN
+2,"RN1, RN3",10K,Resistor_SMD:R_Array_Convex_4x0603,RAVF104DJT10K0,RAVF104DJT10K0CT-ND,C136853,Bourns,,LCSC: Substitute PN
+1,RN5,10K,Resistor_SMD:R_Array_Convex_4x0603,RAVF104DJT10K0,RAVF104DJT10K0CT-ND,C136853,Bourns,,LCSC: Substitute PN
+1,SW1,KMR2,josh-buttons-switches:SW_Push_KMR2,KSR223GLFG,401-1704-1-ND,C354946,C&K,,LCSC: Substitute PN
+2,"SW2, SW3",Rotary_Encoder_Switch,josh-buttons-switches:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_CircularMountingHoles,EC11E1834403,987-1398-ND,C361165,,DNP,"Similar to: https://www.aliexpress.com/item/32839106848.html, must include switch"
+1,U1,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,USBLC6-2SC6,497-5235-1-ND ,C7519,STmicroelectronics,,
+1,U2,ATMEGA32U4,Package_QFP:TQFP-44_10x10mm_P0.8mm,ATMEGA32U4-AU,ATMEGA32U4-AURCT-ND,C44854,Microchip/Atmel,,
+1,U3,CY7C65632-28LTXCT,josh-dfn-qfn:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm_ThermalVias,CY7C65632-28LTXCT,428-3156-1-ND,C466886,Cypress Semiconductor,,
+1,Y1,16MHz,josh-oscillators:Crystal_SMD_3225-4Pin_3.2x2.5mm,ABM8-16.000MHZ-B2-T,535-9134-1-ND ,C179641,Abracon LLC,,
+1,Y2,12MHz,josh-oscillators:Crystal_SMD_3225-4Pin_3.2x2.5mm,ABM8-12.000MHZ-B2-T,535-9826-1-ND,C276421,Abracon LLC,,

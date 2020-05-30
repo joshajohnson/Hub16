@@ -6,8 +6,8 @@ There are numerous ways in which the case for the keyboard can be built, with th
 For a laser cut enclosure, the required files are in `Mechanicals/laser-cut`. 
 	
 * `topSpacer.dxf` and `bottomSpacer.dxf` need to be cut from 4mm acrylic
-* `bottomPlate.dxf` and `inclineSpacer.dxf` should be cut from 3mm acrylic, but could be increased to 4mm if slightly longer screws are used to hold everything together. 
-* `topCover.dxf` holds the key switches in place, and should be no greater than 1.5mm thick, as otherwise the keys will not fit. 
+* `bottomPlate.dxf` and `inclineSpacer.dxf` should be cut from 3mm acrylic, but could be increased to 4mm without too many issues. 
+* `topCover.dxf` holds the key switches in place, and should be no greater than 1.5mm thick.
 
 ### 3D Printing
 

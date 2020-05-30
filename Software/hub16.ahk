@@ -12,7 +12,7 @@ SendMode Input
 ; | a   b   c   d  |
 ; | e   f   g   h  |
 ; | i   j   k   l  |
-; | m   n   o      |
+; | m   n   o   p  |
 ; ------------------
 
 ; Run the below if F24 is pressed, and KiCad is open.
@@ -78,6 +78,7 @@ h::RButton
 ; m::
 ; n::
 ; o::
+; p::
 
 ; Encoder 1
 ; Clockwise

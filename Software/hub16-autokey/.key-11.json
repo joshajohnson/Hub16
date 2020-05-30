@@ -1,0 +1,30 @@
+{
+    "type": "script",
+    "description": "key-11",
+    "store": {},
+    "modes": [
+        3
+    ],
+    "usageCount": 24,
+    "prompt": false,
+    "omitTrigger": false,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]"
+    },
+    "hotkey": {
+        "modifiers": [
+            "<hyper>"
+        ],
+        "hotKey": "k"
+    },
+    "filter": {
+        "regex": null,
+        "isRecursive": false
+    }
+}
