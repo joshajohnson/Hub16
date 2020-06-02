@@ -1,7 +1,6 @@
 #!/bin/python3
 
 # Script to program and test Hub16
-
 import os
 import time
 
@@ -16,7 +15,6 @@ time.sleep(1) # Delay for 32u4 to reset and enumerate
 os.system(flash)
 
 # Test Device
-
 chars_reqd = "abcdefghijklmnopqrstuv"
 chars_input = input("Press all the keys!: ")
 chars_remain = ""
@@ -24,10 +22,10 @@ chars_remain = ""
 while True:
 
     for char in chars_reqd:
-            if char in chars_input:
-                chars_remain = chars_remain.replace(char, "")
-            elif char not in chars_remain:
-                chars_remain = chars_remain + char
+        if char in chars_input:
+            chars_remain = chars_remain.replace(char, "")
+        elif char not in chars_remain:
+            chars_remain = chars_remain + char
 
     if len(chars_remain) == 0:
         print("ALL KEYS WORKING")
