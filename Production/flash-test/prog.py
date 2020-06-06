@@ -12,7 +12,7 @@ def bootloader():
     
     os.system(erase)
     os.system(bootloader)
-    time.sleep(1) # Delay for 32u4 to reset and enumerate
+    time.sleep(2) # Delay for 32u4 to reset and enumerate
 
 def qmk():
     # Flash QMK

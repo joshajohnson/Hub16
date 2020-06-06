@@ -7,13 +7,13 @@ SendMode Input
 #SingleInstance force ;only one instance of this script may run at a time!
 #MaxHotkeysPerInterval 2000
 
-; ------------------
-; |  ENC1   ENC2   |
-; | a   b   c   d  |
-; | e   f   g   h  |
-; | i   j   k   l  |
-; | m   n   o   p  |
-; ------------------
+;------------------  ENC1:Clockwise: q
+;|  ENC1   ENC2   |  ENC1:Anticlockwise: r
+;| a   b   c   d  |  ENC1:Button: s
+;| e   f   g   h  |  ENC2:Clockwise: t
+;| i   j   k   l  |  ENC2:Anticlockwise: u
+;| m   n   o   p  |  ENC2:Button: v
+;------------------
 
 ; Run the below if F24 is pressed, and KiCad is open.
 #if (getKeyState("F24", "P")) and if WinActive("ahk_exe kicad.exe")
