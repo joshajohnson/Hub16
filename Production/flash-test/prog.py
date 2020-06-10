@@ -46,11 +46,19 @@ if __name__ == "__main__":
     parser.add_argument("-b", "--bootloader",   action='store_true')
     parser.add_argument("-q", "--qmk",          action='store_true')
     parser.add_argument("-t", "--test",         action='store_true')
+    parser.add_argument("-r", "--repeat",       action='store_true')
     args = parser.parse_args()
 
-    if args.bootloader:
-        bootloader()
-    if args.qmk:
-        qmk()
-    if args.test:
-        test()
+    while True:
+
+	    if args.bootloader:
+	        bootloader()
+	    if args.qmk:
+	        qmk()
+	    if args.test:
+	        test()
+
+
+	    if args.repeat == False:
+	    	break
+	    time.sleep(1)
