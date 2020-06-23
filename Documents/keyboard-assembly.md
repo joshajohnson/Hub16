@@ -28,7 +28,7 @@ Hub16 comes with two case options: acrylic and barebones, and the hardware requi
 * 4 * M3, 4mm spacers
 * 4 * M3, 10mm threaded nuts
 
-## Before assembling, ensure all key switches work.
+## Before assembling, ensure everything works.
 All boards purchased from me have been 100% functionally tested, however there is a chance for damage to occur to the board during freight rendering it non functional.
 
 Testing can be done by using tweezers or something conductive to short all switch contact points together. The encoder can be tested by pressing the encoder legs against their respective contacts and rotating. Run `Software/test.ahk` on Windows for the board to type the key being pressed, in Linux there is no need to do anything as by default xmodmap will not be configured, and in macOS I'd suggest modifying `Software/karabiner.json` to press keys instead of macros, but unfortuantely do not have a machine to test on.
