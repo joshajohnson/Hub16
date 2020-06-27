@@ -28,6 +28,7 @@ RGB_VAD, RGB_VAI,  RGB_HUD,  RGB_HUI,
 RGB_SAD, RGB_SAI,  _______,  _______, 
 _______, _______,  RESET,    TD(TOGGLE_LAYER)
 ```
+__NOTE__ if your board resets without going into bootloader mode upon pressing the above reset key, you will need to either reset the board using the physical reset button on the back of the PCB instead, or reflash the bootloader following [these instructions](Documents/firmware-install.md). 
 
 ## Firmware Configuration 
 
@@ -38,20 +39,24 @@ To build your new configuration, you will need to do the following:
 * Download QMK: `git clone https://github.com/qmk/qmk_firmware --recursive`
 * Follow the [build instructions](https://docs.qmk.fm/#/getting_started_build_tools) for your OS to install the toolchain.
 
-QMK configurator / VIA is not supported due to rotary encoders [not yet being supported.](https://github.com/qmk/qmk_configurator/issues/468)
-
-The important sections of the code are oulined below:
+The important sections of the code are outlined below:
 
 | Line(s) | Description |  
 | --- | ----------- |  
 | 19 | Default modifier key |  
-| 32:33 | Behaviour of layer shift key |  
+| 32:33 | behaviour of layer shift key |  
 | 35:51| Keyboard layout and layers|  
 | 56:74| Encoder rotation behaviour|  
 
 If you want to use it without all the strange modifier key stuff, I'd suggest modifying the `no_mod` keymap, as it has all of the modifier code removed. 
 
 If you are wondering how all the layouts / layers / code stuff works, I highly recommend the [QMK Documentation](https://docs.qmk.fm/#/).
+
+## VIA Support 
+
+If you would rather use a GUI to configure the board, flash the board with the [VIA](https://caniusevia.com/) keymap (`make hub16:via:flash` or `hub16_via.bin` for QMK Toolbox), and then you will be able to configure the board in VIA.
+
+Unfortunately the rotary encoders cannot be configured from within VIA, and are set to volume / media controls out of the box. Encoder behaviour can be altered in the `/hub16/keymap/via/keymap.c` file and after flashing the board will be updated, whilst allowing the remaining keys to be programmed in VIA.
 
 ## Software Configuration 
 

@@ -12,7 +12,7 @@ All design files required to manufacture the board and enclosure are located in 
 
 ## Key Features
 * 16 Cherry MX compatible switches, along with two switches in the encoders. 
-* Two rotary encoders, bringing an intuitive interface for continous controls such as grid size and volume.
+* Two rotary encoders, bringing an intuitive interface for continuous controls such as grid size and volume.
 * Four port USB 2.0 hub with Type-C connectors, allowing connection to other keyboards, memory sticks, wireless receivers and more! 
 * Designed to interface with host computer to provide a level of interaction / macro control not available on standard keyboards, with examples provided for Windows, macOS, and Linux.
 * Various case designs, allowing the Hub16 to fit in on any desk. 
@@ -28,10 +28,13 @@ All design files required to manufacture the board and enclosure are located in 
 * [Firmware Flashing Instructions](Documents/firmware-install.md)
 * [Enclosure Manufacturing](Documents/enclosure-manufacturing.md)
 
-### Errata
-* Some rotary encoders output flipped signals (clockwise instead of counterclockwise), if after assembly your encoders appear to be sending the wrong signals, comment in line 84 in [config.h](Firmware/hub16/config.h), or alter the setting in your [software](Software).
+### Errata / Changelog
+* Boards purchased between June 12 and June 22 2020 will not go into the bootloader upon resting from software. Workaround: reset board with physical reset button under board. Fix: reflash the bootloader following [these instructions](Documents/firmware-install.md).
 
+* Firmware builds prior to 27th June do not continually send characters when the encoders are depressed. Update to the latest firmware to resolve.
 * Firmware builds prior to 9th June have issues with the bottom right key `p` not functioning correctly. Update to the latest firmware to resolve.
+
+* Some rotary encoders output flipped signals (clockwise instead of counterclockwise), if after assembly your encoders appear to be sending the wrong signals, comment in line 84 in [config.h](Firmware/hub16/config.h), or alter the setting in your [software](Software).
 
 * Long USB cables (> 2m) may not work with the keyboard. If the keyboard is not detected, or power cycles (can often be seen by LEDs flashing on and off), please try a shorter cable.
 
