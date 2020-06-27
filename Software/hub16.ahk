@@ -55,7 +55,47 @@ u::^n   ; Previous grid size
 ; Button
 ; v::
 
-; Run if the above have not been triggered
+; Template for your chosen application
+; #if (getKeyState("F24", "P")) and if WinActive("ahk_exe applicaton.exe")
+; F24::return
+
+; ; Row 1
+; a::
+; b::
+; c::
+; d::
+; ; Row 2
+; e::
+; f::
+; g::
+; h::
+; ; Row 3
+; i::
+; j::
+; k::
+; l::
+; ; Row 4
+; m::
+; n::
+; o::
+; p::
+
+; ; Encoder 1
+; ; Clockwise
+; q::
+; ; Anti Clockwise
+; r::
+; ; Button
+; s::
+; ; Encoder 2
+; ; Clockwise
+; t::
+; ; Anti Clockwise
+; u::
+; ; Button
+; v::
+
+; If not in Kicad / any above apps, run the below
 #if (getKeyState("F24", "P")) 
 F24::return
 
@@ -70,13 +110,60 @@ f::LButton
 g::MButton
 h::RButton
 ; Row 3
-; i::
-; j::
-; k::
-; l::
+i::
+{	
+	; If Excel Active, open file
+	if WinActive("ahk_exe EXCEL.EXE")
+		Send {control down}{o}{control up}
+	; If Excel not active, activate excel
+	else if WinExist("ahk_exe EXCEL.EXE")
+		WinActivate
+	else
+		Run, EXCEL.EXE
+	return
+}
+j::
+{	; Login into Application
+	if WinActive("Title Of Application"){
+		; Adjust below keypresses to suit your use case
+		Send system{enter}
+		Sleep, 200
+		Send department{enter}
+		Sleep, 200
+		Send username{tab}{tab}
+	}
+	; Activate app
+	if WinExist("Title Of Application")
+		WinActivate
+	else if WinExist("Title Of Application Launcher")
+		WinActivate
+	else
+		Run, C:\path-to-exe
+	return
+}
+k::
+{	
+	; If Outlook Active, new email
+	if WinActive("ahk_exe OUTLOOK.EXE")
+		Send {control down}{n}{control up}
+	; If Outlook not active, activate outlook
+	else if WinExist("ahk_exe OUTLOOK.EXE")
+		WinActivate
+	else
+		Run, OUTLOOK.EXE
+	return
+}
 ; Row 4
-; m::
-; n::
+m:: 
+{
+	Send (╯°□°)╯︵ ┻━┻
+	return
+}
+n::
+{
+	Send ¯\_(ツ)_/¯
+	return
+}
 ; o::
 ; p::
 
