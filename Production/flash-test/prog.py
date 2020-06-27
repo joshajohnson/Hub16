@@ -7,8 +7,8 @@ import argparse
 
 def bootloader():
     # Flash Bootloader
-    erase = "avrdude -v -patmega32u4 -cusbasp -Pusb -e -Ulock:w:0x3F:m -Uefuse:w:0xcb:m -Uhfuse:w:0xd8:m -Ulfuse:w:0xff:m"
-    bootloader = "avrdude -v -patmega32u4 -cusbasp -Pusb -Uflash:w:Caterina-Leonardo.hex:i -Ulock:w:0x2F:m"
+    erase = "/home/josh/arduino-1.8.10/hardware/tools/avr/bin/avrdude -C/home/josh/arduino-1.8.10/hardware/tools/avr/etc/avrdude.conf -v -patmega32u4 -cusbasp -Pusb -e -Ulock:w:0x3F:m -Uefuse:w:0xcb:m -Uhfuse:w:0xd8:m -Ulfuse:w:0xff:m "
+    bootloader = "/home/josh/arduino-1.8.10/hardware/tools/avr/bin/avrdude -C/home/josh/arduino-1.8.10/hardware/tools/avr/etc/avrdude.conf -v -patmega32u4 -cusbasp -Pusb -Uflash:w:/home/josh/arduino-1.8.10/hardware/arduino/avr/bootloaders/caterina/Caterina-Leonardo.hex:i -Ulock:w:0x2F:m"
     
     os.system(erase)
     os.system(bootloader)
