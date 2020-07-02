@@ -7,8 +7,8 @@ import argparse
 
 def bootloader():
     # Flash Bootloader
-    erase = "/home/josh/arduino-1.8.10/hardware/tools/avr/bin/avrdude -C/home/josh/arduino-1.8.10/hardware/tools/avr/etc/avrdude.conf -v -patmega32u4 -cusbasp -Pusb -e -Ulock:w:0x3F:m -Uefuse:w:0xcb:m -Uhfuse:w:0xd8:m -Ulfuse:w:0xff:m "
-    bootloader = "/home/josh/arduino-1.8.10/hardware/tools/avr/bin/avrdude -C/home/josh/arduino-1.8.10/hardware/tools/avr/etc/avrdude.conf -v -patmega32u4 -cusbasp -Pusb -Uflash:w:/home/josh/arduino-1.8.10/hardware/arduino/avr/bootloaders/caterina/Caterina-Leonardo.hex:i -Ulock:w:0x2F:m"
+    erase = "/home/josh/arduino-1.8.12/hardware/tools/avr/bin/avrdude -C/home/josh/arduino-1.8.12/hardware/tools/avr/etc/avrdude.conf -v -patmega32u4 -cusbasp -Pusb -e -Ulock:w:0x3F:m -Uefuse:w:0xcb:m -Uhfuse:w:0xd8:m -Ulfuse:w:0xff:m "
+    bootloader = "/home/josh/arduino-1.8.12/hardware/tools/avr/bin/avrdude -C/home/josh/arduino-1.8.12/hardware/tools/avr/etc/avrdude.conf -v -patmega32u4 -cusbasp -Pusb -Uflash:w:/home/josh/arduino-1.8.12/hardware/arduino/avr/bootloaders/caterina/Caterina-Leonardo.hex:i -Ulock:w:0x2F:m"
     
     os.system(erase)
     os.system(bootloader)
@@ -16,7 +16,7 @@ def bootloader():
 
 def qmk():
     # Flash QMK
-    flash = "avrdude -v -patmega32u4 -cavr109 -P/dev/ttyACM0 -b57600 -D -Uflash:w:../../Firmware/binaries/hub16_default.hex:i"
+    flash = "avrdude -v -patmega32u4 -cavr109 -P/dev/ttyACM1 -b57600 -D -Uflash:w:../../Firmware/binaries/hub16_default.hex:i"
     os.system(flash)
 
 def test():
