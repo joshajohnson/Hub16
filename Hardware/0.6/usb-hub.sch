@@ -729,12 +729,12 @@ Wire Wire Line
 Text Notes 6975 675  0    100  ~ 0
 Downstream Ports
 Wire Wire Line
-	6525 1950 6175 1950
+	6525 1750 6175 1750
 Wire Wire Line
-	6175 1750 6525 1750
-Text Label 6175 1750 0    50   ~ 0
-D1_D+
+	6175 1950 6525 1950
 Text Label 6175 1950 0    50   ~ 0
+D1_D+
+Text Label 6175 1750 0    50   ~ 0
 D1_D-
 NoConn ~ 7925 1400
 NoConn ~ 7925 1500
@@ -1141,7 +1141,7 @@ F 5 "C7519" H 8925 4025 50  0001 C CNN "LCSC"
 F 6 "USBLC6-2SC6" H 8925 4025 50  0001 C CNN "MPN"
 F 7 "STmicroelectronics" H 8925 4025 50  0001 C CNN "Manufacturer"
 	1    8925 4025
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	8925 4475 8925 4575
@@ -1255,7 +1255,7 @@ F 5 "C7519" H 6525 5250 50  0001 C CNN "LCSC"
 F 6 "USBLC6-2SC6" H 6525 5250 50  0001 C CNN "MPN"
 F 7 "STmicroelectronics" H 6525 5250 50  0001 C CNN "Manufacturer"
 	1    6525 5250
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	6525 5700 6525 5800
@@ -1516,17 +1516,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 2625 3000 3200
 Wire Wire Line
-	7900 1900 7900 1950
-Wire Wire Line
-	7900 1700 7900 1750
-Wire Wire Line
-	7900 1750 7650 1750
-Wire Wire Line
-	7650 1750 7650 1950
-Connection ~ 7900 1750
-Wire Wire Line
-	7900 1750 7900 1800
-Wire Wire Line
 	6925 2300 6925 2400
 $Comp
 L josh-ic:USBLC6-2SC6 U5
@@ -1541,21 +1530,20 @@ F 5 "C7519" H 6925 1850 50  0001 C CNN "LCSC"
 F 6 "USBLC6-2SC6" H 6925 1850 50  0001 C CNN "MPN"
 F 7 "STmicroelectronics" H 6925 1850 50  0001 C CNN "Manufacturer"
 	1    6925 1850
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7325 1950 7650 1950
+	7900 1700 7900 1750
 Wire Wire Line
-	7325 1750 7550 1750
+	7900 1900 7900 1950
 Wire Wire Line
-	7550 1750 7550 1875
-Wire Wire Line
-	7550 1875 7800 1875
-Wire Wire Line
-	7800 1875 7800 1950
-Wire Wire Line
-	7800 1950 7900 1950
+	7325 1950 7900 1950
 Connection ~ 7900 1950
 Wire Wire Line
 	7900 1950 7900 2000
+Wire Wire Line
+	7325 1750 7900 1750
+Connection ~ 7900 1750
+Wire Wire Line
+	7900 1750 7900 1800
 $EndSCHEMATC
