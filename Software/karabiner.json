@@ -294,7 +294,7 @@
                                 "key_code": "q"
                             },
                             "to": {
-                                "consumer_key_code": "display_brightness_decrement"
+                                "consumer_key_code": "volume_increment"
                             }
                         },
                         {
@@ -302,7 +302,15 @@
                                 "key_code": "r"
                             },
                             "to": {
-                                "consumer_key_code": "display_brightness_increment"
+                                "consumer_key_code": "volume_decrement"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "s"
+                            },
+                            "to": {
+                                "consumer_key_code": "mute"
                             }
                         },
                         {
@@ -310,7 +318,7 @@
                                 "key_code": "t"
                             },
                             "to": {
-                                "key_code": "volume_down"
+                                "key_code": "fastforward"
                             }
                         },
                         {
@@ -318,7 +326,7 @@
                                 "key_code": "u"
                             },
                             "to": {
-                                "key_code": "volume_up"
+                                "key_code": "rewind"
                             }
                         },
                         {
@@ -326,7 +334,7 @@
                                 "key_code": "v"
                             },
                             "to": {
-                                "consumer_key_code": "mute"
+                                "consumer_key_code": "play_or_pause"
                             }
                         }
                     ]
