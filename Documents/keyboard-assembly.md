@@ -68,6 +68,10 @@ Add the acrylic spacer and rubber feet as required to get desired height and ang
 
 With those steps done, add the encoder knobs along with your keycaps and the board is ready to go! 
 
-If you find the power LED annoying and would like to disable it, cut the jumper labeled LED near the USB ports. It can be re-enabled by soldering the jumper shut again. 
+## Disabling Power LED
+
+If you find the power LED annoying and would like to disable it, cut the jumper (along the blue line) labeled LED near the USB ports. It can be re-enabled by soldering the jumper shut again. 
+
+![Add spacer and rubber feet](imgs/led_cut.jpg)
 
 If there are any issues with the assembly process get in touch and I'll do my best to help.
