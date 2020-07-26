@@ -1,0 +1,355 @@
+{
+    "global": {
+        "check_for_updates_on_startup": true,
+        "show_in_menu_bar": false,
+        "show_profile_name_in_menu_bar": false
+    },
+    "profiles": [
+        {
+            "complex_modifications": {
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 50,
+                    "basic.to_delayed_action_delay_milliseconds": 500,
+                    "basic.to_if_alone_timeout_milliseconds": 1000,
+                    "basic.to_if_held_down_threshold_milliseconds": 500,
+                    "mouse_motion_to_scroll.speed": 100
+                },
+                "rules": [
+                    {
+                        "description": "Launch apps with Hub16 macropad",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "product_id": 18448,
+                                                "vendor_id": 27242
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "s"
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open '/System/Applications/Utilities/Digital Color Meter.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "product_id": 18448,
+                                                "vendor_id": 27242
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "h"
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open '/System/Applications/System Preferences.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "product_id": 18448,
+                                                "vendor_id": 27242
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "i"
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open '/Applications/Atom.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "product_id": 18448,
+                                                "vendor_id": 27242
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "j"
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open '/System/Applications/Utilities/Terminal.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "product_id": 18448,
+                                                "vendor_id": 27242
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "k"
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open '/System/Applications/Utilities/Console.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "product_id": 18448,
+                                                "vendor_id": 27242
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "l"
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open '/System/Applications/Utilities/Activity Monitor.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "product_id": 18448,
+                                                "vendor_id": 27242
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "m"
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open '/Applications/Xcode.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "product_id": 18448,
+                                                "vendor_id": 27242
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "n"
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open '/Applications/KiCad/KiCad.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "product_id": 18448,
+                                                "vendor_id": 27242
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "o"
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open '/Applications/QMK Toolbox.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "devices": [
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 18448,
+                        "vendor_id": 27242
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": false,
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "key_code": "a"
+                            },
+                            "to": {
+                                "consumer_key_code": "rewind"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "b"
+                            },
+                            "to": {
+                                "consumer_key_code": "play_or_pause"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "c"
+                            },
+                            "to": {
+                                "consumer_key_code": "fastforward"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "d"
+                            },
+                            "to": {
+                                "consumer_key_code": "eject"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "e"
+                            },
+                            "to": {
+                                "key_code": "launchpad"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "f"
+                            },
+                            "to": {
+                                "key_code": "mission_control"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "g"
+                            },
+                            "to": {
+                                "key_code": "f11"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "q"
+                            },
+                            "to": {
+                                "consumer_key_code": "volume_increment"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "r"
+                            },
+                            "to": {
+                                "consumer_key_code": "volume_decrement"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "s"
+                            },
+                            "to": {
+                                "consumer_key_code": "mute"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "t"
+                            },
+                            "to": {
+                                "key_code": "fastforward"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "u"
+                            },
+                            "to": {
+                                "key_code": "rewind"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "v"
+                            },
+                            "to": {
+                                "consumer_key_code": "play_or_pause"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "name": "Default profile",
+            "parameters": {
+                "delay_milliseconds_before_open_device": 1000
+            },
+            "selected": true,
+            "simple_modifications": [],
+            "virtual_hid_keyboard": {
+                "country_code": 0,
+                "mouse_key_xy_scale": 100
+            }
+        }
+    ]
+}

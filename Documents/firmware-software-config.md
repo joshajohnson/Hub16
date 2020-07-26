@@ -75,7 +75,10 @@ Taran from Linus Tech Tips has a great [video](https://youtu.be/GZEoss4XIgc?t=34
 ### macOS
 * Install [Brew](https://brew.sh/).
 * Open Terminal and install [Karabiner-Elements](https://karabiner-elements.pqrs.org/) with ```brew cask install karabiner-elements```.
-  * Place example config `Software/karabiner.json` in your local `~.config/karabiner` folder.
+*  __NOTE__ recent versions of firmware have an updated VID:PID (to enable VIA support), which Karabiner uses to identify the Hub16 keyboard instead of F24. 
+   *  Due to this, pick the correct configuration file for the VID:PID pair of your Hub16. 
+   *  If firmware on your board is updated, it may require changing the VID:PID in the settings.
+* Place example config `Software/karabiner-0x*.json` in your local `~.config/karabiner` folder.
 
 ### Linux
 * [AutoKey](https://github.com/autokey/autokey) can be used in Linux (tested Ubuntu 19.10) to do the keyboard remapping. 
