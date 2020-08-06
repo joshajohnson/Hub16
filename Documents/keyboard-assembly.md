@@ -39,13 +39,13 @@ If there are any issues getting the above to work, please get in touch before pr
 
 ## Instructions
 
-Ensure that you have all required hardware. The below image is for the Acrylic Case, if you are going barebones you will not have the acrylic parts, but will have 4 * 4mm unthreaded spacers, and 4 * 10mm threaded nuts instead. Both kits will come with rubber feet (not shown).
+Ensure that you have all required hardware. The below image is for the Acrylic Case, if you are going barebones you will not have the acrylic parts, but will have 4 * 4mm unthreaded spacers, and 4 * 10mm threaded nuts instead. Both kits will come with rubber feet (not shown). Ensure protective material is removed from all acrylic pieces before continuing. 
 ![Parts Required](imgs/assm-1.JPG)
 
 Step one is to insert key switches into all four corners of the top cover, ensuring that they click in place and sit flush with the PCB. 
 ![Keys in corners](imgs/assm-2.JPG)
 
-Before mating the cover / switches with the main PCB, insert the rectangular acylic spacer (top right in first image) between the boards, and thread the bolts in touch tight to stop the assembly from falling appart. 
+Before mating the cover / switches with the main PCB, insert the rectangular acrylic spacer (top right in first image) between the boards, and thread the bolts in touch tight to stop the assembly from falling apart. 
 ![Rectangular acrylic spacer](imgs/assm-3.JPG)
 
 If assembling the barebones kit, instead of the acrylic spacer place the 4mm unthreaded nut, followed by the threaded nut as shown below.
@@ -57,7 +57,7 @@ Then insert all switches ensuring that they click in to position. If you have 5 
 Before soldering the keys, ensure that all pins poke through the main PCB and are not bent or damaged. It is much easier to fix it before soldering the pins in. Once everything looks good, solder all of the key switches into position. These photos were taken on a earlier revision, so if your version of the PCB looks slightly different there is nothing to worry about.
 ![Check all switches](imgs/assm-5-annotated.jpg)
 
-Insert the rotary encoders, noting that you may need to bend the pins inward / straighten them up to make everything fit nicely. This step can be a bit finicky, I find that placing the three pins into position first allows the others to fit easier. As with the switches, ensure all pins are poking through the main PCB and that the encoder is perpindicular to the main PCB before soldering everything into place.
+Insert the rotary encoders, noting that you may need to bend the pins inward / straighten them up to make everything fit nicely. This step can be a bit finicky, I find that placing the three pins into position first allows the others to fit easier. I'd suggest tacking the encoder in place with two opposite pins and checking is it perpendicular before soldering all pins in, as this will make adjusting it easier.
 ![Check encoders](imgs/assm-6-annotated.jpg)
 
 Add the other acrylic spacer, ensuring the missing edge is lined up with the USB connectors, along with placing the bottom plate such that the small hole lines up with the reset switch. 
