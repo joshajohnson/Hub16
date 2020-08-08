@@ -36,3 +36,6 @@ fp-info-cache
 *.gto
 *.gtp
 *.gts
+
+# Step Files
+*.step
