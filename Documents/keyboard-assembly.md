@@ -46,8 +46,7 @@ Place the rectangular spacer underneath the top cover, followed by the PCB. Then
 
 ## Step 3: Solder Outside Keys
 
-With parts flush with each other, solder in the four keyswitches to keep everything in place. Before soldering in a key, confirm both legs are poking through the PCB as it is much harder to fix after you have soldered one leg in. (Note: image is of different key, just highlighting what to check for).
-![Checking pins are visible](imgs/assembly-instructions/step-3.JPG)
+With parts flush with each other, solder in the four keyswitches to keep everything in place. Before soldering in a key, confirm both legs are poking through the PCB as it is much harder to fix after you have soldered one leg in. (Note: image is of different key, just highlighting what to check for). ![Checking pins are visible](imgs/assembly-instructions/step-3.JPG)
 
 ## Step 4: Install and Solder Remaining Keys
 
