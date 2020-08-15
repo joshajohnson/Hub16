@@ -1,77 +1,97 @@
 # Assembly Instructions
 
-Hub16 comes with two case options: acrylic and barebones, and the hardware required and mechanical assembly is slightly different for each, so before starting ensure you have all of the required hardware. You will also require a 2mm allen key and/or pliers to assemble the board.
+Before assembling the board, ensure you have all of the required parts.
 
-## Acrylic Case
-### Parts Required
+### Acrylic Case
 * Assembled keyboard PCB
 * Top cover PCB
 * Laser cut acrylic - 4 pieces
-* 16 * Cherry MX Key Switches - Plate Mount (3 Pin)
-* 16 * 1U Cherry MX Keycaps
 * 2 * Rotary encoders (20mm recommended)
 * 2 * Rotary encoder knobs
 * 4 * M3, 16mm cap head bolts
 * 4 * M3 nuts
 * 4 * Rubber feet
+* 16 * Cherry MX Key Switches (not shown)
+* 16 * 1U Cherry MX Keycaps (not shown)
 
+![Parts Required](imgs/assembly-instructions/required-parts-acrylic.JPG)
 
-## Barebones Case
-### Parts Required
-* Assembled keyboard PCB
-* Top cover PCB
-* 16 * Cherry MX Key Switches - Plate Mount (3 Pin)
-* 16 * 1U Cherry MX Keycaps
-* 2 * Rotary encoders (20mm recommended)
-* 2 * Rotary encoder knobs
-* 4 * M3, 10mm cap head bolts
-* 4 * M3, 4mm spacers
-* 4 * M3, 10mm threaded nuts
+## Step 0: Check PCB
+All boards purchased from me have been 100% functionally tested, however there is a chance for damage to occur during freight.
 
-## Before assembling, ensure everything works.
-All boards purchased from me have been 100% functionally tested, however there is a chance for damage to occur to the board during freight rendering it non functional.
+Prior to testing each contact, run `Software/test.ahk` on Windows for the board to type the key being pressed, as that script removes the key wrapping used to differentiate the keyboard. Assuming you have not configured your mac or Linux machine yet, you do not need to run any software before following the below.
 
-Testing can be done by using tweezers or something conductive to short all switch contact points together. The encoder can be tested by pressing the encoder legs against their respective contacts and rotating. Run `Software/test.ahk` on Windows for the board to type the key being pressed, in Linux there is no need to do anything as by default xmodmap will not be configured, and in macOS I'd suggest modifying `Software/karabiner.json` to press keys instead of macros, but unfortuantely do not have a machine to test on.
+**Check the key switches by using tweezers to short the key switch pins together.**  
+![Checking Keys](imgs/assembly-instructions/check-switches.JPG)
 
-I'd also suggest plugging a device into all USB ports in both orintations and ensure they are detected by the computer. 
+**Check the encoders by placing encoder against pins and rotating.**  
+You may need to angle the encoder down to ensure it has good contact.
 
-If there are any issues getting the above to work, please get in touch before proceeding to assemble the board. 
+![Checking Encoders](imgs/assembly-instructions/check-encoders.JPG)
 
-## Instructions
+**Check the USB hub by connecting a device to each port, in both orientations.**  
+You should see a your device appear on each port.
 
-Ensure that you have all required hardware. The below image is for the Acrylic Case, if you are going barebones you will not have the acrylic parts, but will have 4 * 4mm unthreaded spacers, and 4 * 10mm threaded nuts instead. Both kits will come with rubber feet (not shown). Ensure protective material is removed from all acrylic pieces before continuing. 
-![Parts Required](imgs/assm-1.JPG)
+### **If there are any issues getting the above to work, please get in touch before proceeding to assemble the board.**
+
+## Step 1: Insert Outside Keys
 
 Step one is to insert key switches into all four corners of the top cover, ensuring that they click in place and sit flush with the PCB. 
-![Keys in corners](imgs/assm-2.JPG)
+![Keys in corners](imgs/assembly-instructions/step-1.JPG)
 
-Before mating the cover / switches with the main PCB, insert the rectangular acrylic spacer (top right in first image) between the boards, and thread the bolts in touch tight to stop the assembly from falling apart. 
-![Rectangular acrylic spacer](imgs/assm-3.JPG)
+## Step 2: Add Spacer and PCB, and screw together
 
-If assembling the barebones kit, instead of the acrylic spacer place the 4mm unthreaded nut, followed by the threaded nut as shown below.
-![Alternate assembly with spacers](imgs/spacers-side.JPG)
+Place the rectangular spacer underneath the top cover, followed by the PCB. Then place the 4 bolts through the parts and snug together with the provided nuts. This ensures everything is held together during soldering.
+![Adding spacer and PCB](imgs/assembly-instructions/step-2.JPG)
 
-Then insert all switches ensuring that they click in to position. If you have 5 pin key switches, trim off the plastic pins as this will ensure everything fits together nicely. 
-![Insert all switches](imgs/assm-4.JPG)
+## Step 3: Solder Outside Keys
 
-Before soldering the keys, ensure that all pins poke through the main PCB and are not bent or damaged. It is much easier to fix it before soldering the pins in. Once everything looks good, solder all of the key switches into position. These photos were taken on a earlier revision, so if your version of the PCB looks slightly different there is nothing to worry about.
-![Check all switches](imgs/assm-5-annotated.jpg)
+With parts flush with each other, solder in the four keyswitches to keep everything in place. Before soldering in a key, confirm both legs are poking through the PCB as it is much harder to fix after you have soldered one leg in. (Note: image is of different key, just highlighting what to check for).
+![Soldering corner keys](imgs/assembly-instructions/step-3.JPG)
 
-Insert the rotary encoders, noting that you may need to bend the pins inward / straighten them up to make everything fit nicely. This step can be a bit finicky, I find that placing the three pins into position first allows the others to fit easier. I'd suggest tacking the encoder in place with two opposite pins and checking is it perpendicular before soldering all pins in, as this will make adjusting it easier.
-![Check encoders](imgs/assm-6-annotated.jpg)
+## Step 4: Install and Solder Remaining Keys
 
-Add the other acrylic spacer, ensuring the missing edge is lined up with the USB connectors, along with placing the bottom plate such that the small hole lines up with the reset switch. 
-![Add bottom acrylic spacer and bottom plate](imgs/assm-7.JPG)
+With the four keys in place and the enclosure in place (no gaps, nothing out of alignment), install and solder in the the remaining keyswitches. 
+![Installing remaining keys](imgs/assembly-instructions/step-4.JPG)
 
-Add the acrylic spacer and rubber feet as required to get desired height and angle of keyboard, before snugging up the bolts with a 2mm allen key. If you are having issues getting the spacer to fit, loosen off the screws to allow the nuts to turn before fitting the spacer. 
-![Add spacer and rubber feet](imgs/assm-8.JPG)
+## Step 5: Install Rotary Encoders
 
-With those steps done, add the encoder knobs along with your keycaps and the board is ready to go! 
+Insert the rotary encoders, ensuring that the pins are straight.
+![Checking encoders are straight](imgs/assembly-instructions/step-5-1.JPG)
+
+Tack two of the pins in, as this will allow us to adjust the angle of the encoders if required. 
+![Tacking in encoder](imgs/assembly-instructions/step-5-2.JPG)
+
+Check if the encoders are square and are in alignment with each other. If not, melt the solder to one (or both) of the pins on the back and move until in the correct position.
+![Squaring up encoders](imgs/assembly-instructions/step-5-3.JPG)
+
+With the encoders in the correct position, solder in all pins, including the large mechanical legs.
+![Soldering in encoders](imgs/assembly-instructions/step-5-4.JPG)
+
+## Step 6: Assemble remaining enclosure
+
+After removing the nuts from each bolt, add the "U" shaped spacer, followed by the rectangular bottom plate, ensuring the hole is lined up with the reset button.
+![Adding bottom case](imgs/assembly-instructions/step-6-1.JPG)
+
+Thread on all nuts to keep the assembly together. The small spacer can be placed on one end of the case to give an incline. It is best fit when the nuts are loose, as they can be rotated into position easier. 
+![Adding incline spacer](imgs/assembly-instructions/step-6-2.JPG)
+
+Once the spacer is in place, torque the bolts to keep it in position. If loose, flip the spacer over as often the other side is a tighter fit.
+![Tightening bolts](imgs/assembly-instructions/step-6-3.JPG)
+
+The spacer should stay in place once assembled. Finally, add rubber feet if required to adjust angle. If the Hub16 is not level and rocks on your desk, shim a low corner with a few pieces of sticky tape (I usually place between case and spacer on a back corner) until it is not longer rocking.
+![Side view of assembly](imgs/assembly-instructions/step-6-4.JPG)
+
+## Step 7: Add Encoder Knobs and Keycaps
+
+With those steps done, add the encoder knobs along with your keycaps and the board is ready to go!
+
+![Adding knobs and keycaps](imgs/assembly-instructions/step-7.JPG)
 
 ## Disabling Power LED
 
 If you find the power LED annoying and would like to disable it, cut the jumper (along the blue line) labeled LED near the USB ports. It can be re-enabled by soldering the jumper shut again. 
 
-![Add spacer and rubber feet](imgs/led_cut.jpg)
+![Cutting trace for power LED](imgs/assembly-instructions/led_cut.jpg)
 
 If there are any issues with the assembly process get in touch and I'll do my best to help.
