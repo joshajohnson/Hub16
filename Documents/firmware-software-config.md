@@ -3,9 +3,11 @@
 The keyboard is designed to work out of the box with software on your computer such as AutoHotKey, which enables powerful macros to be designed as the computer can make context specific decisions regarding what to do, unlike a traditional keyboard.
 
 ## Theory of Operation
-Hub16 works by 'wrapping' a normal key press with a modifier key, just like CTRL + C or SHIFT + C works on the `c` key on your computer. By using an obscure key such as F24, we can get the same functionality out of our Macro Pad without impeding on the functionality of our standard keyboard (assuming your keyboard does not have a F24 key!). 
+Hub16 works by 'wrapping' a normal key press with a modifier key, just like CTRL + C or SHIFT + C works on the `c` key on your computer. By using an obscure key such as F24, we can get the same functionality out of our macro pad without impeding on the functionality of our standard keyboard (assuming your keyboard does not have a F24 key!). 
 
 When you press a key on the Hub16, it first presses and holds down a modifier key (F24 by default) before pressing and releasing a normal alpha key. It then releases the modifier key and returns to the idle state. As F24 + `a-z` is not a keyboard shortcut nothing occurs, however by using software on the host computer we can detect the F24 press and run the appropriate script. 
+
+**NOTE** macOS does not detect F20-F24, but using a tool such as Karabiner-Elements it can individually detect keyboards based on their VID:PID and remap keys as required.  
 
 ## Default Configuration 
 ```
@@ -44,7 +46,7 @@ The important sections of the code are outlined below:
 | Line(s) | Description |  
 | --- | ----------- |  
 | 19 | Default modifier key |  
-| 32:33 | behaviour of layer shift key |  
+| 32:33 | Behaviour of layer shift key |  
 | 35:51| Keyboard layout and layers|  
 | 56:74| Encoder rotation behaviour|  
 
