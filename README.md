@@ -11,13 +11,24 @@ It is designed to work with software on the host computer to enable powerful, co
 All design files required to manufacture the board and enclosure are located in this repo, along with assembled and tested boards being available from [Tindie](https://www.tindie.com/products/joshajohnson/hub16-programmable-macro-keyboard/). 
 
 ## Key Features
-* 16 Cherry MX compatible switches, along with two switches in the encoders. 
-* Two rotary encoders, bringing an intuitive interface for continuous controls such as grid size and volume.
-* Four port USB 2.0 hub with Type-C connectors, allowing connection to other keyboards, memory sticks, wireless receivers and more! 
-* Designed to interface with host computer to provide a level of interaction / macro control not available on standard keyboards, with examples provided for Windows, macOS, and Linux.
-* Various case designs, allowing the Hub16 to fit in on any desk. 
-* 11 individually addressable RGB LEDs. 
-* Full QMK programmability and customisation. 
+- 16 Cherry MX compatible switches, along with two switches in the encoders.
+- Two rotary encoders, bringing an intuitive interface for continuous controls such as zoom, grid size, and volume.
+- Four port USB 2.0 hub with Type-C connectors, allowing connection to other keyboards, memory sticks, wireless receivers and more!
+- Designed to interface with host computer to provide a level of interaction / macro control not available on standard keyboards, with examples provided for Windows, macOS, and Linux.
+- 11 individually addressable RGB LEDs.
+- Full VIA / QMK programmability and customisation.
+
+
+## Notes on the USB Hub
+The hub is a four port USB 2.0 Hub with Type-C connectors, aimed at allowing connection of keyboards, mice, memory sticks, wireless receivers, and other small devices (including a second macro pad!)  to your computer.
+
+Due to cost and space constraints, the hub has some limitations. The hub **is not**:
+- USB 3.x, Power Delivery, Thunderbolt, DisplayPort, etc compatible. 
+- Designed to charge your phone quickly. Only 100mA is guaranteed per port.
+- Designed to work with power hungry devices such as spinning hard drives.
+- Guaranteed to provide full USB 2.0 speeds and performance on all ports.
+- Suitable for use with long cables. Issues have been seen on cables longer than 2m.
+
 
 ## Build Instructions
 * [Keyboard Assembly](Documents/keyboard-assembly.md)
