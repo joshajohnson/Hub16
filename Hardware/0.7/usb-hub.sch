@@ -134,10 +134,10 @@ F 0 "FB1" H 1600 6600 50  0000 C CNN
 F 1 "600R" H 1600 6925 50  0000 C CNN
 F 2 "josh-passives-smt:Ferrite_Bead_0603" H 1600 6680 50  0001 C CNN
 F 3 "~" V 1600 6750 50  0001 C CNN
-F 4 "C19330" H 1600 6750 50  0001 C CNN "LCSC"
-F 5 "BLM18AG601SN1D" H 1600 6750 50  0001 C CNN "MPN"
-F 6 "490-1014-1-ND" H 1600 6750 50  0001 C CNN "DigiKey"
-F 7 "Y" H 1600 6750 50  0001 C CNN "Substitue Allowed?"
+F 4 "C85833" H 1600 6750 50  0001 C CNN "LCSC"
+F 5 "BLM18KG601SN1D" H 1600 6750 50  0001 C CNN "MPN"
+F 6 " 490-5258-1-ND " H 1600 6750 50  0001 C CNN "DigiKey"
+F 7 "Y - 600R, > 1A current" H 1600 6750 50  0001 C CNN "Substitue Allowed?"
 F 8 "Murata" H 1600 6750 50  0001 C CNN "Manufacturer"
 	1    1600 6750
 	1    0    0    1   
@@ -159,10 +159,10 @@ F 0 "C12" H 1415 7096 50  0000 L CNN
 F 1 "10u" H 1415 7005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1338 6900 50  0001 C CNN
 F 3 "~" H 1300 7050 50  0001 C CNN
-F 4 "1276-1000-1-ND" H 1300 7050 50  0001 C CNN "DigiKey"
-F 5 "CL10B104KB8NNNC" H 1300 7050 50  0001 C CNN "MPN"
-F 6 "Y" H 1300 7050 50  0001 C CNN "Substitue Allowed?"
-F 7 "C1591" H 1300 7050 50  0001 C CNN "LCSC"
+F 4 "1276-1871-1-ND" H 1300 7050 50  0001 C CNN "DigiKey"
+F 5 "CL10A106MP8NNNC" H 1300 7050 50  0001 C CNN "MPN"
+F 6 "Y - X5R or better" H 1300 7050 50  0001 C CNN "Substitue Allowed?"
+F 7 "C85713" H 1300 7050 50  0001 C CNN "LCSC"
 F 8 "Samsung Electro-Mechanics" H 1300 7050 50  0001 C CNN "Manufacturer"
 	1    1300 7050
 	1    0    0    -1  
@@ -180,10 +180,10 @@ F 0 "C13" H 1965 7096 50  0000 L CNN
 F 1 "100n" H 1965 7005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1888 6900 50  0001 C CNN
 F 3 "~" H 1850 7050 50  0001 C CNN
-F 4 "1276-1871-1-ND " H 1850 7050 50  0001 C CNN "DigiKey"
-F 5 "CL10A106MP8NNNC " H 1850 7050 50  0001 C CNN "MPN"
-F 6 "Y" H 1850 7050 50  0001 C CNN "Substitue Allowed?"
-F 7 "C85713" H 1850 7050 50  0001 C CNN "LCSC"
+F 4 "1276-1000-1-ND" H 1850 7050 50  0001 C CNN "DigiKey"
+F 5 "CL10B104KB8NNNC" H 1850 7050 50  0001 C CNN "MPN"
+F 6 "Y - X5R or better" H 1850 7050 50  0001 C CNN "Substitue Allowed?"
+F 7 "C1591" H 1850 7050 50  0001 C CNN "LCSC"
 F 8 "Samsung Electro-Mechanics" H 1850 7050 50  0001 C CNN "Manufacturer"
 	1    1850 7050
 	1    0    0    -1  
@@ -242,7 +242,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 2363 6775 50  0001 C CNN
 F 3 "~" H 2325 6925 50  0001 C CNN
 F 4 "1276-1000-1-ND" H 2325 6925 50  0001 C CNN "DigiKey"
 F 5 "CL10B104KB8NNNC" H 2325 6925 50  0001 C CNN "MPN"
-F 6 "Y" H 2325 6925 50  0001 C CNN "Substitue Allowed?"
+F 6 "Y - X5R or better" H 2325 6925 50  0001 C CNN "Substitue Allowed?"
 F 7 "C1591" H 2325 6925 50  0001 C CNN "LCSC"
 F 8 "Samsung Electro-Mechanics" H 2325 6925 50  0001 C CNN "Manufacturer"
 	1    2325 6925
@@ -258,7 +258,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 2788 6775 50  0001 C CNN
 F 3 "~" H 2750 6925 50  0001 C CNN
 F 4 "1276-1000-1-ND" H 2750 6925 50  0001 C CNN "DigiKey"
 F 5 "CL10B104KB8NNNC" H 2750 6925 50  0001 C CNN "MPN"
-F 6 "Y" H 2750 6925 50  0001 C CNN "Substitue Allowed?"
+F 6 "Y - X5R or better" H 2750 6925 50  0001 C CNN "Substitue Allowed?"
 F 7 "C1591" H 2750 6925 50  0001 C CNN "LCSC"
 F 8 "Samsung Electro-Mechanics" H 2750 6925 50  0001 C CNN "Manufacturer"
 	1    2750 6925
@@ -278,7 +278,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 3213 6775 50  0001 C CNN
 F 3 "~" H 3175 6925 50  0001 C CNN
 F 4 "1276-1000-1-ND" H 3175 6925 50  0001 C CNN "DigiKey"
 F 5 "CL10B104KB8NNNC" H 3175 6925 50  0001 C CNN "MPN"
-F 6 "Y" H 3175 6925 50  0001 C CNN "Substitue Allowed?"
+F 6 "Y - X5R or better" H 3175 6925 50  0001 C CNN "Substitue Allowed?"
 F 7 "C1591" H 3175 6925 50  0001 C CNN "LCSC"
 F 8 "Samsung Electro-Mechanics" H 3175 6925 50  0001 C CNN "Manufacturer"
 	1    3175 6925
@@ -298,7 +298,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 3638 6775 50  0001 C CNN
 F 3 "~" H 3600 6925 50  0001 C CNN
 F 4 "1276-1866-1-ND " H 3600 6925 50  0001 C CNN "DigiKey"
 F 5 "CL10A105MP8NNNC " H 3600 6925 50  0001 C CNN "MPN"
-F 6 "Y" H 3600 6925 50  0001 C CNN "Substitue Allowed?"
+F 6 "Y - X5R or better" H 3600 6925 50  0001 C CNN "Substitue Allowed?"
 F 7 "C29936" H 3600 6925 50  0001 C CNN "LCSC"
 F 8 "Samsung Electro-Mechanics" H 3600 6925 50  0001 C CNN "Manufacturer"
 	1    3600 6925
@@ -318,7 +318,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 4013 6775 50  0001 C CNN
 F 3 "~" H 3975 6925 50  0001 C CNN
 F 4 "1276-1866-1-ND " H 3975 6925 50  0001 C CNN "DigiKey"
 F 5 "CL10A105MP8NNNC " H 3975 6925 50  0001 C CNN "MPN"
-F 6 "Y" H 3975 6925 50  0001 C CNN "Substitue Allowed?"
+F 6 "Y - X5R or better" H 3975 6925 50  0001 C CNN "Substitue Allowed?"
 F 7 "C29936" H 3975 6925 50  0001 C CNN "LCSC"
 F 8 "Samsung Electro-Mechanics" H 3975 6925 50  0001 C CNN "Manufacturer"
 	1    3975 6925
@@ -381,7 +381,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 4413 6775 50  0001 C CNN
 F 3 "~" H 4375 6925 50  0001 C CNN
 F 4 "1276-1000-1-ND" H 4375 6925 50  0001 C CNN "DigiKey"
 F 5 "CL10B104KB8NNNC" H 4375 6925 50  0001 C CNN "MPN"
-F 6 "Y" H 4375 6925 50  0001 C CNN "Substitue Allowed?"
+F 6 "Y - X5R or better" H 4375 6925 50  0001 C CNN "Substitue Allowed?"
 F 7 "C1591" H 4375 6925 50  0001 C CNN "LCSC"
 F 8 "Samsung Electro-Mechanics" H 4375 6925 50  0001 C CNN "Manufacturer"
 	1    4375 6925
@@ -397,7 +397,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 4863 6775 50  0001 C CNN
 F 3 "~" H 4825 6925 50  0001 C CNN
 F 4 "1276-1866-1-ND " H 4825 6925 50  0001 C CNN "DigiKey"
 F 5 "CL10A105MP8NNNC " H 4825 6925 50  0001 C CNN "MPN"
-F 6 "Y" H 4825 6925 50  0001 C CNN "Substitue Allowed?"
+F 6 "Y - X5R or better" H 4825 6925 50  0001 C CNN "Substitue Allowed?"
 F 7 "C29936" H 4825 6925 50  0001 C CNN "LCSC"
 F 8 "Samsung Electro-Mechanics" H 4825 6925 50  0001 C CNN "Manufacturer"
 	1    4825 6925
@@ -452,13 +452,13 @@ P 2400 2375
 AR Path="/5E805CD8" Ref="C?"  Part="1" 
 AR Path="/5E5406D9/5E805CD8" Ref="C18"  Part="1" 
 F 0 "C18" V 2250 2375 50  0000 C CNN
-F 1 "22p" V 2550 2375 50  0000 C CNN
+F 1 "15p" V 2550 2375 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2438 2225 50  0001 C CNN
 F 3 "~" H 2400 2375 50  0001 C CNN
-F 4 "1276-2228-1-ND  " H 2400 2375 50  0001 C CNN "DigiKey"
-F 5 "CL10C220JB8NFNC " H 2400 2375 50  0001 C CNN "MPN"
-F 6 "Y" H 2400 2375 50  0001 C CNN "Substitue Allowed?"
-F 7 "C1653" H 2400 2375 50  0001 C CNN "LCSC"
+F 4 "1276-1296-2-ND" H 2400 2375 50  0001 C CNN "DigiKey"
+F 5 "CL10C150JB8NNNC" H 2400 2375 50  0001 C CNN "MPN"
+F 6 "Y - NP0 / C0G or better" H 2400 2375 50  0001 C CNN "Substitue Allowed?"
+F 7 "C1644" H 2400 2375 50  0001 C CNN "LCSC"
 F 8 "Samsung Electro-Mechanics" H 2400 2375 50  0001 C CNN "Manufacturer"
 	1    2400 2375
 	0    1    1    0   
@@ -470,13 +470,13 @@ P 2400 1975
 AR Path="/5E805CDE" Ref="C?"  Part="1" 
 AR Path="/5E5406D9/5E805CDE" Ref="C17"  Part="1" 
 F 0 "C17" V 2250 1975 50  0000 C CNN
-F 1 "22p" V 2550 1975 50  0000 C CNN
+F 1 "15p" V 2550 1975 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2438 1825 50  0001 C CNN
 F 3 "~" H 2400 1975 50  0001 C CNN
-F 4 "1276-2228-1-ND  " H 2400 1975 50  0001 C CNN "DigiKey"
-F 5 "CL10C220JB8NFNC " H 2400 1975 50  0001 C CNN "MPN"
-F 6 "Y" H 2400 1975 50  0001 C CNN "Substitue Allowed?"
-F 7 "C1653" H 2400 1975 50  0001 C CNN "LCSC"
+F 4 "1276-1296-2-ND" H 2400 1975 50  0001 C CNN "DigiKey"
+F 5 "CL10C150JB8NNNC" H 2400 1975 50  0001 C CNN "MPN"
+F 6 "Y - NP0 / C0G or better" H 2400 1975 50  0001 C CNN "Substitue Allowed?"
+F 7 "C1644" H 2400 1975 50  0001 C CNN "LCSC"
 F 8 "Samsung Electro-Mechanics" H 2400 1975 50  0001 C CNN "Manufacturer"
 	1    2400 1975
 	0    1    1    0   
@@ -556,7 +556,7 @@ F 3 "~" H 3875 3075 50  0001 C CNN
 F 4 "RHM649CFCT-ND  " H 3875 3075 50  0001 C CNN "DigiKey"
 F 5 "MCR03ERTF6490 " H 3875 3075 50  0001 C CNN "MPN"
 F 6 "LCSC: Substitute PN" H 3875 3075 50  0001 C CNN "Notes"
-F 7 "Y" H 3875 3075 50  0001 C CNN "Substitue Allowed?"
+F 7 "Y -  Same spec" H 3875 3075 50  0001 C CNN "Substitue Allowed?"
 F 8 "Rohm Semiconductor" H 3875 3075 50  0001 C CNN "Manufacturer"
 F 9 "C403314" H 3875 3075 50  0001 C CNN "LCSC"
 	1    3875 3075
@@ -605,7 +605,7 @@ F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 6350 7050 50  0001 C CNN
 F 3 "~" H 6075 7050 50  0001 C CNN
 F 4 "RAVF164DJT10K0CT-ND" H 6075 7050 50  0001 C CNN "DigiKey"
 F 5 "RAVF164DJT10K0" H 6075 7050 50  0001 C CNN "MPN"
-F 6 "Y" H 6075 7050 50  0001 C CNN "Substitue Allowed?"
+F 6 "Y -  Same spec" H 6075 7050 50  0001 C CNN "Substitue Allowed?"
 F 7 "C107374" H 6075 7050 50  0001 C CNN "LCSC"
 F 8 "Bourns" H 6075 7050 50  0001 C CNN "Manufacturer"
 F 9 "LCSC: Substitute PN" H 6075 7050 50  0001 C CNN "Notes"
@@ -764,7 +764,7 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 8675 18
 F 4 "C319148" H 8525 1800 50  0001 C CNN "LCSC"
 F 5 "U262-161N-4BVC11" H 8525 1800 50  0001 C CNN "MPN"
 F 6 "Cannot source from DigiKey" H 8525 1800 50  0001 C CNN "Notes"
-F 7 "Y" H 8525 1800 50  0001 C CNN "Substitue Allowed?"
+F 7 "Y - Footprint / pinout compatiable" H 8525 1800 50  0001 C CNN "Substitue Allowed?"
 F 8 "XKB Enterprise" H 8525 1800 50  0001 C CNN "Manufacturer"
 	1    8525 1800
 	-1   0    0    -1  
@@ -822,7 +822,7 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10675 3
 F 4 "C319148" H 10525 3975 50  0001 C CNN "LCSC"
 F 5 "U262-161N-4BVC11" H 10525 3975 50  0001 C CNN "MPN"
 F 6 "Cannot source from DigiKey" H 10525 3975 50  0001 C CNN "Notes"
-F 7 "Y" H 10525 3975 50  0001 C CNN "Substitue Allowed?"
+F 7 "Y - Footprint / pinout compatiable" H 10525 3975 50  0001 C CNN "Substitue Allowed?"
 F 8 "XKB Enterprise" H 10525 3975 50  0001 C CNN "Manufacturer"
 	1    10525 3975
 	-1   0    0    -1  
@@ -845,10 +845,10 @@ F 0 "FB3" H 5875 4450 50  0000 C CNN
 F 1 "600R" H 5875 4775 50  0000 C CNN
 F 2 "josh-passives-smt:Ferrite_Bead_0603" H 5875 4530 50  0001 C CNN
 F 3 "~" V 5875 4600 50  0001 C CNN
-F 4 "C19330" H 5875 4600 50  0001 C CNN "LCSC"
-F 5 "BLM18AG601SN1D" H 5875 4600 50  0001 C CNN "MPN"
-F 6 "490-1014-1-ND" H 5875 4600 50  0001 C CNN "DigiKey"
-F 7 "Y" H 5875 4600 50  0001 C CNN "Substitue Allowed?"
+F 4 "C85833" H 5875 4600 50  0001 C CNN "LCSC"
+F 5 "BLM18KG601SN1D" H 5875 4600 50  0001 C CNN "MPN"
+F 6 " 490-5258-1-ND " H 5875 4600 50  0001 C CNN "DigiKey"
+F 7 "Y - 600R, > 1A current" H 5875 4600 50  0001 C CNN "Substitue Allowed?"
 F 8 "Murata" H 5875 4600 50  0001 C CNN "Manufacturer"
 	1    5875 4600
 	1    0    0    1   
@@ -863,10 +863,10 @@ F 0 "FB2" H 8275 3225 50  0000 C CNN
 F 1 "600R" H 8275 3550 50  0000 C CNN
 F 2 "josh-passives-smt:Ferrite_Bead_0603" H 8275 3305 50  0001 C CNN
 F 3 "~" V 8275 3375 50  0001 C CNN
-F 4 "C19330" H 8275 3375 50  0001 C CNN "LCSC"
-F 5 "BLM18AG601SN1D" H 8275 3375 50  0001 C CNN "MPN"
-F 6 "490-1014-1-ND" H 8275 3375 50  0001 C CNN "DigiKey"
-F 7 "Y" H 8275 3375 50  0001 C CNN "Substitue Allowed?"
+F 4 "C85833" H 8275 3375 50  0001 C CNN "LCSC"
+F 5 "BLM18KG601SN1D" H 8275 3375 50  0001 C CNN "MPN"
+F 6 " 490-5258-1-ND " H 8275 3375 50  0001 C CNN "DigiKey"
+F 7 "Y - 600R, > 1A current" H 8275 3375 50  0001 C CNN "Substitue Allowed?"
 F 8 "Murata" H 8275 3375 50  0001 C CNN "Manufacturer"
 	1    8275 3375
 	1    0    0    1   
@@ -928,7 +928,8 @@ F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 1925 2000 50  00
 F 4 "497-5235-1-ND " H 1725 1650 50  0001 C CNN "DigiKey"
 F 5 "C7519" H 1725 1650 50  0001 C CNN "LCSC"
 F 6 "USBLC6-2SC6" H 1725 1650 50  0001 C CNN "MPN"
-F 7 "STmicroelectronics" H 1725 1650 50  0001 C CNN "Manufacturer"
+F 7 "STMicroelectronics" H 1725 1650 50  0001 C CNN "Manufacturer"
+F 8 "N" H 1725 1650 50  0001 C CNN "Substitue Allowed?"
 	1    1725 1650
 	1    0    0    -1  
 $EndComp
@@ -952,11 +953,12 @@ F 0 "Y2" V 2700 2200 50  0000 L CNN
 F 1 "12MHz" V 2900 2175 50  0000 L CNN
 F 2 "josh-oscillators:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 2800 2175 50  0001 C CNN
 F 3 "~" H 2800 2175 50  0001 C CNN
-F 4 "C276421" H 2800 2175 50  0001 C CNN "LCSC"
-F 5 "ABM8-12.000MHZ-B2-T" H 2800 2175 50  0001 C CNN "MPN"
-F 6 "535-9826-1-ND" H 2800 2175 50  0001 C CNN "DigiKey"
-F 7 "Y" H 2800 2175 50  0001 C CNN "Substitue Allowed?"
+F 4 "C164041" H 2800 2175 50  0001 C CNN "LCSC"
+F 5 "ABM8-12.000MHZ-12-B1U-T" H 2800 2175 50  0001 C CNN "MPN"
+F 6 "535-14962-6-ND" H 2800 2175 50  0001 C CNN "DigiKey"
+F 7 "Y - 12 MHz, 10/12pF" H 2800 2175 50  0001 C CNN "Substitue Allowed?"
 F 8 "Abracon LLC" H 2800 2175 50  0001 C CNN "Manufacturer"
+F 9 "LCSC: Substitute PN" H 2800 2175 50  0001 C CNN "Notes"
 	1    2800 2175
 	0    1    1    0   
 $EndComp
@@ -1004,10 +1006,10 @@ F 0 "FB4" H 6275 1050 50  0000 C CNN
 F 1 "600R" H 6275 1375 50  0000 C CNN
 F 2 "josh-passives-smt:Ferrite_Bead_0603" H 6275 1130 50  0001 C CNN
 F 3 "~" V 6275 1200 50  0001 C CNN
-F 4 "C19330" H 6275 1200 50  0001 C CNN "LCSC"
-F 5 "BLM18AG601SN1D" H 6275 1200 50  0001 C CNN "MPN"
-F 6 "490-1014-1-ND" H 6275 1200 50  0001 C CNN "DigiKey"
-F 7 "Y" H 6275 1200 50  0001 C CNN "Substitue Allowed?"
+F 4 "C85833" H 6275 1200 50  0001 C CNN "LCSC"
+F 5 "BLM18KG601SN1D" H 6275 1200 50  0001 C CNN "MPN"
+F 6 " 490-5258-1-ND " H 6275 1200 50  0001 C CNN "DigiKey"
+F 7 "Y - 600R, > 1A current" H 6275 1200 50  0001 C CNN "Substitue Allowed?"
 F 8 "Murata" H 6275 1200 50  0001 C CNN "Manufacturer"
 	1    6275 1200
 	1    0    0    1   
@@ -1035,6 +1037,11 @@ F 0 "C25" V 7298 1025 50  0000 C CNN
 F 1 "100n" V 7389 1025 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7588 875 50  0001 C CNN
 F 3 "~" H 7550 1025 50  0001 C CNN
+F 4 "1276-1000-1-ND" H 7550 1025 50  0001 C CNN "DigiKey"
+F 5 "C1591" H 7550 1025 50  0001 C CNN "LCSC"
+F 6 "CL10B104KB8NNNC" H 7550 1025 50  0001 C CNN "MPN"
+F 7 "Samsung Electro-Mechanics" H 7550 1025 50  0001 C CNN "Manufacturer"
+F 8 "Y - X5R or better" H 7550 1025 50  0001 C CNN "Substitue Allowed?"
 	1    7550 1025
 	0    1    1    0   
 $EndComp
@@ -1072,6 +1079,11 @@ F 0 "F3" V 6475 1200 50  0000 C CNN
 F 1 "200mA" V 6566 1200 50  0000 C CNN
 F 2 "josh-passives-smt:Fuse_0805_2012Metric" H 6750 1000 50  0001 L CNN
 F 3 "~" H 6700 1200 50  0001 C CNN
+F 4 "507-1811-1-ND" H 6700 1200 50  0001 C CNN "DigiKey"
+F 5 "C70057" H 6700 1200 50  0001 C CNN "LCSC"
+F 6 "0ZCK0020FF2G" H 6700 1200 50  0001 C CNN "MPN"
+F 7 "Bel Fuse" H 6700 1200 50  0001 C CNN "Manufacturer"
+F 8 "Y - 200mA hold / 500mA trip" H 6700 1200 50  0001 C CNN "Substitue Allowed?"
 	1    6700 1200
 	0    1    1    0   
 $EndComp
@@ -1104,7 +1116,8 @@ F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 9125 4375 50  00
 F 4 "497-5235-1-ND " H 8925 4025 50  0001 C CNN "DigiKey"
 F 5 "C7519" H 8925 4025 50  0001 C CNN "LCSC"
 F 6 "USBLC6-2SC6" H 8925 4025 50  0001 C CNN "MPN"
-F 7 "STmicroelectronics" H 8925 4025 50  0001 C CNN "Manufacturer"
+F 7 "STMicroelectronics" H 8925 4025 50  0001 C CNN "Manufacturer"
+F 8 "N" H 8925 4025 50  0001 C CNN "Substitue Allowed?"
 	1    8925 4025
 	-1   0    0    -1  
 $EndComp
@@ -1139,6 +1152,11 @@ F 0 "C26" V 9298 3200 50  0000 C CNN
 F 1 "100n" V 9389 3200 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9588 3050 50  0001 C CNN
 F 3 "~" H 9550 3200 50  0001 C CNN
+F 4 "1276-1000-1-ND" H 9550 3200 50  0001 C CNN "DigiKey"
+F 5 "C1591" H 9550 3200 50  0001 C CNN "LCSC"
+F 6 "CL10B104KB8NNNC" H 9550 3200 50  0001 C CNN "MPN"
+F 7 "Samsung Electro-Mechanics" H 9550 3200 50  0001 C CNN "Manufacturer"
+F 8 "Y - X5R or better" H 9550 3200 50  0001 C CNN "Substitue Allowed?"
 	1    9550 3200
 	0    1    1    0   
 $EndComp
@@ -1167,6 +1185,11 @@ F 0 "F4" V 8475 3375 50  0000 C CNN
 F 1 "200mA" V 8566 3375 50  0000 C CNN
 F 2 "josh-passives-smt:Fuse_0805_2012Metric" H 8750 3175 50  0001 L CNN
 F 3 "~" H 8700 3375 50  0001 C CNN
+F 4 "507-1811-1-ND" H 8700 3375 50  0001 C CNN "DigiKey"
+F 5 "C70057" H 8700 3375 50  0001 C CNN "LCSC"
+F 6 "0ZCK0020FF2G" H 8700 3375 50  0001 C CNN "MPN"
+F 7 "Bel Fuse" H 8700 3375 50  0001 C CNN "Manufacturer"
+F 8 "Y - 200mA hold / 500mA trip" H 8700 3375 50  0001 C CNN "Substitue Allowed?"
 	1    8700 3375
 	0    1    1    0   
 $EndComp
@@ -1218,7 +1241,8 @@ F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 6725 5600 50  00
 F 4 "497-5235-1-ND " H 6525 5250 50  0001 C CNN "DigiKey"
 F 5 "C7519" H 6525 5250 50  0001 C CNN "LCSC"
 F 6 "USBLC6-2SC6" H 6525 5250 50  0001 C CNN "MPN"
-F 7 "STmicroelectronics" H 6525 5250 50  0001 C CNN "Manufacturer"
+F 7 "STMicroelectronics" H 6525 5250 50  0001 C CNN "Manufacturer"
+F 8 "N" H 6525 5250 50  0001 C CNN "Substitue Allowed?"
 	1    6525 5250
 	-1   0    0    -1  
 $EndComp
@@ -1253,6 +1277,11 @@ F 0 "C24" V 6898 4425 50  0000 C CNN
 F 1 "100n" V 6989 4425 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7188 4275 50  0001 C CNN
 F 3 "~" H 7150 4425 50  0001 C CNN
+F 4 "1276-1000-1-ND" H 7150 4425 50  0001 C CNN "DigiKey"
+F 5 "C1591" H 7150 4425 50  0001 C CNN "LCSC"
+F 6 "CL10B104KB8NNNC" H 7150 4425 50  0001 C CNN "MPN"
+F 7 "Samsung Electro-Mechanics" H 7150 4425 50  0001 C CNN "Manufacturer"
+F 8 "Y - X5R or better" H 7150 4425 50  0001 C CNN "Substitue Allowed?"
 	1    7150 4425
 	0    1    1    0   
 $EndComp
@@ -1281,6 +1310,11 @@ F 0 "F2" V 6075 4600 50  0000 C CNN
 F 1 "200mA" V 6166 4600 50  0000 C CNN
 F 2 "josh-passives-smt:Fuse_0805_2012Metric" H 6350 4400 50  0001 L CNN
 F 3 "~" H 6300 4600 50  0001 C CNN
+F 4 "507-1811-1-ND" H 6300 4600 50  0001 C CNN "DigiKey"
+F 5 "C70057" H 6300 4600 50  0001 C CNN "LCSC"
+F 6 "0ZCK0020FF2G" H 6300 4600 50  0001 C CNN "MPN"
+F 7 "Bel Fuse" H 6300 4600 50  0001 C CNN "Manufacturer"
+F 8 "Y - 200mA hold / 500mA trip" H 6300 4600 50  0001 C CNN "Substitue Allowed?"
 	1    6300 4600
 	0    1    1    0   
 $EndComp
@@ -1311,7 +1345,7 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 8275 52
 F 4 "C319148" H 8125 5200 50  0001 C CNN "LCSC"
 F 5 "U262-161N-4BVC11" H 8125 5200 50  0001 C CNN "MPN"
 F 6 "Cannot source from DigiKey" H 8125 5200 50  0001 C CNN "Notes"
-F 7 "Y" H 8125 5200 50  0001 C CNN "Substitue Allowed?"
+F 7 "Y - Footprint / pinout compatiable" H 8125 5200 50  0001 C CNN "Substitue Allowed?"
 F 8 "XKB Enterprise" H 8125 5200 50  0001 C CNN "Manufacturer"
 	1    8125 5200
 	-1   0    0    -1  
@@ -1371,7 +1405,8 @@ F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 7125 2200 50  00
 F 4 "497-5235-1-ND " H 6925 1850 50  0001 C CNN "DigiKey"
 F 5 "C7519" H 6925 1850 50  0001 C CNN "LCSC"
 F 6 "USBLC6-2SC6" H 6925 1850 50  0001 C CNN "MPN"
-F 7 "STmicroelectronics" H 6925 1850 50  0001 C CNN "Manufacturer"
+F 7 "STMicroelectronics" H 6925 1850 50  0001 C CNN "Manufacturer"
+F 8 "N" H 6925 1850 50  0001 C CNN "Substitue Allowed?"
 	1    6925 1850
 	-1   0    0    -1  
 $EndComp
@@ -1397,6 +1432,12 @@ F 0 "R12" V 3775 2525 50  0000 C CNN
 F 1 "10K" V 3825 2725 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3755 2725 50  0001 C CNN
 F 3 "~" H 3825 2725 50  0001 C CNN
+F 4 "CR0603-JW-103ELFCT-ND  " H 3825 2725 50  0001 C CNN "DigiKey"
+F 5 "C144116" H 3825 2725 50  0001 C CNN "LCSC"
+F 6 "CR0603-JW-103ELF " H 3825 2725 50  0001 C CNN "MPN"
+F 7 "Bourns" H 3825 2725 50  0001 C CNN "Manufacturer"
+F 8 "LCSC: Substitute PN" H 3825 2725 50  0001 C CNN "Notes"
+F 9 "Y -  Same spec" H 3825 2725 50  0001 C CNN "Substitue Allowed?"
 	1    3825 2725
 	0    1    1    0   
 $EndComp
@@ -1408,6 +1449,12 @@ F 0 "R10" V 3775 2425 50  0000 C CNN
 F 1 "10K" V 3825 2625 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3755 2625 50  0001 C CNN
 F 3 "~" H 3825 2625 50  0001 C CNN
+F 4 "CR0603-JW-103ELFCT-ND  " H 3825 2625 50  0001 C CNN "DigiKey"
+F 5 "C144116" H 3825 2625 50  0001 C CNN "LCSC"
+F 6 "CR0603-JW-103ELF " H 3825 2625 50  0001 C CNN "MPN"
+F 7 "Bourns" H 3825 2625 50  0001 C CNN "Manufacturer"
+F 8 "LCSC: Substitute PN" H 3825 2625 50  0001 C CNN "Notes"
+F 9 "Y -  Same spec" H 3825 2625 50  0001 C CNN "Substitue Allowed?"
 	1    3825 2625
 	0    1    1    0   
 $EndComp
@@ -1444,10 +1491,10 @@ F 1 "10K" H 3675 3075 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3480 3100 50  0001 C CNN
 F 3 "~" H 3550 3100 50  0001 C CNN
 F 4 "" H 3675 3025 50  0001 C CNN "DNP"
-F 5 "CR0603-JW-104ELFCT-ND " H 3550 3100 50  0001 C CNN "DigiKey"
-F 6 "CR0603-JW-104ELF " H 3550 3100 50  0001 C CNN "MPN"
-F 7 "Y" H 3550 3100 50  0001 C CNN "Substitue Allowed?"
-F 8 "C203223" H 3550 3100 50  0001 C CNN "LCSC"
+F 5 "CR0603-JW-103ELFCT-ND  " H 3550 3100 50  0001 C CNN "DigiKey"
+F 6 "CR0603-JW-103ELF " H 3550 3100 50  0001 C CNN "MPN"
+F 7 "Y -  Same spec" H 3550 3100 50  0001 C CNN "Substitue Allowed?"
+F 8 "C144116" H 3550 3100 50  0001 C CNN "LCSC"
 F 9 "Bourns" H 3550 3100 50  0001 C CNN "Manufacturer"
 F 10 "LCSC: Substitute PN" H 3550 3100 50  0001 C CNN "Notes"
 	1    3550 3100
