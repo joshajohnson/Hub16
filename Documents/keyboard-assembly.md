@@ -91,6 +91,6 @@ With those steps done, add the encoder knobs along with your keycaps and the boa
 
 If you find the power LED annoying and would like to disable it, cut the jumper (along the blue line) labeled LED near the USB ports. It can be re-enabled by soldering the jumper shut again. 
 
-![Cutting trace for power LED](imgs/assembly-instructions/led_cut.jpg)
+![Cutting trace for power LED](imgs/assembly-instructions/led_cut.JPG)
 
 If there are any issues with the assembly process get in touch and I'll do my best to help.
