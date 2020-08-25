@@ -68,7 +68,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 2913 3175 50  0001 C CNN
 F 3 "~" H 2875 3325 50  0001 C CNN
 F 4 "1276-1296-2-ND" H 2875 3325 50  0001 C CNN "DigiKey"
 F 5 "CL10C150JB8NNNC" H 2875 3325 50  0001 C CNN "MPN"
-F 6 "Y - NP0 / C0G or better" H 2875 3325 50  0001 C CNN "Substitue Allowed?"
+F 6 "Y - NP0 / C0G" H 2875 3325 50  0001 C CNN "Substitue Allowed?"
 F 7 "C1644" H 2875 3325 50  0001 C CNN "LCSC"
 F 8 "Samsung Electro-Mechanics" H 2875 3325 50  0001 C CNN "Manufacturer"
 	1    2875 3325
@@ -84,7 +84,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 2913 2775 50  0001 C CNN
 F 3 "~" H 2875 2925 50  0001 C CNN
 F 4 "1276-1296-2-ND" H 2875 2925 50  0001 C CNN "DigiKey"
 F 5 "CL10C150JB8NNNC" H 2875 2925 50  0001 C CNN "MPN"
-F 6 "Y - NP0 / C0G or better" H 2875 2925 50  0001 C CNN "Substitue Allowed?"
+F 6 "Y - NP0 / C0G" H 2875 2925 50  0001 C CNN "Substitue Allowed?"
 F 7 "C1644" H 2875 2925 50  0001 C CNN "LCSC"
 F 8 "Samsung Electro-Mechanics" H 2875 2925 50  0001 C CNN "Manufacturer"
 	1    2875 2925

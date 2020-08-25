@@ -56,6 +56,7 @@ u::^n   ; Previous grid size
 ; v::
 
 ; Template for your chosen application
+; Remove the ";" from each row first, otherwise code will be commented out and not work!
 ; #if (getKeyState("F24", "P")) and if WinActive("ahk_exe applicaton.exe")
 ; F24::return
 
