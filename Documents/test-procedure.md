@@ -1,5 +1,7 @@
 # Test Procedure
 
+__This is only nessesery if you are building your own board from scratch__
+
 This procedure is used to ensure bringup and functionality of a freshly baked PCB goes smoothly. 
 
 * Preform visual inspection of PCA and rework any issues. In particular, USB connectors and resistor networks often short out. 
