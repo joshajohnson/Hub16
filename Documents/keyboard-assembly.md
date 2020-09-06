@@ -17,9 +17,9 @@ Before assembling the board, ensure you have all of the required parts.
 ![Parts Required](imgs/assembly-instructions/required-parts-acrylic.JPG)
 
 ## Step 0: Check PCB
-All boards purchased from me have been 100% functionally tested, however there is a chance for damage to occur during freight.
+All boards purchased have been 100% functionally tested, however there is a chance for damage to occur during freight.
 
-Prior to testing each contact, run `Software/test.ahk` on Windows for the board to type the key being pressed, as that script removes the key wrapping used to differentiate the keyboard. Assuming you have not configured your mac or Linux machine yet, you do not need to run any software before following the below.
+Boards come preloaded with QMK for testing.
 
 **Check the key switches by using tweezers to short the key switch pins together.**  
 ![Checking Keys](imgs/assembly-instructions/check-switches.JPG)
@@ -55,7 +55,7 @@ With the four keys in place and the enclosure in place (no gaps, nothing out of 
 
 ## Step 5: Install Rotary Encoders
 
-Insert the rotary encoders, ensuring that the pins are straight.
+ Ensuring that the pins are straight and insert the rotary encoders.
 ![Checking encoders are straight](imgs/assembly-instructions/step-5-1.JPG)
 
 Tack two of the pins in, as this will allow us to adjust the angle of the encoders if required. 
@@ -93,4 +93,4 @@ If you find the power LED annoying and would like to disable it, cut the jumper 
 
 ![Cutting trace for power LED](imgs/assembly-instructions/led_cut.JPG)
 
-If there are any issues with the assembly process get in touch and I'll do my best to help.
+__You have completed your build. Enjoy :D __
