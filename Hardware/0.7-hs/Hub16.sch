@@ -601,7 +601,7 @@ Connection ~ 8500 2825
 Wire Wire Line
 	8500 2825 9400 2825
 Connection ~ 9400 2825
-Text Label 7350 2825 2    50   ~ 0
+Text Label 7350 2825 0    50   ~ 0
 row3
 Text Notes 8650 725  0    100  ~ 0
 Switch Array
@@ -631,13 +631,13 @@ row3
 Text Label 7000 2075 2    50   ~ 0
 row4
 Connection ~ 2625 3325
-Text Label 11000 1025 1    50   ~ 0
+Text Label 11000 1025 3    50   ~ 0
 col4
-Text Label 10100 1025 1    50   ~ 0
+Text Label 10100 1025 3    50   ~ 0
 col3
-Text Label 9200 1025 1    50   ~ 0
+Text Label 9200 1025 3    50   ~ 0
 col2
-Text Label 8300 1025 1    50   ~ 0
+Text Label 8300 1025 3    50   ~ 0
 col1
 $Comp
 L Switch:SW_Push SW1
@@ -1359,7 +1359,7 @@ Wire Wire Line
 	8500 1925 8500 1975
 Wire Wire Line
 	7600 1925 7600 1975
-Text Label 7350 2225 2    50   ~ 0
+Text Label 7350 2225 0    50   ~ 0
 row2
 Connection ~ 9400 2225
 Wire Wire Line
@@ -1386,7 +1386,7 @@ Wire Wire Line
 	8500 1325 8500 1375
 Wire Wire Line
 	7600 1325 7600 1375
-Text Label 7350 1625 3    50   ~ 0
+Text Label 7350 1625 0    50   ~ 0
 row1
 Connection ~ 9400 1625
 Wire Wire Line
@@ -1438,7 +1438,7 @@ Wire Wire Line
 	8500 3125 8500 3175
 Wire Wire Line
 	7600 3125 7600 3175
-Text Label 7350 3425 2    50   ~ 0
+Text Label 7350 3425 0    50   ~ 0
 row4
 Wire Wire Line
 	9400 3425 10300 3425
@@ -2182,15 +2182,15 @@ P 2700 1225
 AR Path="/5EB49DDF" Ref="F1"  Part="1" 
 AR Path="/5E5406D9/5EB49DDF" Ref="F?"  Part="1" 
 F 0 "F1" V 2600 1225 50  0000 C CNN
-F 1 "500mA" V 2800 1225 50  0000 C CNN
+F 1 "1A" V 2800 1225 50  0000 C CNN
 F 2 "josh-passives-smt:Fuse_0805_2012Metric" H 2750 1025 50  0001 L CNN
 F 3 "~" H 2700 1225 50  0001 C CNN
-F 4 "C66452" H 2700 1225 50  0001 C CNN "LCSC"
-F 5 "0ZCK0050FF2E" H 2700 1225 50  0001 C CNN "MPN"
-F 6 "507-1813-1-ND" H 2700 1225 50  0001 C CNN "DigiKey"
-F 7 "LCSC: Substitute PN" H 2700 1225 50  0001 C CNN "Notes"
-F 8 "Y - 500mA hold / 1A trip" H 2700 1225 50  0001 C CNN "Substitue Allowed?"
-F 9 "Bel Fuse" H 2700 1225 50  0001 C CNN "Manufacturer"
+F 4 "C80270" H 2700 1225 50  0001 C CNN "LCSC"
+F 5 "0805L100WR" H 2700 1225 50  0001 C CNN "MPN"
+F 6 "F2774CT-ND" H 2700 1225 50  0001 C CNN "DigiKey"
+F 7 "" H 2700 1225 50  0001 C CNN "Notes"
+F 8 "Y - 1A hold / >1.5A trip" H 2700 1225 50  0001 C CNN "Substitue Allowed?"
+F 9 "Littelfuse" H 2700 1225 50  0001 C CNN "Manufacturer"
 	1    2700 1225
 	0    1    1    0   
 $EndComp
