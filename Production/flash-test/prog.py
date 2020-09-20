@@ -1,14 +1,16 @@
 #!/bin/python3
 
 # Script to program and test Hub16
+# Requires avrdude 6.3 to be installed and added to path
+
 import os
 import time
 import argparse
 
 def bootloader():
     # Flash Bootloader
-    erase = "/home/josh/arduino-1.8.12/hardware/tools/avr/bin/avrdude -C/home/josh/arduino-1.8.12/hardware/tools/avr/etc/avrdude.conf -v -patmega32u4 -cavrispmkII -Pusb -e -Ulock:w:0x3F:m -Uefuse:w:0xcb:m -Uhfuse:w:0xd8:m -Ulfuse:w:0xff:m"
-    bootloader = "/home/josh/arduino-1.8.12/hardware/tools/avr/bin/avrdude -C/home/josh/arduino-1.8.12/hardware/tools/avr/etc/avrdude.conf -v -patmega32u4 -cavrispmkII -Pusb -Uflash:w:/home/josh/arduino-1.8.12/hardware/arduino/avr/bootloaders/caterina/Caterina-Leonardo.hex:i -Ulock:w:0x2F:m"
+    erase = "avrdude -C avrdude.conf -v -p atmega32u4 -c usbasp -Pusb -e -Ulock:w:0x3F:m -Uefuse:w:0xcb:m -Uhfuse:w:0xd8:m -Ulfuse:w:0xff:m"
+    bootloader = "avrdude -C avrdude.conf -v -p atmega32u4 -c usbasp -Pusb -Uflash:w:Caterina-Leonardo.hex:i -Ulock:w:0x2F:m"
     
     os.system(erase)
     os.system(bootloader)
@@ -16,7 +18,7 @@ def bootloader():
 
 def qmk():
     # Flash QMK
-    flash = "avrdude -v -patmega32u4 -cavr109 -P/dev/ttyACM0 -b57600 -D -Uflash:w:../../Firmware/binaries/hub16_default.hex:i"
+    flash = "avrdude -C avrdude.conf -v -patmega32u4 -c avr109 -P /dev/ttyACM0 -b 57600 -D -Uflash:w:../../Firmware/binaries/hub16_via.hex:i"
     os.system(flash)
 
 def test():
