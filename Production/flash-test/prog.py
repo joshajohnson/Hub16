@@ -16,6 +16,18 @@ def bootloader():
     os.system(bootloader)
     time.sleep(2) # Delay for 32u4 to reset and enumerate
 
+def read_eeprom():
+    # Read eeprom contents
+    read = "avrdude -C avrdude.conf -v -p atmega32u4 -c usbasp -Pusb -U eeprom:r:eeprom.bin:r"
+    os.system(read)
+    time.sleep(2)
+
+def write_eeprom():
+    # Write eeprom contents
+    write = "avrdude -C avrdude.conf -v -p atmega32u4 -c usbasp -Pusb -U eeprom:w:eeprom.bin:r"
+    os.system(write)
+    time.sleep(2)
+
 def qmk():
     # Flash QMK
     flash = "avrdude -C avrdude.conf -v -patmega32u4 -c avr109 -P /dev/ttyACM0 -b 57600 -D -Uflash:w:../../Firmware/binaries/hub16_via.hex:i"
@@ -46,6 +58,8 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-b", "--bootloader",   action='store_true')
+    parser.add_argument("-e", "--read_eeprom",  action='store_true')
+    parser.add_argument("-w", "--write_eeprom", action='store_true')
     parser.add_argument("-q", "--qmk",          action='store_true')
     parser.add_argument("-t", "--test",         action='store_true')
     parser.add_argument("-r", "--repeat",       action='store_true')
@@ -53,16 +67,20 @@ if __name__ == "__main__":
 
     while True:
 
-	    if args.bootloader:
-	        bootloader()
-	    if args.qmk:
-	        qmk()
-	    if args.test:
-	        test()
+        if args.bootloader:
+            bootloader()
+        if args.read_eeprom:
+            read_eeprom()
+        if args.write_eeprom:
+            write_eeprom()
+        if args.qmk:
+            qmk()
+        if args.test:
+            test()
 
 
-	    if args.repeat == False:
-	    	break
-	    time.sleep(1)
+        if args.repeat == False:
+        	break
+        time.sleep(1)
 
-	    input("Press any key to continue.")
+        input("Press any key to continue.")
