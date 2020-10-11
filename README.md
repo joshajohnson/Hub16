@@ -2,51 +2,58 @@
 
 ![Hub16 assembled](Documents/imgs/header-img.JPG)
 
-A macro pad with 16 keys, two rotary encoders, a four port USB hub, and plenty of LEDs!
+Hub16 is a macropad with a bunch of features you never knew you needed. They include:
 
-This project started as I wanted to utilise rotary encoders to change the grid and trace size in KiCad, and then thought wouldn't it be nice to run a cable between the macro pad and keyboard, so a hub was added! 
+- 16 Cherry MX compatible keys, along with two in each encoder.
+- Two rotary encoders, enabling intuitive controls for a wide range of tools including CAD and photo / video editing.
+- Inbuilt USB 2.0 Hub with Type-C connectors, allowing connection to other keyboards, memory sticks, wireless receivers and more!
+- VIA and QMK compatibility, including a "macro" mode enabling the keys to be remapped on a host computer.
+- 11 addressable RGB LEDs to display state, or just light your desk up.
 
-It is designed to work with software on the host computer to enable powerful, context aware macros to be run, ensuring you never have to press a strange sequence of keys ever again. 
+## Project Status
 
-All design files required to manufacture the board and enclosure are located in this repo, along with assembled and tested boards being available from [Tindie](https://www.tindie.com/products/joshajohnson/hub16-programmable-macro-keyboard/). 
+Project is stable, with assembled boards available at [Tindie](https://www.tindie.com/products/joshajohnson/hub16-programmable-macro-keyboard/).
 
-## Key Features
-- 16 Cherry MX compatible switches, along with two switches in the encoders.
-- Two rotary encoders, bringing an intuitive interface for continuous controls such as zoom, grid size, and volume.
-- Four port USB 2.0 hub with Type-C connectors, allowing connection to other keyboards, memory sticks, wireless receivers and more!
-- Designed to interface with host computer to provide a level of interaction / macro control not available on standard keyboards, with examples provided for Windows, macOS, and Linux.
-- 11 individually addressable RGB LEDs.
-- Full VIA / QMK programmability and customisation.
+## Getting Started Guide
 
+- [Keyboard Assembly](Documents/keyboard-assembly.md)
+- [VIA Keymap Configuration](Documents/via.md)
+- [Macro Configuration](Documents/macro.md)
 
-## Notes on the USB Hub
-The hub is a four port USB 2.0 Hub with Type-C connectors, aimed at allowing connection of keyboards, mice, memory sticks, wireless receivers, and other small devices (including a second macro pad!)  to your computer.
+## Detailed Info
+
+- [Advanced Firmware / Software Configuration](Documents/advanced-config.md)
+- [PCB SMT Assembly Guide](Documents/pcba.md)
+- [Enclosure Manufacturing](Documents/enclosure.md)
+
+### Repo Contents
+
+- `Documents` contains all documentation and images for the project.
+- `Firmware` contains both the source and precompiled binaries for Hub16.
+- `Hardware` contains the KiCad design files for the keyboard.
+- `josh-kicad-lib` is my personal KiCad parts library which contains many of the parts used.
+- `Mechanicals` contain the plate and case design for Hub16.
+- `Production` contains all the files required to produce the PCB. It also contains test scripts and jigs.
+- `Software` contains all the VIA config, along with template script to use Hub16 as a macropad with software on your computer.
+
+### Notes on the USB Hub
+
+The hub is a four port USB 2.0 Hub with Type-C connectors, aimed at allowing connection of keyboards, mice, memory sticks, wireless receivers, and other small devices (including a second Hub16!)  to your computer.
 
 Due to cost and space constraints, the hub has some limitations. The hub **is not**:
+
 - USB 3.x, Power Delivery, Thunderbolt, DisplayPort, etc compatible. 
 - Designed to charge your phone quickly. Only 100mA is guaranteed per port.
 - Designed to work with power hungry devices such as spinning hard drives.
 - Guaranteed to provide full USB 2.0 speeds and performance on all ports.
-- Suitable for use with long cables. Issues have been seen on cables longer than 2m.
 
+Might you be able to charge your phone whilst copying files at full speed of a spinning hard drive over a long cable? Maybe. However Hub16 is a macropad first, USB hub second, so if you are looking for a high performance device I'd suggest picking up a dedicated USB hub and just using Hub16 as a macropad.
 
-## Build Instructions
-* [Keyboard Assembly](Documents/keyboard-assembly.md)
-* [Firmware and Software Configuration](Documents/firmware-software-config.md) 
+### Errata
 
-### Assembling the board from design files? 
-* [PCB SMT Assembly Guide](Documents/smt-assembly.md)
-* [Firmware Flashing Instructions](Documents/firmware-install.md)
-* [Enclosure Manufacturing](Documents/enclosure-manufacturing.md)
+- Boards purchased between June 12 and June 22 2020 will not go into the bootloader upon resting from software. Workaround: reset board with physical reset button on bottom of PCB. Fix: reflash the bootloader following [these instructions](Documents/firmware-install.md).
+- Firmware builds prior to 27th June do not continually send characters when the encoders are depressed. Update to the latest firmware to resolve.
+- Firmware builds prior to 9th June have issues with the bottom right key `p` not functioning correctly. Update to the latest firmware to resolve.
+- Some rotary encoders output flipped signals (clockwise instead of counterclockwise), if after assembly your encoders appear to be sending the wrong signals, comment in line 84 in [config.h](Firmware/hub16/config.h), or alter the setting in your [software](Software).
 
-### Errata / Changelog
-* Boards purchased between June 12 and June 22 2020 will not go into the bootloader upon resting from software. Workaround: reset board with physical reset button on bottom of PCB. Fix: reflash the bootloader following [these instructions](Documents/firmware-install.md).
-
-* Firmware builds prior to 27th June do not continually send characters when the encoders are depressed. Update to the latest firmware to resolve.
-* Firmware builds prior to 9th June have issues with the bottom right key `p` not functioning correctly. Update to the latest firmware to resolve.
-
-* Some rotary encoders output flipped signals (clockwise instead of counterclockwise), if after assembly your encoders appear to be sending the wrong signals, comment in line 84 in [config.h](Firmware/hub16/config.h), or alter the setting in your [software](Software).
-
-* Long USB cables (> 2m) may not work with the keyboard. If the keyboard is not detected, or power cycles (can often be seen by LEDs flashing on and off), please try a shorter cable.
-
-If you have any questions or comments please get in touch. I can be found on Discord as `_joshajohnson#9451`, [Twitter](https://twitter.com/_joshajohnson), and [r/mk](https://www.reddit.com/user/_joshajohnson). 
+If you have any questions or comments please get in touch. I can be found on Discord as `_joshajohnson#9451`, [Twitter](https://twitter.com/_joshajohnson), email, or leave an issue or pull request on this repo.
