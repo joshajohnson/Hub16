@@ -42,7 +42,7 @@ The hub is a four port USB 2.0 Hub with Type-C connectors, aimed at allowing con
 
 Due to cost and space constraints, the hub has some limitations. The hub **is not**:
 
-- USB 3.x, Power Delivery, Thunderbolt, DisplayPort, etc compatible. 
+- USB 3.x, Power Delivery, Thunderbolt, DisplayPort, etc compatible.
 - Designed to charge your phone quickly. Only 100mA is guaranteed per port.
 - Designed to work with power hungry devices such as spinning hard drives.
 - Guaranteed to provide full USB 2.0 speeds and performance on all ports.
@@ -51,7 +51,7 @@ Might you be able to charge your phone whilst copying files at full speed of a s
 
 ### Errata
 
-- Boards purchased between June 12 and June 22 2020 will not go into the bootloader upon resting from software. Workaround: reset board with physical reset button on bottom of PCB. Fix: reflash the bootloader following [these instructions](Documents/firmware-install.md).
+- Boards purchased between June 12 and June 22 2020 will not go into the bootloader upon resting from software. Workaround: reset board with physical reset button on bottom of PCB. Fix: reflash the bootloader following [these instructions](Documents/advanced-config.md#Bootloader-Flashing).
 - Firmware builds prior to 27th June do not continually send characters when the encoders are depressed. Update to the latest firmware to resolve.
 - Firmware builds prior to 9th June have issues with the bottom right key `p` not functioning correctly. Update to the latest firmware to resolve.
 - Some rotary encoders output flipped signals (clockwise instead of counterclockwise), if after assembly your encoders appear to be sending the wrong signals, comment in line 84 in [config.h](Firmware/hub16/config.h), or alter the setting in your [software](Software).
