@@ -4,10 +4,10 @@
 
 Hub16 is a macropad with a bunch of features you never knew you needed. They include:
 
-- 16 Cherry MX compatible keys, along with two in each encoder.
+- 16 Cherry MX compatible keys, along with switches in each encoder.
 - Two rotary encoders, enabling intuitive controls for a wide range of tools including CAD and photo / video editing.
 - Inbuilt USB 2.0 Hub with Type-C connectors, allowing connection to other keyboards, memory sticks, wireless receivers and more!
-- VIA and QMK compatibility, including a "macro" mode enabling the keys to be remapped on a host computer.
+- VIA and QMK compatibility, including a "macro" mode enabling the keys to be dynamically remapped on a host computer.
 - 11 addressable RGB LEDs to display state, or just light your desk up.
 
 ## Project Status

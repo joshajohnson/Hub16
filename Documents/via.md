@@ -21,5 +21,5 @@ Unfortunately, due to limitations in VIA the encoders are not visible or configu
 - Follow the QMK [getting started guide](https://docs.qmk.fm/#/newbs_getting_started) to install the toolchain and configure your build environment.
 - Open the `qmk_firmware/keyboards/Hub16/keymaps/via/keymap.c` file in your preferred text editor.
 - Locate the function `encoder_update_user`, and update the keycodes in `tap_code(KC_xxx)` to one from the [keycodes list](https://docs.qmk.fm/#/keycodes?id=basic-keycodes). If you use keycode not on the basic list, you may need to replace `tap_code` with `tap_code16`.
-- With the changes made, save your new keymap, build, and flash the keymap to Hub16 with `make Hub16:via:flash` run from the `qmk_firmware` directory.
+- With the changes made, save your new keymap, build, and flash the keymap to Hub16 with `make hub16:via:flash` run from the `qmk_firmware` directory.
 - You should now see the encoders functioning as desired, and you can configure the remainder or your keyboard using VIA.

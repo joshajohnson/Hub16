@@ -9,8 +9,8 @@ import argparse
 
 def bootloader():
     # Flash Bootloader
-    erase = "avrdude -C avrdude.conf -v -p atmega32u4 -c usbasp -Pusb -e -Ulock:w:0x3F:m -Uefuse:w:0xcb:m -Uhfuse:w:0xd8:m -Ulfuse:w:0xff:m"
-    bootloader = "avrdude -C avrdude.conf -v -p atmega32u4 -c usbasp -Pusb -Uflash:w:Caterina-Leonardo.hex:i -Ulock:w:0x2F:m"
+    erase = "avrdude -C avrdude.conf -v -p atmega32u4 -c avrispmkii -Pusb -e -Ulock:w:0x3F:m -Uefuse:w:0xcb:m -Uhfuse:w:0xd8:m -Ulfuse:w:0xff:m"
+    bootloader = "avrdude -C avrdude.conf -v -p atmega32u4 -c avrispmkii -Pusb -Uflash:w:Caterina-Leonardo.hex:i -Ulock:w:0x2F:m"
     
     os.system(erase)
     os.system(bootloader)
@@ -18,13 +18,13 @@ def bootloader():
 
 def read_eeprom():
     # Read eeprom contents
-    read = "avrdude -C avrdude.conf -v -p atmega32u4 -c usbasp -Pusb -U eeprom:r:eeprom.bin:r"
+    read = "avrdude -C avrdude.conf -v -p atmega32u4 -c avrispmkii -Pusb -U eeprom:r:eeprom.bin:r"
     os.system(read)
     time.sleep(2)
 
 def write_eeprom():
     # Write eeprom contents
-    write = "avrdude -C avrdude.conf -v -p atmega32u4 -c usbasp -Pusb -U eeprom:w:eeprom.bin:r"
+    write = "avrdude -C avrdude.conf -v -p atmega32u4 -c avrispmkii -Pusb -U eeprom:w:eeprom.bin:r"
     os.system(write)
     time.sleep(2)
 

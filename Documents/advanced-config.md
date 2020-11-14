@@ -15,10 +15,10 @@ The macro functionality of Hub16 is quite unique, as it moves control over what 
 
 ## Theory of Operation
 
-- Hub16 works by presenting a uniquely identifiable key to your computer, which can be intercepted by a intermediate layer of software on your computer, and can then be processed as required.
+- Hub16 works by presenting a uniquely identifiable key to your computer, which can be intercepted by a intermediate layer of software on your computer, and can then be processed by the OS as required.
 - This works by "wrapping" a normal key press with a modifier key to create a unique key, just like pressing SHIFT changes the key shown on your screen when pressed in conjunction with a key on your keyboard.
 - However, as CTRL, SHIFT, ALT etc are commonly used they would not be very helpful to generate a unique key, so we instead use F13 - F24 as most keyboards do not have these, but are still valid keycodes.
-- To achieve this, when you press a key, Hub16 first sends a modifier key (e.g. F23) before pressing down the key you touched. Upon release of your key, it releases the modifier, allowing the computer to pick up that Hub16 has pressed a key.
+- To achieve this, when you press a key, Hub16 first sends a modifier key (e.g. F24) before pressing down the key you touched. Upon release of your key, it releases the modifier, allowing the computer to pick up that Hub16 has pressed a key.
 - **NOTE** macOS instead uses the VID:PID of your device to uniquely identify Hub16, however the high level concept outlined above still applies.
 
 ## Firmware Configuration
@@ -63,4 +63,4 @@ If you come up with a novel use case, I'd be very interested to hear about it so
 	- You will need to select 'Arduino Leonardo' as your chosen board, and connect to the programming header exposed on the board.
 	- Pressing 2x3 male header against the pins will provide a good way to flash the board without soldering to the programming header.
 
-With the bootloader on the microcontroller, we can now flash the QMK firmware onto the device.
+With the bootloader on the microcontroller, you can flash the firmware onto the device.

@@ -10,23 +10,23 @@ Hub16 does not ship with the macro firmware preinstalled, but is easily flashed 
 
 MechMerlin has [a great video](https://youtu.be/VR53Wo9Z960) on the process, so I will highlight the Hub16 specific configurations / settings.
 
-- When selecting the file to flash, use `firmware/binaries/Hub16_macro.bin`.
-- There is no need to select the microcontroller before flashing the board.
-- The reset button can be found between the USB connectors on the back of the board, or by holding down the top right button and depressing the left encoder.
+- When selecting the file to flash, use `firmware/binaries/hub16_macro.bin`.
+- Ensure you select the microcontroller as "ATMEGA32U4" before flashing the board.
+- The reset button can be found between the USB connectors on the back of the board, or by holding the bottom left key down whilst pressing the second from the right key on the bottom row (see below).
 
-The default configuration for the keyboard is shown below:
+The default configuration for macro mode is shown below:
 
 ```
 ------------------  ENC1:Clockwise: q
 |  ENC1   ENC2   |  ENC1:Anticlockwise: r
-| a   b   c   d* |  ENC1:Button: s
+| a   b   c   d  |  ENC1:Button: s
 | e   f   g   h  |  ENC2:Clockwise: t
 | i   j   k   l  |  ENC2:Anticlockwise: u
-| m   n   o   p  |  ENC2:Button: v
+| m   n   o   p* |  ENC2:Button: v
 ------------------
 ```
 
-\* Once flashing the macro layout you may notice that holding or tapping the top right key quickly may not result in a key being sent. This because if you double tap that key, it will bring you to a configuration layer on the keyboard which allows you to control the LEDs and reset the keyboard.  Double tapping the same key will return you to the base layer. The keymap for this configuration is shown below:
+\* Once flashing the macro layout you may notice that holding or tapping the bottom left key quickly may not result in a key being sent. This because if you double tap that key, it will bring you to a configuration layer on the keyboard which allows you to control the LEDs and reset the keyboard.  Double tapping the same key will return you to the base layer. The keymap for this configuration is shown below:
 
 ```
          _______,   _______,
@@ -42,14 +42,14 @@ _______, _______,  RESET,       HOME,
 ### Windows
 
 - Download and install [AutoHotKey](https://www.autohotkey.com/).
-- Copy the example script from `software/Hub16-template.ahk` into a folder of your choice.
+- Copy the example script from `software/hub16-template.ahk` into a folder of your choice.
 - For the script to run at startup, I strongly suggest placing a shortcut to the above file in `%APPDATA%/Roaming/Microsoft/Windows/Start Menu/Programs/Start-up`.
 - Configure the script to suit your use case, ensuring to restart the AHK script after each change, otherwise it will not use the latest changes.
 
 ### macOS
 
 - Install [Karabiner-Elements](https://karabiner-elements.pqrs.org/docs/getting-started/installation/).
-- Copy the example script from `software/karabiner-Hub16.json` to your local `~.config/karabiner` folder.
+- Copy the example script from `software/hub16-karabiner.json` to your local `~.config/karabiner` folder.
 - Configure keybindings as required.
 
 ### Linux
