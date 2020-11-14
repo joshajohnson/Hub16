@@ -1,6 +1,6 @@
 # Hub16
 
-![Hub16 assembled](Documents/imgs/header-img.JPG)
+![Hub16 assembled](Documents/imgs/new-header.JPG)
 
 Hub16 is a macropad with a bunch of features you never knew you needed. They include:
 
@@ -13,6 +13,8 @@ Hub16 is a macropad with a bunch of features you never knew you needed. They inc
 ## Project Status
 
 Project is stable, with assembled boards available at [Tindie](https://www.tindie.com/products/joshajohnson/hub16-programmable-macro-keyboard/).
+
+![Hub16 on desk](Documents/imgs/all-the-cables.JPG)
 
 ## Getting Started Guide
 

@@ -5,7 +5,7 @@ Before assembling the board, ensure you have all of the required parts.
 * Assembled keyboard PCB
 * Top cover / Plate PCB
 * Laser cut acrylic - 4 pieces
-    * If you are building the barbones version you will have a FR4 bottom plate instead of the acrylic. Skip the sections of the instructions with black acrylic.
+    * If you are building the barebones version you will have a FR4 bottom plate instead of the acrylic. Skip the sections of the instructions with black acrylic.
 * 2 * Rotary encoders (20mm recommended)
 * 2 * Rotary encoder knobs
 * 4 * 4mm M2 cap head bolts
