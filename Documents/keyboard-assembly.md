@@ -1,18 +1,26 @@
 # Assembly Instructions
 
+Click the below to jump to the correct instructions:
+
+[Acrylic Case](#acrylic-case)
+
+[Barebones Case]() (TODO)
+
+[Disabling Power LED](#disabling-power-LED)
+
+## Acrylic Case
+
 Before assembling the board, ensure you have all of the required parts.
 
-* Assembled keyboard PCB
 * Top cover / Plate PCB
+* Assembled keyboard PCB
 * Laser cut acrylic - 4 pieces
-    * If you are building the barebones version you will have a FR4 bottom plate instead of the acrylic. Skip the sections of the instructions with black acrylic.
 * 2 * Rotary encoders (20mm recommended)
 * 2 * Rotary encoder knobs
 * 4 * 4mm M2 cap head bolts
 * 4 * 8mm M2 cap head bolts
-    * If you are building the barebones version, you will have 8 * 4mm M2 bolts instead.
 * 4 * 8mm female threaded standoffs
-* 4 * Rubber feet
+* 4 * Rubber feet (optional)
 * 16 * Cherry MX Key Switches (not shown)
 * 16 * 1U Cherry MX Keycaps (not shown)
 
