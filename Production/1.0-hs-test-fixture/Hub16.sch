@@ -1,0 +1,2454 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Hub16"
+Date "2020-09-14"
+Rev "1.0-HS"
+Comp "Josh Johnson"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR017
+U 1 1 5CBFA2B0
+P 4850 900
+F 0 "#PWR017" H 4850 750 50  0001 C CNN
+F 1 "+5V" H 4865 1073 50  0000 C CNN
+F 2 "" H 4850 900 50  0001 C CNN
+F 3 "" H 4850 900 50  0001 C CNN
+	1    4850 900 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CBFB065
+P 7150 925
+F 0 "R2" H 7220 971 50  0000 L CNN
+F 1 "10K" H 7220 880 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7080 925 50  0001 C CNN
+F 3 "~" H 7150 925 50  0001 C CNN
+F 4 "CR0603-JW-103ELFCT-ND  " H 7150 925 50  0001 C CNN "DigiKey"
+F 5 "CR0603-JW-103ELF " H 7150 925 50  0001 C CNN "MPN"
+F 6 "Y  - Same spec" H 7150 925 50  0001 C CNN "Substitue Allowed?"
+F 7 "C144116" H 7150 925 50  0001 C CNN "LCSC"
+F 8 "Bourns" H 7150 925 50  0001 C CNN "Manufacturer"
+F 9 "LCSC: Substitute PN" H 7150 925 50  0001 C CNN "Notes"
+	1    7150 925 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1075 7150 1125
+Wire Wire Line
+	7150 1125 7450 1125
+Wire Wire Line
+	7150 775  7150 725 
+$Comp
+L power:+5V #PWR07
+U 1 1 5CBFB970
+P 7150 725
+F 0 "#PWR07" H 7150 575 50  0001 C CNN
+F 1 "+5V" H 7165 898 50  0000 C CNN
+F 2 "" H 7150 725 50  0001 C CNN
+F 3 "" H 7150 725 50  0001 C CNN
+	1    7150 725 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5CBFE319
+P 2875 3325
+F 0 "C3" V 2725 3325 50  0000 C CNN
+F 1 "15p" V 3025 3325 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2913 3175 50  0001 C CNN
+F 3 "~" H 2875 3325 50  0001 C CNN
+F 4 "1276-1296-2-ND" H 2875 3325 50  0001 C CNN "DigiKey"
+F 5 "CL10C150JB8NNNC" H 2875 3325 50  0001 C CNN "MPN"
+F 6 "Y - NP0 / C0G" H 2875 3325 50  0001 C CNN "Substitue Allowed?"
+F 7 "C1644" H 2875 3325 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 2875 3325 50  0001 C CNN "Manufacturer"
+	1    2875 3325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5CBFEAD2
+P 2875 2925
+F 0 "C2" V 2725 2925 50  0000 C CNN
+F 1 "15p" V 3025 2925 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2913 2775 50  0001 C CNN
+F 3 "~" H 2875 2925 50  0001 C CNN
+F 4 "1276-1296-2-ND" H 2875 2925 50  0001 C CNN "DigiKey"
+F 5 "CL10C150JB8NNNC" H 2875 2925 50  0001 C CNN "MPN"
+F 6 "Y - NP0 / C0G" H 2875 2925 50  0001 C CNN "Substitue Allowed?"
+F 7 "C1644" H 2875 2925 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 2875 2925 50  0001 C CNN "Manufacturer"
+	1    2875 2925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2725 3325 2625 3325
+$Comp
+L power:GND #PWR011
+U 1 1 5CBFF70C
+P 2625 3475
+F 0 "#PWR011" H 2625 3225 50  0001 C CNN
+F 1 "GND" H 2630 3302 50  0000 C CNN
+F 2 "" H 2625 3475 50  0001 C CNN
+F 3 "" H 2625 3475 50  0001 C CNN
+	1    2625 3475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2125 4850 2125
+Wire Wire Line
+	4850 2125 4850 2025
+Wire Wire Line
+	4850 2025 4900 2025
+Wire Wire Line
+	4650 2225 4650 2275
+Wire Wire Line
+	4650 2275 4900 2275
+Wire Wire Line
+	4650 2425 4650 2375
+Wire Wire Line
+	4650 2375 4900 2375
+Wire Wire Line
+	3025 3325 3275 3325
+Wire Wire Line
+	3025 2925 3275 2925
+Connection ~ 3275 2925
+Wire Wire Line
+	3275 2925 3725 2925
+Connection ~ 3275 3325
+Wire Wire Line
+	3275 3325 3725 3325
+Wire Wire Line
+	2725 2925 2625 2925
+$Comp
+L Device:C C4
+U 1 1 5CCA7150
+P 4050 3575
+F 0 "C4" H 4165 3621 50  0000 L CNN
+F 1 "1u" H 4165 3530 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4088 3425 50  0001 C CNN
+F 3 "~" H 4050 3575 50  0001 C CNN
+F 4 "1276-1866-1-ND " H 4050 3575 50  0001 C CNN "DigiKey"
+F 5 "CL10A105MP8NNNC " H 4050 3575 50  0001 C CNN "MPN"
+F 6 "Y - X5R or better" H 4050 3575 50  0001 C CNN "Substitue Allowed?"
+F 7 "C29936" H 4050 3575 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 4050 3575 50  0001 C CNN "Manufacturer"
+	1    4050 3575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3325 4050 3325
+Wire Wire Line
+	4050 3325 4050 3425
+Wire Wire Line
+	4050 3725 4050 3825
+$Comp
+L power:GND #PWR013
+U 1 1 5CCACF4D
+P 4050 3825
+F 0 "#PWR013" H 4050 3575 50  0001 C CNN
+F 1 "GND" H 4055 3652 50  0000 C CNN
+F 2 "" H 4050 3825 50  0001 C CNN
+F 3 "" H 4050 3825 50  0001 C CNN
+	1    4050 3825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3725 3175 3725 3325
+Wire Wire Line
+	7050 1125 7150 1125
+Connection ~ 7150 1125
+Wire Wire Line
+	6650 1125 6600 1125
+Wire Wire Line
+	6600 1125 6600 1175
+$Comp
+L power:GND #PWR01
+U 1 1 5CCC8544
+P 6600 1175
+F 0 "#PWR01" H 6600 925 50  0001 C CNN
+F 1 "GND" H 6605 1002 50  0000 C CNN
+F 2 "" H 6600 1175 50  0001 C CNN
+F 3 "" H 6600 1175 50  0001 C CNN
+	1    6600 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5CCD411E
+P 4650 1150
+F 0 "C6" V 4600 1250 50  0000 C CNN
+F 1 "100n" V 4700 1300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4688 1000 50  0001 C CNN
+F 3 "~" H 4650 1150 50  0001 C CNN
+F 4 "1276-1000-1-ND" H 4650 1150 50  0001 C CNN "DigiKey"
+F 5 "CL10B104KB8NNNC" H 4650 1150 50  0001 C CNN "MPN"
+F 6 "Y - X5R or better" H 4650 1150 50  0001 C CNN "Substitue Allowed?"
+F 7 "C1591" H 4650 1150 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 4650 1150 50  0001 C CNN "Manufacturer"
+	1    4650 1150
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5CCD4937
+P 4650 950
+F 0 "C5" V 4700 800 50  0000 L CNN
+F 1 "1u" V 4600 800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4688 800 50  0001 C CNN
+F 3 "~" H 4650 950 50  0001 C CNN
+F 4 "1276-1866-1-ND " H 4650 950 50  0001 C CNN "DigiKey"
+F 5 "CL10A105MP8NNNC " H 4650 950 50  0001 C CNN "MPN"
+F 6 "Y - X5R or better" H 4650 950 50  0001 C CNN "Substitue Allowed?"
+F 7 "C29936" H 4650 950 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 4650 950 50  0001 C CNN "Manufacturer"
+	1    4650 950 
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4800 950  4850 950 
+Connection ~ 4850 950 
+Wire Wire Line
+	4850 950  4850 900 
+Wire Wire Line
+	4800 1150 4850 1150
+Wire Wire Line
+	4850 1150 4850 950 
+Wire Wire Line
+	4500 950  4350 950 
+Wire Wire Line
+	4350 1150 4500 1150
+Wire Wire Line
+	4350 950  4350 1150
+Connection ~ 4350 1150
+Wire Wire Line
+	5125 5350 5125 5300
+Wire Wire Line
+	5125 6250 5125 6300
+$Comp
+L power:GND #PWR03
+U 1 1 5CE26CC2
+P 5125 6300
+F 0 "#PWR03" H 5125 6050 50  0001 C CNN
+F 1 "GND" H 5130 6127 50  0000 C CNN
+F 2 "" H 5125 6300 50  0001 C CNN
+F 3 "" H 5125 6300 50  0001 C CNN
+	1    5125 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5625 5650 5875 5650
+Wire Wire Line
+	5625 5750 5875 5750
+Wire Wire Line
+	5625 5850 5875 5850
+Wire Wire Line
+	5625 5950 5875 5950
+Text Label 5875 5950 2    50   ~ 0
+T_nRST
+Text Label 5875 5850 2    50   ~ 0
+T_SCK
+Text Label 5875 5750 2    50   ~ 0
+T_MOSI
+Text Label 5875 5650 2    50   ~ 0
+T_MISO
+Wire Wire Line
+	6600 1775 7000 1775
+Wire Wire Line
+	6600 1675 7000 1675
+Wire Wire Line
+	6600 1575 7000 1575
+Text Label 7450 1125 2    50   ~ 0
+nRST
+Text Label 7000 1575 2    50   ~ 0
+SCK
+Text Label 7000 1675 2    50   ~ 0
+MOSI
+Text Label 7000 1775 2    50   ~ 0
+MISO
+Wire Wire Line
+	4900 4075 4850 4075
+Wire Wire Line
+	4900 3975 4850 3975
+Connection ~ 4850 3975
+Wire Wire Line
+	4850 3975 4850 4075
+Wire Wire Line
+	4900 3875 4850 3875
+Connection ~ 4850 3875
+Wire Wire Line
+	4850 3875 4850 3975
+Wire Wire Line
+	4900 3775 4850 3775
+Connection ~ 4850 3775
+Wire Wire Line
+	4850 3775 4850 3875
+Wire Wire Line
+	4850 3675 4900 3675
+Wire Wire Line
+	4850 3675 4850 3775
+$Comp
+L power:GND #PWR018
+U 1 1 5CC6A8D1
+P 4850 4200
+F 0 "#PWR018" H 4850 3950 50  0001 C CNN
+F 1 "GND" H 4855 4027 50  0000 C CNN
+F 2 "" H 4850 4200 50  0001 C CNN
+F 3 "" H 4850 4200 50  0001 C CNN
+	1    4850 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1875 4850 1875
+Wire Wire Line
+	4850 1875 4850 1775
+Wire Wire Line
+	4850 1475 4900 1475
+Connection ~ 4850 1475
+Wire Wire Line
+	4900 1575 4850 1575
+Connection ~ 4850 1575
+Wire Wire Line
+	4850 1575 4850 1475
+Wire Wire Line
+	4900 1675 4850 1675
+Connection ~ 4850 1675
+Wire Wire Line
+	4850 1675 4850 1575
+Wire Wire Line
+	4900 1775 4850 1775
+Connection ~ 4850 1775
+Wire Wire Line
+	4850 1775 4850 1675
+Wire Wire Line
+	2625 2925 2625 3125
+Wire Wire Line
+	2625 3325 2625 3475
+Wire Wire Line
+	3725 2925 3725 3075
+Text Label 4700 2575 0    50   ~ 0
+nRST
+Wire Wire Line
+	4700 2575 4900 2575
+$Comp
+L Device:C C7
+U 1 1 5CD39D82
+P 4650 1350
+F 0 "C7" V 4600 1450 50  0000 C CNN
+F 1 "100n" V 4700 1500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4688 1200 50  0001 C CNN
+F 3 "~" H 4650 1350 50  0001 C CNN
+F 4 "1276-1000-1-ND" H 4650 1350 50  0001 C CNN "DigiKey"
+F 5 "CL10B104KB8NNNC" H 4650 1350 50  0001 C CNN "MPN"
+F 6 "Y - X5R or better" H 4650 1350 50  0001 C CNN "Substitue Allowed?"
+F 7 "C1591" H 4650 1350 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 4650 1350 50  0001 C CNN "Manufacturer"
+	1    4650 1350
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4350 1350 4500 1350
+$Comp
+L power:GND #PWR014
+U 1 1 5CD39D8C
+P 4350 1475
+F 0 "#PWR014" H 4350 1225 50  0001 C CNN
+F 1 "GND" H 4350 1325 50  0000 C CNN
+F 2 "" H 4350 1475 50  0001 C CNN
+F 3 "" H 4350 1475 50  0001 C CNN
+	1    4350 1475
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1150 4850 1350
+Wire Wire Line
+	4850 1350 4800 1350
+Connection ~ 4850 1150
+Connection ~ 4850 1350
+Text Notes 8650 725  0    100  ~ 0
+Switch Array
+Text Notes 5150 825  0    100  ~ 0
+Microcontroller
+Connection ~ 2625 3325
+Wire Wire Line
+	4500 3425 4500 3475
+Wire Wire Line
+	4500 3425 4900 3425
+$Comp
+L Device:R R5
+U 1 1 5D324ECA
+P 4500 3625
+F 0 "R5" H 4570 3671 50  0000 L CNN
+F 1 "10K" H 4570 3580 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4430 3625 50  0001 C CNN
+F 3 "~" H 4500 3625 50  0001 C CNN
+F 4 "CR0603-JW-103ELFCT-ND  " H 4500 3625 50  0001 C CNN "DigiKey"
+F 5 "CR0603-JW-103ELF " H 4500 3625 50  0001 C CNN "MPN"
+F 6 "Y  - Same spec" H 4500 3625 50  0001 C CNN "Substitue Allowed?"
+F 7 "C144116" H 4500 3625 50  0001 C CNN "LCSC"
+F 8 "Bourns" H 4500 3625 50  0001 C CNN "Manufacturer"
+F 9 "LCSC: Substitute PN" H 4500 3625 50  0001 C CNN "Notes"
+	1    4500 3625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3775 4500 3825
+$Comp
+L power:GND #PWR015
+U 1 1 5D336893
+P 4500 3825
+F 0 "#PWR015" H 4500 3575 50  0001 C CNN
+F 1 "GND" H 4505 3652 50  0000 C CNN
+F 2 "" H 4500 3825 50  0001 C CNN
+F 3 "" H 4500 3825 50  0001 C CNN
+	1    4500 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K1
+U 1 1 5CC00E9D
+P 7950 1325
+F 0 "K1" H 7950 1500 60  0000 C CNN
+F 1 "Kailh Hotswap Socket" H 7950 1225 60  0001 C CNN
+F 2 "josh-keyboard:POGO_P100_Kailh_Hotswap_1U" H 7950 1325 60  0001 C CNN
+F 3 "" H 7950 1325 60  0000 C CNN
+F 4 "Not available from Digikey / LCSC" H 7950 1325 50  0001 C CNN "Notes"
+F 5 "" H 7950 1325 50  0001 C CNN "DNP"
+F 6 "CPG151101S11" H 7950 1325 50  0001 C CNN "MPN"
+F 7 "Kailh Switch" H 7950 1325 50  0001 C CNN "Manufacturer"
+F 8 "N" H 7950 1325 50  0001 C CNN "Substitue Allowed?"
+	1    7950 1325
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K2
+U 1 1 5CC017E3
+P 7950 2225
+F 0 "K2" H 7950 2400 60  0000 C CNN
+F 1 "Kailh Hotswap Socket" H 7950 2125 60  0001 C CNN
+F 2 "josh-keyboard:POGO_P100_Kailh_Hotswap_1U" H 7950 2225 60  0001 C CNN
+F 3 "" H 7950 2225 60  0000 C CNN
+F 4 "Not available from Digikey / LCSC" H 7950 2225 50  0001 C CNN "Notes"
+F 5 "" H 7950 2225 50  0001 C CNN "DNP"
+F 6 "CPG151101S11" H 7950 2225 50  0001 C CNN "MPN"
+F 7 "Kailh Switch" H 7950 2225 50  0001 C CNN "Manufacturer"
+F 8 "N" H 7950 2225 50  0001 C CNN "Substitue Allowed?"
+	1    7950 2225
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K3
+U 1 1 5CC01C35
+P 7950 3125
+F 0 "K3" H 7950 3300 60  0000 C CNN
+F 1 "Kailh Hotswap Socket" H 7950 3025 60  0001 C CNN
+F 2 "josh-keyboard:POGO_P100_Kailh_Hotswap_1U" H 7950 3125 60  0001 C CNN
+F 3 "" H 7950 3125 60  0000 C CNN
+F 4 "Not available from Digikey / LCSC" H 7950 3125 50  0001 C CNN "Notes"
+F 5 "" H 7950 3125 50  0001 C CNN "DNP"
+F 6 "CPG151101S11" H 7950 3125 50  0001 C CNN "MPN"
+F 7 "Kailh Switch" H 7950 3125 50  0001 C CNN "Manufacturer"
+F 8 "N" H 7950 3125 50  0001 C CNN "Substitue Allowed?"
+	1    7950 3125
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K4
+U 1 1 5CC02078
+P 7950 4100
+F 0 "K4" H 7950 4275 60  0000 C CNN
+F 1 "Kailh Hotswap Socket" H 7950 4000 60  0001 C CNN
+F 2 "josh-keyboard:POGO_P100_Kailh_Hotswap_1U" H 7950 4100 60  0001 C CNN
+F 3 "" H 7950 4100 60  0000 C CNN
+F 4 "Not available from Digikey / LCSC" H 7950 4100 50  0001 C CNN "Notes"
+F 5 "" H 7950 4100 50  0001 C CNN "DNP"
+F 6 "CPG151101S11" H 7950 4100 50  0001 C CNN "MPN"
+F 7 "Kailh Switch" H 7950 4100 50  0001 C CNN "Manufacturer"
+F 8 "N" H 7950 4100 50  0001 C CNN "Substitue Allowed?"
+	1    7950 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K6
+U 1 1 5CC292A9
+P 8850 1325
+F 0 "K6" H 8850 1500 60  0000 C CNN
+F 1 "Kailh Hotswap Socket" H 8850 1225 60  0001 C CNN
+F 2 "josh-keyboard:POGO_P100_Kailh_Hotswap_1U" H 8850 1325 60  0001 C CNN
+F 3 "" H 8850 1325 60  0000 C CNN
+F 4 "Not available from Digikey / LCSC" H 8850 1325 50  0001 C CNN "Notes"
+F 5 "" H 8850 1325 50  0001 C CNN "DNP"
+F 6 "CPG151101S11" H 8850 1325 50  0001 C CNN "MPN"
+F 7 "Kailh Switch" H 8850 1325 50  0001 C CNN "Manufacturer"
+F 8 "N" H 8850 1325 50  0001 C CNN "Substitue Allowed?"
+	1    8850 1325
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K7
+U 1 1 5CC292AF
+P 8850 2225
+F 0 "K7" H 8850 2400 60  0000 C CNN
+F 1 "Kailh Hotswap Socket" H 8850 2125 60  0001 C CNN
+F 2 "josh-keyboard:POGO_P100_Kailh_Hotswap_1U" H 8850 2225 60  0001 C CNN
+F 3 "" H 8850 2225 60  0000 C CNN
+F 4 "Not available from Digikey / LCSC" H 8850 2225 50  0001 C CNN "Notes"
+F 5 "" H 8850 2225 50  0001 C CNN "DNP"
+F 6 "CPG151101S11" H 8850 2225 50  0001 C CNN "MPN"
+F 7 "Kailh Switch" H 8850 2225 50  0001 C CNN "Manufacturer"
+F 8 "N" H 8850 2225 50  0001 C CNN "Substitue Allowed?"
+	1    8850 2225
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K8
+U 1 1 5CC292B5
+P 8850 3125
+F 0 "K8" H 8850 3300 60  0000 C CNN
+F 1 "Kailh Hotswap Socket" H 8850 3025 60  0001 C CNN
+F 2 "josh-keyboard:POGO_P100_Kailh_Hotswap_1U" H 8850 3125 60  0001 C CNN
+F 3 "" H 8850 3125 60  0000 C CNN
+F 4 "Not available from Digikey / LCSC" H 8850 3125 50  0001 C CNN "Notes"
+F 5 "" H 8850 3125 50  0001 C CNN "DNP"
+F 6 "CPG151101S11" H 8850 3125 50  0001 C CNN "MPN"
+F 7 "Kailh Switch" H 8850 3125 50  0001 C CNN "Manufacturer"
+F 8 "N" H 8850 3125 50  0001 C CNN "Substitue Allowed?"
+	1    8850 3125
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K9
+U 1 1 5CC292BB
+P 8850 4100
+F 0 "K9" H 8850 4275 60  0000 C CNN
+F 1 "Kailh Hotswap Socket" H 8850 4000 60  0001 C CNN
+F 2 "josh-keyboard:POGO_P100_Kailh_Hotswap_1U" H 8850 4100 60  0001 C CNN
+F 3 "" H 8850 4100 60  0000 C CNN
+F 4 "Not available from Digikey / LCSC" H 8850 4100 50  0001 C CNN "Notes"
+F 5 "" H 8850 4100 50  0001 C CNN "DNP"
+F 6 "CPG151101S11" H 8850 4100 50  0001 C CNN "MPN"
+F 7 "Kailh Switch" H 8850 4100 50  0001 C CNN "Manufacturer"
+F 8 "N" H 8850 4100 50  0001 C CNN "Substitue Allowed?"
+	1    8850 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K16
+U 1 1 5CC4D1B0
+P 10650 1325
+F 0 "K16" H 10650 1500 60  0000 C CNN
+F 1 "Kailh Hotswap Socket" H 10650 1225 60  0001 C CNN
+F 2 "josh-keyboard:POGO_P100_Kailh_Hotswap_1U" H 10650 1325 60  0001 C CNN
+F 3 "" H 10650 1325 60  0000 C CNN
+F 4 "Not available from Digikey / LCSC" H 10650 1325 50  0001 C CNN "Notes"
+F 5 "" H 10650 1325 50  0001 C CNN "DNP"
+F 6 "CPG151101S11" H 10650 1325 50  0001 C CNN "MPN"
+F 7 "Kailh Switch" H 10650 1325 50  0001 C CNN "Manufacturer"
+F 8 "N" H 10650 1325 50  0001 C CNN "Substitue Allowed?"
+	1    10650 1325
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K17
+U 1 1 5CC4D1B6
+P 10650 2225
+F 0 "K17" H 10650 2400 60  0000 C CNN
+F 1 "Kailh Hotswap Socket" H 10650 2125 60  0001 C CNN
+F 2 "josh-keyboard:POGO_P100_Kailh_Hotswap_1U" H 10650 2225 60  0001 C CNN
+F 3 "" H 10650 2225 60  0000 C CNN
+F 4 "Not available from Digikey / LCSC" H 10650 2225 50  0001 C CNN "Notes"
+F 5 "" H 10650 2225 50  0001 C CNN "DNP"
+F 6 "CPG151101S11" H 10650 2225 50  0001 C CNN "MPN"
+F 7 "Kailh Switch" H 10650 2225 50  0001 C CNN "Manufacturer"
+F 8 "N" H 10650 2225 50  0001 C CNN "Substitue Allowed?"
+	1    10650 2225
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K18
+U 1 1 5CC4D1BC
+P 10650 3125
+F 0 "K18" H 10650 3300 60  0000 C CNN
+F 1 "Kailh Hotswap Socket" H 10650 3025 60  0001 C CNN
+F 2 "josh-keyboard:POGO_P100_Kailh_Hotswap_1U" H 10650 3125 60  0001 C CNN
+F 3 "" H 10650 3125 60  0000 C CNN
+F 4 "Not available from Digikey / LCSC" H 10650 3125 50  0001 C CNN "Notes"
+F 5 "" H 10650 3125 50  0001 C CNN "DNP"
+F 6 "CPG151101S11" H 10650 3125 50  0001 C CNN "MPN"
+F 7 "Kailh Switch" H 10650 3125 50  0001 C CNN "Manufacturer"
+F 8 "N" H 10650 3125 50  0001 C CNN "Substitue Allowed?"
+	1    10650 3125
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K19
+U 1 1 5CC4D1C2
+P 10650 4100
+F 0 "K19" H 10650 4275 60  0000 C CNN
+F 1 "Kailh Hotswap Socket" H 10650 4000 60  0001 C CNN
+F 2 "josh-keyboard:POGO_P100_Kailh_Hotswap_1U" H 10650 4100 60  0001 C CNN
+F 3 "" H 10650 4100 60  0000 C CNN
+F 4 "Not available from Digikey / LCSC" H 10650 4100 50  0001 C CNN "Notes"
+F 5 "" H 10650 4100 50  0001 C CNN "DNP"
+F 6 "CPG151101S11" H 10650 4100 50  0001 C CNN "MPN"
+F 7 "Kailh Switch" H 10650 4100 50  0001 C CNN "Manufacturer"
+F 8 "N" H 10650 4100 50  0001 C CNN "Substitue Allowed?"
+	1    10650 4100
+	-1   0    0    -1  
+$EndComp
+Text Label 10925 5400 2    50   ~ 0
+ENC_1_SW
+Wire Wire Line
+	9950 5200 10125 5200
+Wire Wire Line
+	10125 5200 10125 5075
+$Comp
+L Device:Rotary_Encoder_Switch SW3
+U 1 1 5CE0D2AF
+P 9650 6025
+F 0 "SW3" H 9650 6392 50  0000 C CNN
+F 1 "EC11 Encoder" H 9650 6301 50  0000 C CNN
+F 2 "josh-buttons-switches:POGO_P100_RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_CircularMountingHoles" H 9500 6185 50  0001 C CNN
+F 3 "~" H 9650 6285 50  0001 C CNN
+F 4 "" H 9650 6025 50  0001 C CNN "Notes"
+F 5 "PEC11L-4120F-S0020-ND" H 9650 6025 50  0001 C CNN "DigiKey"
+F 6 "" H 9650 6025 50  0001 C CNN "LCSC"
+F 7 "PEC11L-4120F-S0020" H 9650 6025 50  0001 C CNN "MPN"
+F 8 "Y - 20 PPR" H 9650 6025 50  0001 C CNN "Substitue Allowed?"
+F 9 "DNP" H 9650 6025 50  0001 C CNN "DNP"
+F 10 "Bourns" H 9650 6025 50  0001 C CNN "Manufacturer"
+	1    9650 6025
+	1    0    0    -1  
+$EndComp
+Text Label 10925 6125 2    50   ~ 0
+ENC_2_SW
+Wire Wire Line
+	9950 5925 10125 5925
+Wire Wire Line
+	10125 5925 10125 5800
+$Comp
+L Device:Crystal_GND24_Small Y1
+U 1 1 5D3B2BCA
+P 3275 3125
+F 0 "Y1" V 3175 3150 50  0000 L CNN
+F 1 "16MHz" V 3375 3125 50  0000 L CNN
+F 2 "josh-oscillators:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 3275 3125 50  0001 C CNN
+F 3 "~" H 3275 3125 50  0001 C CNN
+F 4 "C164044" H 3275 3125 50  0001 C CNN "LCSC"
+F 5 "ABM8-16.000MHZ-10-1-U-T" H 3275 3125 50  0001 C CNN "MPN"
+F 6 "535-9675-6-ND" H 3275 3125 50  0001 C CNN "DigiKey"
+F 7 "Y - 16 MHz, 10/12pF" H 3275 3125 50  0001 C CNN "Substitue Allowed?"
+F 8 "Abracon LLC" H 3275 3125 50  0001 C CNN "Manufacturer"
+F 9 "LCSC: Substitute PN" H 3275 3125 50  0001 C CNN "Notes"
+	1    3275 3125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3275 2925 3275 3025
+Wire Wire Line
+	3275 3225 3275 3325
+Connection ~ 2625 3125
+Wire Wire Line
+	2625 3125 2625 3325
+$Comp
+L power:GND #PWR023
+U 1 1 5D4386B6
+P 3450 3125
+F 0 "#PWR023" H 3450 2875 50  0001 C CNN
+F 1 "GND" H 3455 2952 50  0000 C CNN
+F 2 "" H 3450 3125 50  0001 C CNN
+F 3 "" H 3450 3125 50  0001 C CNN
+	1    3450 3125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5CCFEB75
+P 1650 3450
+F 0 "D1" V 1689 3333 50  0000 R CNN
+F 1 "LED" V 1598 3333 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 1650 3450 50  0001 C CNN
+F 3 "~" H 1650 3450 50  0001 C CNN
+F 4 "" V 1525 3250 50  0000 C CNN "DNP"
+F 5 "" H 1650 3450 50  0001 C CNN "DigiKey"
+F 6 "OSK40603C1E" H 1650 3450 50  0001 C CNN "MPN"
+F 7 "Y - Any Pink / Purple" H 1650 3450 50  0001 C CNN "Substitue Allowed?"
+F 8 "C268294" H 1650 3450 50  0001 C CNN "LCSC"
+F 9 "OptoSupply" H 1650 3450 50  0001 C CNN "Manufacturer"
+F 10 "" H 1650 3450 50  0001 C CNN "Notes"
+	1    1650 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5CCFF54D
+P 1650 3800
+F 0 "R1" H 1720 3846 50  0000 L CNN
+F 1 "5K1" H 1720 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1580 3800 50  0001 C CNN
+F 3 "~" H 1650 3800 50  0001 C CNN
+F 4 "" H 1800 3675 50  0000 C CNN "DNP"
+F 5 "118-CR0603-JW-512ELFCT-ND " H 1650 3800 50  0001 C CNN "DigiKey"
+F 6 "CR0603-JW-512ELF " H 1650 3800 50  0001 C CNN "MPN"
+F 7 "Y  - Same spec" H 1650 3800 50  0001 C CNN "Substitue Allowed?"
+F 8 "C14677" H 1650 3800 50  0001 C CNN "LCSC"
+F 9 "Bourns" H 1650 3800 50  0001 C CNN "Manufacturer"
+F 10 "LCSC: Substitute PN" H 1650 3800 50  0001 C CNN "Notes"
+	1    1650 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3250 1650 3300
+$Comp
+L power:GND #PWR05
+U 1 1 5CD05EEA
+P 1650 4050
+F 0 "#PWR05" H 1650 3800 50  0001 C CNN
+F 1 "GND" H 1655 3877 50  0000 C CNN
+F 2 "" H 1650 4050 50  0001 C CNN
+F 3 "" H 1650 4050 50  0001 C CNN
+	1    1650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 5CD062ED
+P 1650 3250
+F 0 "#PWR04" H 1650 3100 50  0001 C CNN
+F 1 "+5V" H 1665 3423 50  0000 C CNN
+F 2 "" H 1650 3250 50  0001 C CNN
+F 3 "" H 1650 3250 50  0001 C CNN
+	1    1650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L josh-ic:ATMEGA32U4 U2
+U 1 1 5CBFF289
+P 5950 2525
+F 0 "U2" H 5750 3862 60  0000 C CNN
+F 1 "ATMEGA32U4" H 5750 3756 60  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 5950 2525 60  0001 C CNN
+F 3 "" H 5950 2525 60  0000 C CNN
+F 4 "C45874" H 5950 2525 50  0001 C CNN "LCSC"
+F 5 "ATMEGA32U4-MU" H 5950 2525 50  0001 C CNN "MPN"
+F 6 "ATMEGA32U4-MU-ND" H 5950 2525 50  0001 C CNN "DigiKey"
+F 7 "N" H 5950 2525 50  0001 C CNN "Substitue Allowed?"
+F 8 "Microchip/Atmel" H 5950 2525 50  0001 C CNN "Manufacturer"
+	1    5950 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5E5AA738
+P 4375 2225
+F 0 "R6" V 4325 2075 50  0000 C CNN
+F 1 "22R" V 4375 2225 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4305 2225 50  0001 C CNN
+F 3 "~" H 4375 2225 50  0001 C CNN
+F 4 "CR0603-JW-220ELFCT-ND  " H 4375 2225 50  0001 C CNN "DigiKey"
+F 5 "CR0603-JW-220ELF " H 4375 2225 50  0001 C CNN "MPN"
+F 6 "Y - Same spec" H 4375 2225 50  0001 C CNN "Substitue Allowed?"
+F 7 "C203424" H 4375 2225 50  0001 C CNN "LCSC"
+F 8 "Bourns" H 4375 2225 50  0001 C CNN "Manufacturer"
+F 9 "LCSC: Substitute PN" H 4375 2225 50  0001 C CNN "Notes"
+	1    4375 2225
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5E5AA73E
+P 4375 2425
+F 0 "R7" V 4325 2275 50  0000 C CNN
+F 1 "22R" V 4375 2425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4305 2425 50  0001 C CNN
+F 3 "~" H 4375 2425 50  0001 C CNN
+F 4 "CR0603-JW-220ELFCT-ND  " H 4375 2425 50  0001 C CNN "DigiKey"
+F 5 "CR0603-JW-220ELF " H 4375 2425 50  0001 C CNN "MPN"
+F 6 "Y - Same spec" H 4375 2425 50  0001 C CNN "Substitue Allowed?"
+F 7 "C203424" H 4375 2425 50  0001 C CNN "LCSC"
+F 8 "Bourns" H 4375 2425 50  0001 C CNN "Manufacturer"
+F 9 "LCSC: Substitute PN" H 4375 2425 50  0001 C CNN "Notes"
+	1    4375 2425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4525 2425 4650 2425
+Wire Wire Line
+	4525 2225 4650 2225
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 5EB49DDF
+P 2700 1225
+AR Path="/5EB49DDF" Ref="F1"  Part="1" 
+AR Path="/5E5406D9/5EB49DDF" Ref="F?"  Part="1" 
+F 0 "F1" V 2600 1225 50  0000 C CNN
+F 1 "500mA" V 2800 1225 50  0000 C CNN
+F 2 "josh-passives-smt:Fuse_0805_2012Metric" H 2750 1025 50  0001 L CNN
+F 3 "~" H 2700 1225 50  0001 C CNN
+F 4 "" H 2700 1225 50  0001 C CNN "LCSC"
+F 5 "" H 2700 1225 50  0001 C CNN "MPN"
+F 6 "" H 2700 1225 50  0001 C CNN "DigiKey"
+F 7 "" H 2700 1225 50  0001 C CNN "Notes"
+F 8 "" H 2700 1225 50  0001 C CNN "Substitue Allowed?"
+F 9 "" H 2700 1225 50  0001 C CNN "Manufacturer"
+	1    2700 1225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2925 1225 2925 1175
+$Comp
+L power:+5V #PWR0111
+U 1 1 5EB49DE7
+P 2925 1175
+AR Path="/5EB49DE7" Ref="#PWR0111"  Part="1" 
+AR Path="/5E5406D9/5EB49DE7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0111" H 2925 1025 50  0001 C CNN
+F 1 "+5V" H 2925 1325 50  0000 C CNN
+F 2 "" H 2925 1175 50  0001 C CNN
+F 3 "" H 2925 1175 50  0001 C CNN
+	1    2925 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0112
+U 1 1 5EB49DED
+P 2350 825
+AR Path="/5EB49DED" Ref="#PWR0112"  Part="1" 
+AR Path="/5E5406D9/5EB49DED" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0112" H 2350 675 50  0001 C CNN
+F 1 "VBUS" H 2365 998 50  0000 C CNN
+F 2 "" H 2350 825 50  0001 C CNN
+F 3 "" H 2350 825 50  0001 C CNN
+	1    2350 825 
+	1    0    0    -1  
+$EndComp
+Connection ~ 2350 1225
+Wire Wire Line
+	2350 1225 2500 1225
+$Comp
+L Device:C C1
+U 1 1 5EB49DF6
+P 2150 925
+AR Path="/5EB49DF6" Ref="C1"  Part="1" 
+AR Path="/5E5406D9/5EB49DF6" Ref="C?"  Part="1" 
+F 0 "C1" V 1898 925 50  0000 C CNN
+F 1 "10u" V 1989 925 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2188 775 50  0001 C CNN
+F 3 "~" H 2150 925 50  0001 C CNN
+F 4 "1276-1871-1-ND" H 2150 925 50  0001 C CNN "DigiKey"
+F 5 "CL10A106MP8NNNC" H 2150 925 50  0001 C CNN "MPN"
+F 6 "Y - X5R or better" H 2150 925 50  0001 C CNN "Substitue Allowed?"
+F 7 "C85713" H 2150 925 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 2150 925 50  0001 C CNN "Manufacturer"
+	1    2150 925 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 925  2350 925 
+Connection ~ 2350 925 
+Wire Wire Line
+	2350 925  2350 1225
+Wire Wire Line
+	2000 925  1950 925 
+Wire Wire Line
+	1950 925  1950 975 
+$Comp
+L power:GND #PWR0113
+U 1 1 5EB49E01
+P 1950 975
+AR Path="/5EB49E01" Ref="#PWR0113"  Part="1" 
+AR Path="/5E5406D9/5EB49E01" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0113" H 1950 725 50  0001 C CNN
+F 1 "GND" H 1955 802 50  0000 C CNN
+F 2 "" H 1950 975 50  0001 C CNN
+F 3 "" H 1950 975 50  0001 C CNN
+	1    1950 975 
+	1    0    0    -1  
+$EndComp
+Connection ~ 2925 1225
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J?
+U 1 1 5EB49E0E
+P 1175 1825
+AR Path="/5E5406D9/5EB49E0E" Ref="J?"  Part="1" 
+AR Path="/5EB49E0E" Ref="J1"  Part="1" 
+F 0 "J1" H 1282 2692 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1282 2601 50  0000 C CNN
+F 2 "josh-connectors:USB_C_U262-161N-4BVC11" H 1325 1825 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1325 1825 50  0001 C CNN
+F 4 "C319148" H 1175 1825 50  0001 C CNN "LCSC"
+F 5 "U262-161N-4BVC11" H 1175 1825 50  0001 C CNN "MPN"
+F 6 "Cannot source from DigiKey" H 1175 1825 50  0001 C CNN "Notes"
+F 7 "Y - Footprint / pinout compatiable" H 1175 1825 50  0001 C CNN "Substitue Allowed?"
+F 8 "XKB Enterprise" H 1175 1825 50  0001 C CNN "Manufacturer"
+	1    1175 1825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	875  2725 875  2750
+Wire Wire Line
+	875  2750 1025 2750
+Wire Wire Line
+	1175 2750 1175 2725
+$Comp
+L power:GND #PWR?
+U 1 1 5EB49E17
+P 1025 2800
+AR Path="/5E5406D9/5EB49E17" Ref="#PWR?"  Part="1" 
+AR Path="/5EB49E17" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 1025 2550 50  0001 C CNN
+F 1 "GND" H 1030 2627 50  0000 C CNN
+F 2 "" H 1025 2800 50  0001 C CNN
+F 3 "" H 1025 2800 50  0001 C CNN
+	1    1025 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1025 2800 1025 2750
+Connection ~ 1025 2750
+Wire Wire Line
+	1025 2750 1175 2750
+NoConn ~ 1775 2425
+NoConn ~ 1775 2325
+Wire Wire Line
+	1775 2025 1825 2025
+Wire Wire Line
+	1825 2025 1825 1975
+Wire Wire Line
+	1825 1925 1775 1925
+Wire Wire Line
+	1775 1825 1825 1825
+Wire Wire Line
+	1825 1825 1825 1775
+Wire Wire Line
+	1825 1725 1775 1725
+$Comp
+L Device:R R?
+U 1 1 5EB49E28
+P 2100 1425
+AR Path="/5E5406D9/5EB49E28" Ref="R?"  Part="1" 
+AR Path="/5EB49E28" Ref="R3"  Part="1" 
+F 0 "R3" V 2025 1425 50  0000 C CNN
+F 1 "5K1" V 2100 1425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2030 1425 50  0001 C CNN
+F 3 "~" H 2100 1425 50  0001 C CNN
+F 4 "118-CR0603-JW-512ELFCT-ND " H 2100 1425 50  0001 C CNN "DigiKey"
+F 5 "CR0603-JW-512ELF " H 2100 1425 50  0001 C CNN "MPN"
+F 6 "Y  - Same spec" H 2100 1425 50  0001 C CNN "Substitue Allowed?"
+F 7 "C14677" H 2100 1425 50  0001 C CNN "LCSC"
+F 8 "Bourns" H 2100 1425 50  0001 C CNN "Manufacturer"
+F 9 "LCSC: Substitute PN" H 2100 1425 50  0001 C CNN "Notes"
+	1    2100 1425
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EB49E2E
+P 2100 1525
+AR Path="/5E5406D9/5EB49E2E" Ref="R?"  Part="1" 
+AR Path="/5EB49E2E" Ref="R4"  Part="1" 
+F 0 "R4" V 2175 1525 50  0000 C CNN
+F 1 "5K1" V 2100 1525 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2030 1525 50  0001 C CNN
+F 3 "~" H 2100 1525 50  0001 C CNN
+F 4 "118-CR0603-JW-512ELFCT-ND " H 2100 1525 50  0001 C CNN "DigiKey"
+F 5 "CR0603-JW-512ELF " H 2100 1525 50  0001 C CNN "MPN"
+F 6 "Y  - Same spec" H 2100 1525 50  0001 C CNN "Substitue Allowed?"
+F 7 "C14677" H 2100 1525 50  0001 C CNN "LCSC"
+F 8 "Bourns" H 2100 1525 50  0001 C CNN "Manufacturer"
+F 9 "LCSC: Substitute PN" H 2100 1525 50  0001 C CNN "Notes"
+	1    2100 1525
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1775 1525 1950 1525
+Wire Wire Line
+	1775 1425 1950 1425
+$Comp
+L power:GND #PWR?
+U 1 1 5EB49E36
+P 2425 1500
+AR Path="/5E5406D9/5EB49E36" Ref="#PWR?"  Part="1" 
+AR Path="/5EB49E36" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 2425 1250 50  0001 C CNN
+F 1 "GND" H 2525 1400 50  0000 C CNN
+F 2 "" H 2425 1500 50  0001 C CNN
+F 3 "" H 2425 1500 50  0001 C CNN
+	1    2425 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1525 2325 1525
+Wire Wire Line
+	2325 1525 2325 1475
+Wire Wire Line
+	2325 1475 2425 1475
+Wire Wire Line
+	2425 1475 2425 1500
+Wire Wire Line
+	2250 1425 2325 1425
+Connection ~ 2325 1475
+Wire Wire Line
+	2325 1425 2325 1475
+Text Notes 725  850  0    100  ~ 0
+Upstream USB
+Wire Wire Line
+	1775 1225 2350 1225
+Connection ~ 1825 1775
+Wire Wire Line
+	1825 1775 1825 1725
+Connection ~ 1825 1975
+Wire Wire Line
+	1825 1975 1825 1925
+Wire Wire Line
+	3100 1225 3100 1200
+Wire Wire Line
+	2925 1225 3100 1225
+Text Label 2500 1775 2    50   ~ 0
+USB_UP_D-
+Text Label 2500 1975 2    50   ~ 0
+USB_UP_D+
+Wire Wire Line
+	3725 3175 4300 3175
+Wire Wire Line
+	4300 3175 4300 2975
+Wire Wire Line
+	4300 2975 4900 2975
+Wire Wire Line
+	4900 2875 4175 2875
+Wire Wire Line
+	4175 2875 4175 3075
+Wire Wire Line
+	4175 3075 3725 3075
+Wire Wire Line
+	3875 2425 4225 2425
+Wire Wire Line
+	4225 2225 4000 2225
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F1408E2
+P 2500 1200
+AR Path="/5F1408E2" Ref="#FLG0102"  Part="1" 
+AR Path="/5E5406D9/5F1408E2" Ref="#FLG?"  Part="1" 
+F 0 "#FLG0102" H 2500 1275 50  0001 C CNN
+F 1 "PWR_FLAG" V 2500 1328 50  0000 L CNN
+F 2 "" H 2500 1200 50  0001 C CNN
+F 3 "~" H 2500 1200 50  0001 C CNN
+	1    2500 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5EB49E07
+P 3100 1200
+AR Path="/5EB49E07" Ref="#FLG0101"  Part="1" 
+AR Path="/5E5406D9/5EB49E07" Ref="#FLG?"  Part="1" 
+F 0 "#FLG0101" H 3100 1275 50  0001 C CNN
+F 1 "PWR_FLAG" V 3100 1328 50  0000 L CNN
+F 2 "" H 3100 1200 50  0001 C CNN
+F 3 "~" H 3100 1200 50  0001 C CNN
+	1    3100 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1200 2500 1225
+Connection ~ 2500 1225
+Wire Wire Line
+	2500 1225 2600 1225
+Wire Wire Line
+	2350 825  2350 925 
+Wire Wire Line
+	1650 3650 1650 3600
+Wire Wire Line
+	3375 3125 3450 3125
+Wire Wire Line
+	2625 3125 3175 3125
+$Comp
+L Connector:AVR-ISP-6 J2
+U 1 1 5CE1B6F6
+P 5225 5850
+F 0 "J2" H 5225 6375 50  0000 R CNN
+F 1 "AVR-ISP-6" H 5575 6300 50  0000 R CNN
+F 2 "josh-connectors:POGO_P100_AVR_PROG_2.54_THT" V 4975 5900 50  0001 C CNN
+F 3 " ~" H 3950 5300 50  0001 C CNN
+F 4 "DNP" H 5225 5850 50  0000 C CNN "DNP"
+	1    5225 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K14
+U 1 1 5CC3B34A
+P 9750 4100
+F 0 "K14" H 9750 4275 60  0000 C CNN
+F 1 "Kailh Hotswap Socket" H 9750 4000 60  0001 C CNN
+F 2 "josh-keyboard:POGO_P100_Kailh_Hotswap_1U" H 9750 4100 60  0001 C CNN
+F 3 "" H 9750 4100 60  0000 C CNN
+F 4 "Not available from Digikey / LCSC" H 9750 4100 50  0001 C CNN "Notes"
+F 5 "" H 9750 4100 50  0001 C CNN "DNP"
+F 6 "CPG151101S11" H 9750 4100 50  0001 C CNN "MPN"
+F 7 "Kailh Switch" H 9750 4100 50  0001 C CNN "Manufacturer"
+F 8 "N" H 9750 4100 50  0001 C CNN "Substitue Allowed?"
+	1    9750 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K13
+U 1 1 5CC3B344
+P 9750 3125
+F 0 "K13" H 9750 3300 60  0000 C CNN
+F 1 "Kailh Hotswap Socket" H 9750 3025 60  0001 C CNN
+F 2 "josh-keyboard:POGO_P100_Kailh_Hotswap_1U" H 9750 3125 60  0001 C CNN
+F 3 "" H 9750 3125 60  0000 C CNN
+F 4 "Not available from Digikey / LCSC" H 9750 3125 50  0001 C CNN "Notes"
+F 5 "" H 9750 3125 50  0001 C CNN "DNP"
+F 6 "CPG151101S11" H 9750 3125 50  0001 C CNN "MPN"
+F 7 "Kailh Switch" H 9750 3125 50  0001 C CNN "Manufacturer"
+F 8 "N" H 9750 3125 50  0001 C CNN "Substitue Allowed?"
+	1    9750 3125
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K12
+U 1 1 5CC3B33E
+P 9750 2225
+F 0 "K12" H 9750 2400 60  0000 C CNN
+F 1 "Kailh Hotswap Socket" H 9750 2125 60  0001 C CNN
+F 2 "josh-keyboard:POGO_P100_Kailh_Hotswap_1U" H 9750 2225 60  0001 C CNN
+F 3 "" H 9750 2225 60  0000 C CNN
+F 4 "Not available from Digikey / LCSC" H 9750 2225 50  0001 C CNN "Notes"
+F 5 "" H 9750 2225 50  0001 C CNN "DNP"
+F 6 "CPG151101S11" H 9750 2225 50  0001 C CNN "MPN"
+F 7 "Kailh Switch" H 9750 2225 50  0001 C CNN "Manufacturer"
+F 8 "N" H 9750 2225 50  0001 C CNN "Substitue Allowed?"
+	1    9750 2225
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push K11
+U 1 1 5CC3B338
+P 9750 1325
+F 0 "K11" H 9750 1500 60  0000 C CNN
+F 1 "Kailh Hotswap Socket" H 9750 1225 60  0001 C CNN
+F 2 "josh-keyboard:POGO_P100_Kailh_Hotswap_1U" H 9750 1325 60  0001 C CNN
+F 3 "" H 9750 1325 60  0000 C CNN
+F 4 "Not available from Digikey / LCSC" H 9750 1325 50  0001 C CNN "Notes"
+F 5 "" H 9750 1325 50  0001 C CNN "DNP"
+F 6 "CPG151101S11" H 9750 1325 50  0001 C CNN "MPN"
+F 7 "Kailh Switch" H 9750 1325 50  0001 C CNN "Manufacturer"
+F 8 "N" H 9750 1325 50  0001 C CNN "Substitue Allowed?"
+	1    9750 1325
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2000 4700 2025
+Connection ~ 4850 2025
+Wire Wire Line
+	4700 2025 4850 2025
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5D0FF496
+P 6850 7075
+F 0 "H1" H 6950 7121 50  0000 L CNN
+F 1 "MH-M2" H 6950 7030 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 6850 7075 50  0001 C CNN
+F 3 "~" H 6850 7075 50  0001 C CNN
+F 4 "DNP" H 6850 7075 50  0001 C CNN "DNP"
+	1    6850 7075
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5D100356
+P 6850 7275
+F 0 "H2" H 6950 7321 50  0000 L CNN
+F 1 "MH-M2" H 6950 7230 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 6850 7275 50  0001 C CNN
+F 3 "~" H 6850 7275 50  0001 C CNN
+F 4 "DNP" H 6850 7275 50  0001 C CNN "DNP"
+	1    6850 7275
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5D1006A4
+P 6850 7475
+F 0 "H3" H 6950 7521 50  0000 L CNN
+F 1 "MH-M2" H 6950 7430 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 6850 7475 50  0001 C CNN
+F 3 "~" H 6850 7475 50  0001 C CNN
+F 4 "DNP" H 6850 7475 50  0001 C CNN "DNP"
+	1    6850 7475
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5D1008E1
+P 6850 7675
+F 0 "H4" H 6950 7721 50  0000 L CNN
+F 1 "MH-M2" H 6950 7630 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 6850 7675 50  0001 C CNN
+F 3 "~" H 6850 7675 50  0001 C CNN
+F 4 "DNP" H 6850 7675 50  0001 C CNN "DNP"
+	1    6850 7675
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole LOGO2
+U 1 1 5E4B8663
+P 6275 7575
+F 0 "LOGO2" H 6375 7621 50  0000 L CNN
+F 1 "Josh-Details" H 6375 7530 50  0000 L CNN
+F 2 "josh-logos:josh-details" H 6275 7575 50  0001 C CNN
+F 3 "~" H 6275 7575 50  0001 C CNN
+F 4 "DNP" H 6275 7575 50  0001 C CNN "DNP"
+	1    6275 7575
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole LOGO1
+U 1 1 5E56A762
+P 6275 7400
+F 0 "LOGO1" H 6375 7446 50  0000 L CNN
+F 1 "Josh-Logo" H 6375 7355 50  0000 L CNN
+F 2 "josh-logos:josh-johnson-logo-17x3" H 6275 7400 50  0001 C CNN
+F 3 "~" H 6275 7400 50  0001 C CNN
+F 4 "DNP" H 6275 7400 50  0001 C CNN "DNP"
+	1    6275 7400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO4
+U 1 1 5F550BAB
+P 6150 7050
+F 0 "LOGO4" H 6150 7325 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 6150 6825 50  0001 C CNN
+F 2 "josh-logos:OSHW-Logo2_9.8x8mm_Mask" H 6150 7050 50  0001 C CNN
+F 3 "~" H 6150 7050 50  0001 C CNN
+F 4 "DNP" H 6150 7050 50  0001 C CNN "DNP"
+	1    6150 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0132
+U 1 1 5F4541D8
+P 4700 2000
+F 0 "#PWR0132" H 4700 1850 50  0001 C CNN
+F 1 "+5V" H 4715 2173 50  0000 C CNN
+F 2 "" H 4700 2000 50  0001 C CNN
+F 3 "" H 4700 2000 50  0001 C CNN
+	1    4700 2000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole LOGO3
+U 1 1 5E4B7D8A
+P 6275 7750
+F 0 "LOGO3" H 6375 7796 50  0000 L CNN
+F 1 "Board-Details" H 6375 7705 50  0000 L CNN
+F 2 "josh-logos:board-title" H 6275 7750 50  0001 C CNN
+F 3 "~" H 6275 7750 50  0001 C CNN
+F 4 "DNP" H 6275 7750 50  0001 C CNN "DNP"
+	1    6275 7750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10425 6125 10925 6125
+$Comp
+L Device:Rotary_Encoder_Switch SW2
+U 1 1 5CC6A4E2
+P 9650 5300
+F 0 "SW2" H 9650 5667 50  0000 C CNN
+F 1 "EC11 Encoder" H 9650 5576 50  0000 C CNN
+F 2 "josh-buttons-switches:POGO_P100_RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_CircularMountingHoles" H 9500 5460 50  0001 C CNN
+F 3 "~" H 9650 5560 50  0001 C CNN
+F 4 "" H 9650 5300 50  0001 C CNN "Notes"
+F 5 "PEC11L-4120F-S0020-ND" H 9650 5300 50  0001 C CNN "DigiKey"
+F 6 "" H 9650 5300 50  0001 C CNN "LCSC"
+F 7 "PEC11L-4120F-S0020" H 9650 5300 50  0001 C CNN "MPN"
+F 8 "Y - 20 PPR" H 9650 5300 50  0001 C CNN "Substitue Allowed?"
+F 9 "DNP" H 9650 5300 50  0001 C CNN "DNP"
+F 10 "Bourns" H 9650 5300 50  0001 C CNN "Manufacturer"
+	1    9650 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10425 5400 10925 5400
+Wire Wire Line
+	3875 1775 3875 2425
+Wire Wire Line
+	4000 1975 4000 2225
+Wire Wire Line
+	1825 1975 4000 1975
+Wire Wire Line
+	1825 1775 3875 1775
+NoConn ~ 4900 4175
+Wire Wire Line
+	4850 4075 4850 4200
+Connection ~ 4850 4075
+Wire Wire Line
+	1650 3950 1650 4050
+Wire Wire Line
+	4850 1350 4850 1475
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5D2BE1D3
+P 6850 1125
+F 0 "SW1" H 6850 1410 50  0000 C CNN
+F 1 "EVQPUL" H 6850 1319 50  0000 C CNN
+F 2 "josh-buttons-switches:Panasonic_EVQPUL_EVQPUC" H 6850 1325 50  0001 C CNN
+F 3 "~" H 6850 1325 50  0001 C CNN
+F 4 "C397351" H 6850 1125 50  0001 C CNN "LCSC"
+F 5 "EVQ-PUL02K" H 6850 1125 50  0001 C CNN "MPN"
+F 6 "P10853SCT-ND" H 6850 1125 50  0001 C CNN "DigiKey"
+F 7 "LCSC: Substitute PN" H 6850 1125 50  0001 C CNN "Notes"
+F 8 "Y - Same footprint" H 6850 1125 50  0001 C CNN "Substitue Allowed?"
+F 9 "Panasonic" H 6850 1125 50  0001 C CNN "Manufacturer"
+	1    6850 1125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  3300 750  3250
+Wire Wire Line
+	750  4200 750  4250
+$Comp
+L power:GND #PWR0101
+U 1 1 5FE69DE3
+P 750 4250
+F 0 "#PWR0101" H 750 4000 50  0001 C CNN
+F 1 "GND" H 755 4077 50  0000 C CNN
+F 2 "" H 750 4250 50  0001 C CNN
+F 3 "" H 750 4250 50  0001 C CNN
+	1    750  4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5FE69DE9
+P 750 3250
+F 0 "#PWR0102" H 750 3100 50  0001 C CNN
+F 1 "+5V" H 765 3423 50  0000 C CNN
+F 2 "" H 750 3250 50  0001 C CNN
+F 3 "" H 750 3250 50  0001 C CNN
+	1    750  3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 3600 1500 3600
+Wire Wire Line
+	1250 3700 1500 3700
+Wire Wire Line
+	1250 3800 1500 3800
+Wire Wire Line
+	1250 3900 1500 3900
+Text Label 1500 3900 2    50   ~ 0
+nRST
+Text Label 1500 3800 2    50   ~ 0
+SCK
+Text Label 1500 3700 2    50   ~ 0
+MOSI
+Text Label 1500 3600 2    50   ~ 0
+MISO
+Text Notes 875  3250 0    100  ~ 0
+ICSP
+$Comp
+L Connector:AVR-ISP-6 J3
+U 1 1 5FE69DF9
+P 850 3800
+F 0 "J3" H 850 4325 50  0000 R CNN
+F 1 "AVR-ISP-6" H 1200 4250 50  0000 R CNN
+F 2 "josh-connectors:AVR_PROG_2.54_SMT" V 600 3850 50  0001 C CNN
+F 3 " ~" H -425 3250 50  0001 C CNN
+F 4 "DNP" H 850 3800 50  0000 C CNN "DNP"
+	1    850  3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 1150 4350 1350
+Wire Wire Line
+	6375 6250 6375 6300
+$Comp
+L power:GND #PWR0103
+U 1 1 5FEA3E10
+P 6375 6300
+F 0 "#PWR0103" H 6375 6050 50  0001 C CNN
+F 1 "GND" H 6380 6127 50  0000 C CNN
+F 2 "" H 6375 6300 50  0001 C CNN
+F 3 "" H 6375 6300 50  0001 C CNN
+	1    6375 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6875 5650 7125 5650
+Wire Wire Line
+	6875 5750 7125 5750
+Wire Wire Line
+	6875 5850 7125 5850
+Wire Wire Line
+	6875 5950 7125 5950
+Text Label 7125 5950 2    50   ~ 0
+T_nRST
+Text Label 7125 5850 2    50   ~ 0
+T_SCK
+Text Label 7125 5750 2    50   ~ 0
+T_MOSI
+Text Label 7125 5650 2    50   ~ 0
+T_MISO
+$Comp
+L Connector:AVR-ISP-6 J4
+U 1 1 5FEA3E26
+P 6475 5850
+F 0 "J4" H 6475 6375 50  0000 R CNN
+F 1 "AVR-ISP-6" H 6825 6300 50  0000 R CNN
+F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Horizontal" V 6225 5900 50  0001 C CNN
+F 3 " ~" H 5200 5300 50  0001 C CNN
+F 4 "DNP" H 6475 5850 50  0000 C CNN "DNP"
+	1    6475 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J5
+U 1 1 5FEADA39
+P 6625 5225
+F 0 "J5" H 6597 5107 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 6597 5198 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 6625 5225 50  0001 C CNN
+F 3 "~" H 6625 5225 50  0001 C CNN
+	1    6625 5225
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6425 5225 6375 5225
+Wire Wire Line
+	6375 5225 6375 5350
+Wire Wire Line
+	6425 5125 6375 5125
+Wire Wire Line
+	6375 5125 6375 5050
+$Comp
+L power:VCC #PWR0104
+U 1 1 5FEC2E6F
+P 6375 5050
+F 0 "#PWR0104" H 6375 4900 50  0001 C CNN
+F 1 "VCC" H 6390 5223 50  0000 C CNN
+F 2 "" H 6375 5050 50  0001 C CNN
+F 3 "" H 6375 5050 50  0001 C CNN
+	1    6375 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0105
+U 1 1 5FECF5E5
+P 10125 5075
+F 0 "#PWR0105" H 10125 4925 50  0001 C CNN
+F 1 "VCC" H 10140 5248 50  0000 C CNN
+F 2 "" H 10125 5075 50  0001 C CNN
+F 3 "" H 10125 5075 50  0001 C CNN
+	1    10125 5075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0106
+U 1 1 5FEE118D
+P 10125 5800
+F 0 "#PWR0106" H 10125 5650 50  0001 C CNN
+F 1 "VCC" H 10140 5973 50  0000 C CNN
+F 2 "" H 10125 5800 50  0001 C CNN
+F 3 "" H 10125 5800 50  0001 C CNN
+	1    10125 5800
+	1    0    0    -1  
+$EndComp
+Text Notes 5275 4950 0    100  ~ 0
+Target ICSP
+$Comp
+L Transistor_FET:BSS138 Q4
+U 1 1 5FF357E1
+P 7950 4350
+F 0 "Q4" V 7875 4525 50  0000 C CNN
+F 1 "BSS138" V 7800 4550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8150 4275 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 7950 4350 50  0001 L CNN
+	1    7950 4350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8150 4250 8150 4100
+Wire Wire Line
+	7750 4250 7750 4100
+$Comp
+L Transistor_FET:BSS138 Q8
+U 1 1 5FF7CF78
+P 8850 4350
+F 0 "Q8" V 8775 4525 50  0000 C CNN
+F 1 "BSS138" V 8700 4550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9050 4275 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 8850 4350 50  0001 L CNN
+	1    8850 4350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9050 4250 9050 4100
+Wire Wire Line
+	8650 4250 8650 4100
+$Comp
+L Transistor_FET:BSS138 Q12
+U 1 1 5FF86F1F
+P 9750 4350
+F 0 "Q12" V 9675 4525 50  0000 C CNN
+F 1 "BSS138" V 9600 4550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9950 4275 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 9750 4350 50  0001 L CNN
+	1    9750 4350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9950 4250 9950 4100
+Wire Wire Line
+	9550 4250 9550 4100
+$Comp
+L Transistor_FET:BSS138 Q16
+U 1 1 5FF9037D
+P 10650 4350
+F 0 "Q16" V 10575 4525 50  0000 C CNN
+F 1 "BSS138" V 10500 4550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10850 4275 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 10650 4350 50  0001 L CNN
+	1    10650 4350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	10850 4250 10850 4100
+Wire Wire Line
+	10450 4250 10450 4100
+$Comp
+L Transistor_FET:BSS138 Q3
+U 1 1 60029739
+P 7950 3375
+F 0 "Q3" V 7875 3550 50  0000 C CNN
+F 1 "BSS138" V 7800 3575 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8150 3300 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 7950 3375 50  0001 L CNN
+	1    7950 3375
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8150 3275 8150 3125
+Wire Wire Line
+	7750 3275 7750 3125
+$Comp
+L Transistor_FET:BSS138 Q7
+U 1 1 60029741
+P 8850 3375
+F 0 "Q7" V 8775 3550 50  0000 C CNN
+F 1 "BSS138" V 8700 3575 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9050 3300 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 8850 3375 50  0001 L CNN
+	1    8850 3375
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9050 3275 9050 3125
+Wire Wire Line
+	8650 3275 8650 3125
+$Comp
+L Transistor_FET:BSS138 Q11
+U 1 1 60029749
+P 9750 3375
+F 0 "Q11" V 9675 3550 50  0000 C CNN
+F 1 "BSS138" V 9600 3575 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9950 3300 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 9750 3375 50  0001 L CNN
+	1    9750 3375
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9950 3275 9950 3125
+Wire Wire Line
+	9550 3275 9550 3125
+$Comp
+L Transistor_FET:BSS138 Q15
+U 1 1 60029751
+P 10650 3375
+F 0 "Q15" V 10575 3550 50  0000 C CNN
+F 1 "BSS138" V 10500 3575 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10850 3300 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 10650 3375 50  0001 L CNN
+	1    10650 3375
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	10850 3275 10850 3125
+Wire Wire Line
+	10450 3275 10450 3125
+$Comp
+L Transistor_FET:BSS138 Q2
+U 1 1 6003B687
+P 7950 2475
+F 0 "Q2" V 7875 2650 50  0000 C CNN
+F 1 "BSS138" V 7800 2675 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8150 2400 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 7950 2475 50  0001 L CNN
+	1    7950 2475
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8150 2375 8150 2225
+Wire Wire Line
+	7750 2375 7750 2225
+$Comp
+L Transistor_FET:BSS138 Q6
+U 1 1 6003B68F
+P 8850 2475
+F 0 "Q6" V 8775 2650 50  0000 C CNN
+F 1 "BSS138" V 8700 2675 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9050 2400 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 8850 2475 50  0001 L CNN
+	1    8850 2475
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9050 2375 9050 2225
+Wire Wire Line
+	8650 2375 8650 2225
+$Comp
+L Transistor_FET:BSS138 Q10
+U 1 1 6003B697
+P 9750 2475
+F 0 "Q10" V 9675 2650 50  0000 C CNN
+F 1 "BSS138" V 9600 2675 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9950 2400 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 9750 2475 50  0001 L CNN
+	1    9750 2475
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9950 2375 9950 2225
+Wire Wire Line
+	9550 2375 9550 2225
+$Comp
+L Transistor_FET:BSS138 Q14
+U 1 1 6003B69F
+P 10650 2475
+F 0 "Q14" V 10575 2650 50  0000 C CNN
+F 1 "BSS138" V 10500 2675 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10850 2400 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 10650 2475 50  0001 L CNN
+	1    10650 2475
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	10850 2375 10850 2225
+Wire Wire Line
+	10450 2375 10450 2225
+$Comp
+L Transistor_FET:BSS138 Q1
+U 1 1 6004EF4D
+P 7950 1575
+F 0 "Q1" V 7875 1750 50  0000 C CNN
+F 1 "BSS138" V 7800 1775 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8150 1500 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 7950 1575 50  0001 L CNN
+	1    7950 1575
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8150 1475 8150 1325
+Wire Wire Line
+	7750 1475 7750 1325
+$Comp
+L Transistor_FET:BSS138 Q5
+U 1 1 6004EF55
+P 8850 1575
+F 0 "Q5" V 8775 1750 50  0000 C CNN
+F 1 "BSS138" V 8700 1775 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9050 1500 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 8850 1575 50  0001 L CNN
+	1    8850 1575
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9050 1475 9050 1325
+Wire Wire Line
+	8650 1475 8650 1325
+$Comp
+L Transistor_FET:BSS138 Q9
+U 1 1 6004EF5D
+P 9750 1575
+F 0 "Q9" V 9675 1750 50  0000 C CNN
+F 1 "BSS138" V 9600 1775 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9950 1500 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 9750 1575 50  0001 L CNN
+	1    9750 1575
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9950 1475 9950 1325
+Wire Wire Line
+	9550 1475 9550 1325
+$Comp
+L Transistor_FET:BSS138 Q13
+U 1 1 6004EF65
+P 10650 1575
+F 0 "Q13" V 10575 1750 50  0000 C CNN
+F 1 "BSS138" V 10500 1775 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10850 1500 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 10650 1575 50  0001 L CNN
+	1    10650 1575
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	10850 1475 10850 1325
+Wire Wire Line
+	10450 1475 10450 1325
+Wire Wire Line
+	9350 5300 9200 5300
+Wire Wire Line
+	9200 5300 9200 5500
+$Comp
+L power:GND #PWR0107
+U 1 1 600879F3
+P 9200 5500
+F 0 "#PWR0107" H 9200 5250 50  0001 C CNN
+F 1 "GND" H 9205 5327 50  0000 C CNN
+F 2 "" H 9200 5500 50  0001 C CNN
+F 3 "" H 9200 5500 50  0001 C CNN
+	1    9200 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 6025 9200 6025
+Wire Wire Line
+	9200 6025 9200 6225
+$Comp
+L power:GND #PWR0108
+U 1 1 6008876D
+P 9200 6225
+F 0 "#PWR0108" H 9200 5975 50  0001 C CNN
+F 1 "GND" H 9205 6052 50  0000 C CNN
+F 2 "" H 9200 6225 50  0001 C CNN
+F 3 "" H 9200 6225 50  0001 C CNN
+	1    9200 6225
+	1    0    0    -1  
+$EndComp
+Text Label 8325 5200 0    50   ~ 0
+ENC_1_A
+Wire Wire Line
+	8325 5200 8850 5200
+Text Label 8325 5400 0    50   ~ 0
+ENC_1_B
+Wire Wire Line
+	8325 5400 8850 5400
+Text Label 8325 5925 0    50   ~ 0
+ENC_2_A
+Wire Wire Line
+	8325 5925 8850 5925
+Text Label 8325 6125 0    50   ~ 0
+ENC_2_B
+Wire Wire Line
+	8325 6125 8850 6125
+$Comp
+L josh-passive:RN RN1
+U 2 1 600F202B
+P 9000 5200
+F 0 "RN1" H 8800 5250 50  0000 C CNN
+F 1 "1K" H 9000 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 9000 5200 50  0001 C CNN
+F 3 "~" V 9000 5200 50  0001 C CNN
+	2    9000 5200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L josh-passive:RN RN1
+U 3 1 600FBAFD
+P 10275 5400
+F 0 "RN1" H 10075 5450 50  0000 C CNN
+F 1 "1K" H 10275 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 10275 5400 50  0001 C CNN
+F 3 "~" V 10275 5400 50  0001 C CNN
+	3    10275 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L josh-passive:RN RN2
+U 2 1 60105700
+P 9000 6125
+F 0 "RN2" H 8800 6175 50  0000 C CNN
+F 1 "1K" H 9000 6125 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 9000 6125 50  0001 C CNN
+F 3 "~" V 9000 6125 50  0001 C CNN
+	2    9000 6125
+	1    0    0    -1  
+$EndComp
+$Comp
+L josh-passive:RN RN1
+U 1 1 600F05B4
+P 9000 5400
+F 0 "RN1" H 8800 5450 50  0000 C CNN
+F 1 "1K" H 9000 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 9000 5400 50  0001 C CNN
+F 3 "~" V 9000 5400 50  0001 C CNN
+	1    9000 5400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 5400 9350 5400
+Wire Wire Line
+	9150 5200 9350 5200
+Wire Wire Line
+	9150 6125 9350 6125
+Wire Wire Line
+	9150 5925 9350 5925
+$Comp
+L josh-passive:RN RN2
+U 1 1 601A2D43
+P 9000 5925
+F 0 "RN2" H 8800 5975 50  0000 C CNN
+F 1 "1K" H 9000 5925 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 9000 5925 50  0001 C CNN
+F 3 "~" V 9000 5925 50  0001 C CNN
+	1    9000 5925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10125 5400 9950 5400
+Wire Wire Line
+	10125 6125 9950 6125
+Text Label 7125 2325 2    50   ~ 0
+ENC_1_A
+Wire Wire Line
+	7125 2325 6600 2325
+Text Label 7125 2425 2    50   ~ 0
+ENC_1_B
+Wire Wire Line
+	7125 2425 6600 2425
+Text Label 7125 3775 2    50   ~ 0
+ENC_2_A
+Wire Wire Line
+	7125 3775 6600 3775
+Text Label 7125 3675 2    50   ~ 0
+ENC_2_B
+Wire Wire Line
+	7125 3675 6600 3675
+Text Label 7125 2075 2    50   ~ 0
+ENC_1_SW
+Wire Wire Line
+	6600 2075 7125 2075
+Text Label 7125 3575 2    50   ~ 0
+ENC_2_SW
+Wire Wire Line
+	6600 3575 7125 3575
+$Comp
+L Device:R R?
+U 1 1 6031E633
+P 7275 5950
+AR Path="/5E5406D9/6031E633" Ref="R?"  Part="1" 
+AR Path="/6031E633" Ref="R8"  Part="1" 
+F 0 "R8" V 7350 5950 50  0000 C CNN
+F 1 "5K1" V 7275 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7205 5950 50  0001 C CNN
+F 3 "~" H 7275 5950 50  0001 C CNN
+F 4 "118-CR0603-JW-512ELFCT-ND " H 7275 5950 50  0001 C CNN "DigiKey"
+F 5 "CR0603-JW-512ELF " H 7275 5950 50  0001 C CNN "MPN"
+F 6 "Y  - Same spec" H 7275 5950 50  0001 C CNN "Substitue Allowed?"
+F 7 "C14677" H 7275 5950 50  0001 C CNN "LCSC"
+F 8 "Bourns" H 7275 5950 50  0001 C CNN "Manufacturer"
+F 9 "LCSC: Substitute PN" H 7275 5950 50  0001 C CNN "Notes"
+	1    7275 5950
+	0    1    1    0   
+$EndComp
+Text Label 8000 5950 2    50   ~ 0
+MCU_T_nRST
+Wire Wire Line
+	7425 5950 8000 5950
+Text Label 7125 1475 2    50   ~ 0
+MCU_T_nRST
+Wire Wire Line
+	6600 1475 7125 1475
+Wire Wire Line
+	4350 1475 4350 1350
+Connection ~ 4350 1350
+Wire Wire Line
+	2800 1225 2925 1225
+Wire Wire Line
+	7950 1775 7950 1850
+Wire Wire Line
+	7950 1850 7675 1850
+Text Label 7675 1850 0    50   ~ 0
+KEY_A
+Wire Wire Line
+	8850 1775 8850 1850
+Wire Wire Line
+	8850 1850 8575 1850
+Text Label 8575 1850 0    50   ~ 0
+KEY_B
+Wire Wire Line
+	9750 1775 9750 1850
+Wire Wire Line
+	9750 1850 9475 1850
+Text Label 9475 1850 0    50   ~ 0
+KEY_C
+Wire Wire Line
+	10650 1775 10650 1850
+Wire Wire Line
+	10650 1850 10375 1850
+Text Label 10375 1850 0    50   ~ 0
+KEY_D
+Wire Wire Line
+	7950 2675 7950 2750
+Wire Wire Line
+	7950 2750 7675 2750
+Text Label 7675 2750 0    50   ~ 0
+KEY_E
+Wire Wire Line
+	8850 2675 8850 2750
+Wire Wire Line
+	8850 2750 8575 2750
+Text Label 8575 2750 0    50   ~ 0
+KEY_F
+Wire Wire Line
+	9750 2675 9750 2750
+Wire Wire Line
+	9750 2750 9475 2750
+Text Label 9475 2750 0    50   ~ 0
+KEY_G
+Wire Wire Line
+	10650 2675 10650 2750
+Wire Wire Line
+	10650 2750 10375 2750
+Text Label 10375 2750 0    50   ~ 0
+KEY_H
+Wire Wire Line
+	10650 3575 10650 3650
+Wire Wire Line
+	10650 3650 10375 3650
+Text Label 10375 3650 0    50   ~ 0
+KEY_L
+Wire Wire Line
+	9750 3575 9750 3650
+Wire Wire Line
+	9750 3650 9475 3650
+Text Label 9475 3650 0    50   ~ 0
+KEY_K
+Wire Wire Line
+	8850 3575 8850 3650
+Wire Wire Line
+	8850 3650 8575 3650
+Text Label 8575 3650 0    50   ~ 0
+KEY_J
+Wire Wire Line
+	7950 3575 7950 3650
+Wire Wire Line
+	7950 3650 7675 3650
+Text Label 7675 3650 0    50   ~ 0
+KEY_I
+Wire Wire Line
+	7950 4550 7950 4625
+Wire Wire Line
+	7950 4625 7675 4625
+Text Label 7675 4625 0    50   ~ 0
+KEY_M
+Wire Wire Line
+	8850 4550 8850 4625
+Wire Wire Line
+	8850 4625 8575 4625
+Text Label 8575 4625 0    50   ~ 0
+KEY_N
+Wire Wire Line
+	9750 4550 9750 4625
+Wire Wire Line
+	9750 4625 9475 4625
+Text Label 9475 4625 0    50   ~ 0
+KEY_O
+Wire Wire Line
+	10650 4550 10650 4625
+Wire Wire Line
+	10650 4625 10375 4625
+Text Label 10375 4625 0    50   ~ 0
+KEY_P
+$Comp
+L 74xx:74HC595 U1
+U 1 1 60506424
+P 1575 6250
+F 0 "U1" H 1650 6875 50  0000 C CNN
+F 1 "74HC595" H 1775 6800 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 1575 6250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 1575 6250 50  0001 C CNN
+	1    1575 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0109
+U 1 1 605943D3
+P 5125 5300
+F 0 "#PWR0109" H 5125 5150 50  0001 C CNN
+F 1 "VCC" H 5140 5473 50  0000 C CNN
+F 2 "" H 5125 5300 50  0001 C CNN
+F 3 "" H 5125 5300 50  0001 C CNN
+	1    5125 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1575 6950 1575 7000
+$Comp
+L power:GND #PWR0110
+U 1 1 605C9BBA
+P 1575 7000
+F 0 "#PWR0110" H 1575 6750 50  0001 C CNN
+F 1 "GND" H 1580 6827 50  0000 C CNN
+F 2 "" H 1575 7000 50  0001 C CNN
+F 3 "" H 1575 7000 50  0001 C CNN
+	1    1575 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1575 5600 1575 5650
+$Comp
+L power:+5V #PWR0116
+U 1 1 605DDFA7
+P 1575 5600
+F 0 "#PWR0116" H 1575 5450 50  0001 C CNN
+F 1 "+5V" H 1590 5773 50  0000 C CNN
+F 2 "" H 1575 5600 50  0001 C CNN
+F 3 "" H 1575 5600 50  0001 C CNN
+	1    1575 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1975 5850 2250 5850
+Text Label 2250 5850 2    50   ~ 0
+KEY_A
+Wire Wire Line
+	1975 5950 2250 5950
+Text Label 2250 5950 2    50   ~ 0
+KEY_B
+Wire Wire Line
+	1975 6050 2250 6050
+Text Label 2250 6050 2    50   ~ 0
+KEY_C
+Wire Wire Line
+	1975 6150 2250 6150
+Text Label 2250 6150 2    50   ~ 0
+KEY_D
+Wire Wire Line
+	1975 6250 2250 6250
+Text Label 2250 6250 2    50   ~ 0
+KEY_E
+Wire Wire Line
+	1975 6350 2250 6350
+Text Label 2250 6350 2    50   ~ 0
+KEY_F
+Wire Wire Line
+	1975 6450 2250 6450
+Text Label 2250 6450 2    50   ~ 0
+KEY_G
+Wire Wire Line
+	1975 6550 2250 6550
+Text Label 2250 6550 2    50   ~ 0
+KEY_H
+Text Label 825  5850 0    50   ~ 0
+SR_SER
+Wire Wire Line
+	825  5850 1175 5850
+Text Label 825  6050 0    50   ~ 0
+SR_CLK
+Wire Wire Line
+	825  6050 1175 6050
+Text Label 825  6350 0    50   ~ 0
+SR_RCLK
+Wire Wire Line
+	825  6350 1175 6350
+Text Label 825  6450 0    50   ~ 0
+SR_nOE
+Wire Wire Line
+	825  6450 1175 6450
+Text Label 825  6150 0    50   ~ 0
+SR_nCLK
+Wire Wire Line
+	825  6150 1175 6150
+Text Label 6950 1975 2    50   ~ 0
+SR_SER
+Wire Wire Line
+	6950 1975 6600 1975
+Text Label 6950 3175 2    50   ~ 0
+SR_CLK
+Wire Wire Line
+	6950 3175 6600 3175
+Text Label 6950 3275 2    50   ~ 0
+SR_RCLK
+Wire Wire Line
+	6950 3275 6600 3275
+Text Label 6950 1875 2    50   ~ 0
+SR_nOE
+Wire Wire Line
+	6950 1875 6600 1875
+Text Label 6950 2975 2    50   ~ 0
+SR_nCLK
+Wire Wire Line
+	6950 2975 6600 2975
+$Comp
+L 74xx:74HC595 U3
+U 1 1 6079254A
+P 3250 6225
+F 0 "U3" H 3325 6850 50  0000 C CNN
+F 1 "74HC595" H 3450 6775 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 3250 6225 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 3250 6225 50  0001 C CNN
+	1    3250 6225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 6925 3250 6975
+$Comp
+L power:GND #PWR0117
+U 1 1 60792551
+P 3250 6975
+F 0 "#PWR0117" H 3250 6725 50  0001 C CNN
+F 1 "GND" H 3255 6802 50  0000 C CNN
+F 2 "" H 3250 6975 50  0001 C CNN
+F 3 "" H 3250 6975 50  0001 C CNN
+	1    3250 6975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 5575 3250 5625
+$Comp
+L power:+5V #PWR0118
+U 1 1 60792558
+P 3250 5575
+F 0 "#PWR0118" H 3250 5425 50  0001 C CNN
+F 1 "+5V" H 3265 5748 50  0000 C CNN
+F 2 "" H 3250 5575 50  0001 C CNN
+F 3 "" H 3250 5575 50  0001 C CNN
+	1    3250 5575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 5825 3925 5825
+Text Label 3925 5825 2    50   ~ 0
+KEY_I
+Wire Wire Line
+	3650 5925 3925 5925
+Text Label 3925 5925 2    50   ~ 0
+KEY_J
+Wire Wire Line
+	3650 6025 3925 6025
+Text Label 3925 6025 2    50   ~ 0
+KEY_K
+Wire Wire Line
+	3650 6125 3925 6125
+Text Label 3925 6125 2    50   ~ 0
+KEY_L
+Wire Wire Line
+	3650 6225 3925 6225
+Text Label 3925 6225 2    50   ~ 0
+KEY_M
+Wire Wire Line
+	3650 6325 3925 6325
+Text Label 3925 6325 2    50   ~ 0
+KEY_N
+Wire Wire Line
+	3650 6425 3925 6425
+Text Label 3925 6425 2    50   ~ 0
+KEY_O
+Wire Wire Line
+	3650 6525 3925 6525
+Text Label 3925 6525 2    50   ~ 0
+KEY_P
+Text Label 2500 6025 0    50   ~ 0
+SR_CLK
+Wire Wire Line
+	2500 6025 2850 6025
+Text Label 2500 6325 0    50   ~ 0
+SR_RCLK
+Wire Wire Line
+	2500 6325 2850 6325
+Text Label 2500 6425 0    50   ~ 0
+SR_nOE
+Wire Wire Line
+	2500 6425 2850 6425
+Text Label 2500 6125 0    50   ~ 0
+SR_nCLK
+Wire Wire Line
+	2500 6125 2850 6125
+Wire Wire Line
+	1975 6750 2400 6750
+Wire Wire Line
+	2400 6750 2400 5825
+Wire Wire Line
+	2400 5825 2850 5825
+NoConn ~ 3650 6725
+$Comp
+L Device:Polyfuse_Small F2
+U 1 1 608AD665
+P 3275 1225
+AR Path="/608AD665" Ref="F2"  Part="1" 
+AR Path="/5E5406D9/608AD665" Ref="F?"  Part="1" 
+F 0 "F2" V 3175 1225 50  0000 C CNN
+F 1 "250mA" V 3375 1225 50  0000 C CNN
+F 2 "josh-passives-smt:Fuse_0805_2012Metric" H 3325 1025 50  0001 L CNN
+F 3 "~" H 3275 1225 50  0001 C CNN
+F 4 "" H 3275 1225 50  0001 C CNN "LCSC"
+F 5 "" H 3275 1225 50  0001 C CNN "MPN"
+F 6 "" H 3275 1225 50  0001 C CNN "DigiKey"
+F 7 "" H 3275 1225 50  0001 C CNN "Notes"
+F 8 "" H 3275 1225 50  0001 C CNN "Substitue Allowed?"
+F 9 "" H 3275 1225 50  0001 C CNN "Manufacturer"
+	1    3275 1225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3175 1225 3100 1225
+Connection ~ 3100 1225
+$Comp
+L power:VCC #PWR0119
+U 1 1 608E7031
+P 3375 1150
+F 0 "#PWR0119" H 3375 1000 50  0001 C CNN
+F 1 "VCC" H 3390 1323 50  0000 C CNN
+F 2 "" H 3375 1150 50  0001 C CNN
+F 3 "" H 3375 1150 50  0001 C CNN
+	1    3375 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3375 1150 3375 1225
+$Comp
+L Device:C C8
+U 1 1 6093878E
+P 2400 5225
+F 0 "C8" V 2350 5325 50  0000 C CNN
+F 1 "100n" V 2450 5375 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2438 5075 50  0001 C CNN
+F 3 "~" H 2400 5225 50  0001 C CNN
+F 4 "1276-1000-1-ND" H 2400 5225 50  0001 C CNN "DigiKey"
+F 5 "CL10B104KB8NNNC" H 2400 5225 50  0001 C CNN "MPN"
+F 6 "Y - X5R or better" H 2400 5225 50  0001 C CNN "Substitue Allowed?"
+F 7 "C1591" H 2400 5225 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 2400 5225 50  0001 C CNN "Manufacturer"
+	1    2400 5225
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 60938799
+P 2400 5425
+F 0 "C9" V 2350 5525 50  0000 C CNN
+F 1 "100n" V 2450 5575 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2438 5275 50  0001 C CNN
+F 3 "~" H 2400 5425 50  0001 C CNN
+F 4 "1276-1000-1-ND" H 2400 5425 50  0001 C CNN "DigiKey"
+F 5 "CL10B104KB8NNNC" H 2400 5425 50  0001 C CNN "MPN"
+F 6 "Y - X5R or better" H 2400 5425 50  0001 C CNN "Substitue Allowed?"
+F 7 "C1591" H 2400 5425 50  0001 C CNN "LCSC"
+F 8 "Samsung Electro-Mechanics" H 2400 5425 50  0001 C CNN "Manufacturer"
+	1    2400 5425
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0120
+U 1 1 6094DA5C
+P 2625 5175
+F 0 "#PWR0120" H 2625 5025 50  0001 C CNN
+F 1 "+5V" H 2640 5348 50  0000 C CNN
+F 2 "" H 2625 5175 50  0001 C CNN
+F 3 "" H 2625 5175 50  0001 C CNN
+	1    2625 5175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2625 5175 2625 5225
+Wire Wire Line
+	2625 5225 2550 5225
+Wire Wire Line
+	2625 5225 2625 5425
+Wire Wire Line
+	2625 5425 2550 5425
+Connection ~ 2625 5225
+Wire Wire Line
+	2250 5225 2050 5225
+Wire Wire Line
+	2050 5225 2050 5425
+Wire Wire Line
+	2250 5425 2050 5425
+Connection ~ 2050 5425
+Wire Wire Line
+	2050 5425 2050 5500
+$Comp
+L power:GND #PWR0121
+U 1 1 609E1A5F
+P 2050 5500
+F 0 "#PWR0121" H 2050 5250 50  0001 C CNN
+F 1 "GND" H 2055 5327 50  0000 C CNN
+F 2 "" H 2050 5500 50  0001 C CNN
+F 3 "" H 2050 5500 50  0001 C CNN
+	1    2050 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 60A21632
+P 2025 3450
+F 0 "D2" V 2064 3333 50  0000 R CNN
+F 1 "LED" V 1973 3333 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 2025 3450 50  0001 C CNN
+F 3 "~" H 2025 3450 50  0001 C CNN
+F 4 "" V 1900 3250 50  0000 C CNN "DNP"
+F 5 "" H 2025 3450 50  0001 C CNN "DigiKey"
+F 6 "OSK40603C1E" H 2025 3450 50  0001 C CNN "MPN"
+F 7 "Y - Any Pink / Purple" H 2025 3450 50  0001 C CNN "Substitue Allowed?"
+F 8 "C268294" H 2025 3450 50  0001 C CNN "LCSC"
+F 9 "OptoSupply" H 2025 3450 50  0001 C CNN "Manufacturer"
+F 10 "" H 2025 3450 50  0001 C CNN "Notes"
+	1    2025 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 60A2163F
+P 2025 3800
+F 0 "R9" H 2095 3846 50  0000 L CNN
+F 1 "5K1" H 2095 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1955 3800 50  0001 C CNN
+F 3 "~" H 2025 3800 50  0001 C CNN
+F 4 "" H 2175 3675 50  0000 C CNN "DNP"
+F 5 "118-CR0603-JW-512ELFCT-ND " H 2025 3800 50  0001 C CNN "DigiKey"
+F 6 "CR0603-JW-512ELF " H 2025 3800 50  0001 C CNN "MPN"
+F 7 "Y  - Same spec" H 2025 3800 50  0001 C CNN "Substitue Allowed?"
+F 8 "C14677" H 2025 3800 50  0001 C CNN "LCSC"
+F 9 "Bourns" H 2025 3800 50  0001 C CNN "Manufacturer"
+F 10 "LCSC: Substitute PN" H 2025 3800 50  0001 C CNN "Notes"
+	1    2025 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2025 3250 2025 3300
+$Comp
+L power:GND #PWR0122
+U 1 1 60A21646
+P 2025 4050
+F 0 "#PWR0122" H 2025 3800 50  0001 C CNN
+F 1 "GND" H 2030 3877 50  0000 C CNN
+F 2 "" H 2025 4050 50  0001 C CNN
+F 3 "" H 2025 4050 50  0001 C CNN
+	1    2025 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2025 3650 2025 3600
+Wire Wire Line
+	2025 3950 2025 4050
+$Comp
+L power:VCC #PWR0123
+U 1 1 60A515D3
+P 2025 3250
+F 0 "#PWR0123" H 2025 3100 50  0001 C CNN
+F 1 "VCC" H 2040 3423 50  0000 C CNN
+F 2 "" H 2025 3250 50  0001 C CNN
+F 3 "" H 2025 3250 50  0001 C CNN
+	1    2025 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L josh-passive:RN RN2
+U 3 1 601A2D3D
+P 10275 6125
+F 0 "RN2" H 10475 6100 50  0000 C CNN
+F 1 "1K" H 10275 6125 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 10275 6125 50  0001 C CNN
+F 3 "~" V 10275 6125 50  0001 C CNN
+	3    10275 6125
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 60FD6B8E
+P 4425 7000
+F 0 "H5" H 4525 7046 50  0000 L CNN
+F 1 "MH-M3" H 4525 6955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 4425 7000 50  0001 C CNN
+F 3 "~" H 4425 7000 50  0001 C CNN
+F 4 "DNP" H 4425 7000 50  0001 C CNN "DNP"
+	1    4425 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 610322F1
+P 4425 7175
+F 0 "H6" H 4525 7221 50  0000 L CNN
+F 1 "MH-M3" H 4525 7130 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 4425 7175 50  0001 C CNN
+F 3 "~" H 4425 7175 50  0001 C CNN
+F 4 "DNP" H 4425 7175 50  0001 C CNN "DNP"
+	1    4425 7175
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 610486C4
+P 4425 7350
+F 0 "H7" H 4525 7396 50  0000 L CNN
+F 1 "MH-M3" H 4525 7305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 4425 7350 50  0001 C CNN
+F 3 "~" H 4425 7350 50  0001 C CNN
+F 4 "DNP" H 4425 7350 50  0001 C CNN "DNP"
+	1    4425 7350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 6105EB4D
+P 4425 7525
+F 0 "H8" H 4525 7571 50  0000 L CNN
+F 1 "MH-M3" H 4525 7480 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 4425 7525 50  0001 C CNN
+F 3 "~" H 4425 7525 50  0001 C CNN
+F 4 "DNP" H 4425 7525 50  0001 C CNN "DNP"
+	1    4425 7525
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole H9
+U 1 1 61074FFC
+P 4925 7000
+F 0 "H9" H 5025 7046 50  0000 L CNN
+F 1 "MH-M3" H 5025 6955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 4925 7000 50  0001 C CNN
+F 3 "~" H 4925 7000 50  0001 C CNN
+F 4 "DNP" H 4925 7000 50  0001 C CNN "DNP"
+	1    4925 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole H10
+U 1 1 6108B399
+P 4925 7175
+F 0 "H10" H 5025 7221 50  0000 L CNN
+F 1 "MH-M3" H 5025 7130 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 4925 7175 50  0001 C CNN
+F 3 "~" H 4925 7175 50  0001 C CNN
+F 4 "DNP" H 4925 7175 50  0001 C CNN "DNP"
+	1    4925 7175
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole H11
+U 1 1 610A1822
+P 4925 7350
+F 0 "H11" H 5025 7396 50  0000 L CNN
+F 1 "MH-M3" H 5025 7305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 4925 7350 50  0001 C CNN
+F 3 "~" H 4925 7350 50  0001 C CNN
+F 4 "DNP" H 4925 7350 50  0001 C CNN "DNP"
+	1    4925 7350
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
