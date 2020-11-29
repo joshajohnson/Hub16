@@ -1845,25 +1845,6 @@ Text Label 7125 3575 2    50   ~ 0
 ENC_2_SW
 Wire Wire Line
 	6600 3575 7125 3575
-$Comp
-L Device:R R?
-U 1 1 6031E633
-P 7275 5950
-AR Path="/5E5406D9/6031E633" Ref="R?"  Part="1" 
-AR Path="/6031E633" Ref="R8"  Part="1" 
-F 0 "R8" V 7350 5950 50  0000 C CNN
-F 1 "5K1" V 7275 5950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7205 5950 50  0001 C CNN
-F 3 "~" H 7275 5950 50  0001 C CNN
-F 4 "118-CR0603-JW-512ELFCT-ND " H 7275 5950 50  0001 C CNN "DigiKey"
-F 5 "CR0603-JW-512ELF " H 7275 5950 50  0001 C CNN "MPN"
-F 6 "Y  - Same spec" H 7275 5950 50  0001 C CNN "Substitue Allowed?"
-F 7 "C14677" H 7275 5950 50  0001 C CNN "LCSC"
-F 8 "Bourns" H 7275 5950 50  0001 C CNN "Manufacturer"
-F 9 "LCSC: Substitute PN" H 7275 5950 50  0001 C CNN "Notes"
-	1    7275 5950
-	0    1    1    0   
-$EndComp
 Text Label 8000 5950 2    50   ~ 0
 MCU_T_nRST
 Wire Wire Line
@@ -2449,6 +2430,17 @@ F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 4925 7350 50  0001 C CNN
 F 3 "~" H 4925 7350 50  0001 C CNN
 F 4 "DNP" H 4925 7350 50  0001 C CNN "DNP"
 	1    4925 7350
+	-1   0    0    1   
+$EndComp
+$Comp
+L josh-passive:RN RN2
+U 4 1 5FBF5549
+P 7275 5950
+F 0 "RN2" H 7275 6050 50  0000 C CNN
+F 1 "1K" H 7275 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 7275 5950 50  0001 C CNN
+F 3 "~" V 7275 5950 50  0001 C CNN
+	4    7275 5950
 	-1   0    0    1   
 $EndComp
 $EndSCHEMATC

@@ -4,7 +4,7 @@ Click the below to jump to the correct instructions:
 
 [Acrylic Case](#acrylic-case)
 
-[Barebones Case]() (TODO)
+[bare-bones Case]() (TODO)
 
 [Disabling Power LED](#disabling-power-LED)
 
@@ -17,9 +17,9 @@ Before assembling the board, ensure you have all of the required parts.
 * Laser cut acrylic - 4 pieces
 * 2 * Rotary encoders (20mm recommended)
 * 2 * Rotary encoder knobs
-* 4 * 4mm M2 cap head bolts
+* 4 * 4mm M2 cap head bolts (bare-bones 8 * 4mm)
 * 4 * 8mm M2 cap head bolts
-* 4 * 8mm female threaded standoffs
+* 4 * 8mm female threaded standoffs (bare-bones 10mm)
 * 4 * Rubber feet (optional)
 * 16 * Cherry MX Key Switches (not shown)
 * 16 * 1U Cherry MX Keycaps (not shown)
@@ -35,7 +35,7 @@ You will also require the following tools:
 
 Whilst we do our best to ensure the PCBs work, there may be issues that slip through QC or the boards may be damaged in freight. As such you should test the PCB before continuing.
 
-Boards come preloaded with QMK for testing, and using their "Key Tester -> Test Matrix" option is the easiest way to ensure the board works.
+Boards come preloaded with VIA for testing, and using their "Key Tester -> Test Matrix" option is the easiest way to ensure the board works.
 
 **Check the key switches by using tweezers to short the key switch pins together.**  
 ![Checking Keys](imgs/assembly-instructions/check-switches.JPG)
