@@ -4,7 +4,7 @@ Click the below to jump to the correct instructions:
 
 [Acrylic Case](#acrylic-case)
 
-[bare-bones Case]() (TODO)
+[bare-bones Case](#bare-bones)
 
 [Disabling Power LED](#disabling-power-LED)
 
@@ -95,6 +95,24 @@ With those steps done, insert keys into their positions. If a key does not want 
 
 Finally, fit your keycaps of choice and the encoder knobs, and you are done! Enjoy :D
 ![Adding knobs and keycaps](imgs/assembly-instructions/step-8.JPG)
+
+## Bare-bones
+
+Assembly of the bare-bones case is similar to the acrylic case, with one major change: it's easier to assemble from the top down.
+
+Steps:
+- Check PCB.
+- Solder Encoders.
+- Place 4 keys (one in each corner) into plate.
+- Place plate atop PCB, using the four keys to locate and hold in position.
+- Add remaining keys
+- Place standoffs through PCB, and screw into top plate.
+- Screw bottom plate onto bottom of standoffs.
+- Add keycaps and encoder knobs, and you are done!
+
+Your assembled bare-bones board should look similar to below:
+
+![Assembled bare-bones board](imgs/assembly-instructions/bare-bones.JPG)
 
 ## Disabling Power LED
 
