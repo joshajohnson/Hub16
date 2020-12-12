@@ -2051,7 +2051,7 @@ SR_nOE
 Wire Wire Line
 	825  6450 1175 6450
 Text Label 825  6150 0    50   ~ 0
-SR_nCLK
+SR_nCLR
 Wire Wire Line
 	825  6150 1175 6150
 Text Label 6950 1975 2    50   ~ 0
@@ -2071,7 +2071,7 @@ SR_nOE
 Wire Wire Line
 	6950 1875 6600 1875
 Text Label 6950 2975 2    50   ~ 0
-SR_nCLK
+SR_nCLR
 Wire Wire Line
 	6950 2975 6600 2975
 $Comp
