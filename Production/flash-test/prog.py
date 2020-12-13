@@ -9,7 +9,6 @@ from colorama import Fore
 import serial
 from serial.tools import list_ports
 import io
-import getch
 
 def bootloader():
     ''' Flashes Bootloader '''
@@ -75,32 +74,36 @@ def test():
     serial_io = io.TextIOWrapper(
         io.BufferedRWPair(uart, uart))
 
-    # for char in range(1,23):   # A to V (included encoders)
-    for char in range(1,17):   # A to P (keys only)
+    # Send keys we want to press, and check we get the same key in return
+    for char in range(17,23):   # A to P (keys only)
         serial_io.write(str(char) + "\r\n")
         serial_io.flush()
-        recv = getch.getch()
-        print(f'requested: {chr(char + 96)} received: {str(recv)}')
-        if recv != chr(char + 96):
-            # retry once
+        recv = input()
+        print(f'requested: {chr(char + 96)} received: {str(recv)}') # + 96 converts to ASCII indexing
+
+        if recv != chr(char + 96): # Retry once
             time.sleep(1)
             print('trying again')
             serial_io.write(str(char) + "\r\n")
             serial_io.flush()
-            recv = getch.getch()
-            if recv != chr(char):
+            recv = input()
+            print(f'requested: {chr(char + 96)} received: {str(recv)}') # + 96 converts to ASCII indexing
+
+            if recv != chr(char + 96):
                 print(f'{Fore.RED}###############')
                 print(f'{Fore.RED}NOT TYPING {chr(char + 96)} !!!')
                 print(f'{Fore.RED}###############')
                 exit()
 
-    # serial_io.write("255" + "\r\n") # Reset if required
-    # serial_io.flush()
+    # Check software reset works - VIA wont flash if this fails
+    serial_io.write("255" + "\r\n")
+    serial_io.flush()
+    print(f'{Fore.BLUE}SOFT RESET FOR VIA')
 
 if __name__ == "__main__":
 
     # Suggest args to flash and test board from scratch
-    # ./prog.py -b -q -t -w -v
+    # ./prog.py -b -w -q -t -v
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-b", "--bootloader",   action='store_true')
@@ -119,6 +122,10 @@ if __name__ == "__main__":
         read_eeprom()
         print(f'{Fore.BLUE}EEPROM READ{Fore.WHITE}')
         time.sleep(2)
+    if args.write_eeprom:
+        write_eeprom()
+        print(f'{Fore.BLUE}EEPROM WRITTEN{Fore.WHITE}')
+        time.sleep(2)
     if args.qmk_test:
         qmk_test()
         print(f'{Fore.BLUE}QMK TEST FILE FLASHED{Fore.WHITE}')
@@ -127,14 +134,11 @@ if __name__ == "__main__":
         test()
         print(f'{Fore.BLUE}KEY AND ENCODER TEST PASSED{Fore.WHITE}')
         time.sleep(2)
-    if args.write_eeprom:
-        write_eeprom()
-        print(f'{Fore.BLUE}EEPROM WRITTEN{Fore.WHITE}')
-        time.sleep(2)
     if args.via:
         via()
         print(f'{Fore.BLUE}VIA FLASHED{Fore.WHITE}')
+        time.sleep(2)
 
-    print(f'{Fore.GREEN}#######')
-    print(f'{Fore.GREEN}DONE!!!')
-    print(f'{Fore.GREEN}#######')
+    print(f'{Fore.GREEN}###################')
+    print(f'{Fore.GREEN}ALL TESTS PASSED!!!')
+    print(f'{Fore.GREEN}###################')
