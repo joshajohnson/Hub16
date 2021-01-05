@@ -26,7 +26,7 @@ The default configuration for macro mode is shown below:
 ------------------
 ```
 
-\* Once flashing the macro layout you may notice that holding or tapping the bottom left key quickly may not result in a key being sent. This because if you double tap that key, it will bring you to a configuration layer on the keyboard which allows you to control the LEDs and reset the keyboard.  Double tapping the same key will return you to the base layer. The keymap for this configuration is shown below:
+\* Once flashing the macro layout you may notice that holding or tapping the bottom right key quickly may not result in a key being sent. This because if you double tap that key, it will bring you to a configuration layer on the keyboard which allows you to control the LEDs and reset the keyboard.  Double tapping the same key will return you to the base layer. The keymap for this configuration is shown below:
 
 ```
          _______,   _______,
