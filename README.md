@@ -53,7 +53,7 @@ Might you be able to charge your phone whilst copying files at full speed of a s
 
 ### Errata
 
-- Boards assembled in 2021 will have an issue with VIA where the LED controls are incorrect. [Follow these instructions to resolve](Documents/via.md)
+- Boards assembled in 2021 will have an issue with VIA where the LED controls are incorrect. [Follow these instructions to resolve](Documents/via.md#install-via)
 - Boards purchased between June 12 and June 22 2020 will not go into the bootloader upon resting from software. Workaround: reset board with physical reset button on bottom of PCB. Fix: reflash the bootloader following [these instructions](Documents/advanced-config.md#Bootloader-Flashing).
 - Firmware builds prior to 27th June do not continually send characters when the encoders are depressed.
 - Firmware builds prior to 9th June have issues with the bottom right key `p` not functioning correctly.
