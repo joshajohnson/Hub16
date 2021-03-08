@@ -53,9 +53,10 @@ Might you be able to charge your phone whilst copying files at full speed of a s
 
 ### Errata
 
+- Boards assembled in 2021 will have an issue with VIA where the LED controls are incorrect. [Follow these instructions to resolve](Documents/via.md)
 - Boards purchased between June 12 and June 22 2020 will not go into the bootloader upon resting from software. Workaround: reset board with physical reset button on bottom of PCB. Fix: reflash the bootloader following [these instructions](Documents/advanced-config.md#Bootloader-Flashing).
-- Firmware builds prior to 27th June do not continually send characters when the encoders are depressed. Update to the latest firmware to resolve.
-- Firmware builds prior to 9th June have issues with the bottom right key `p` not functioning correctly. Update to the latest firmware to resolve.
+- Firmware builds prior to 27th June do not continually send characters when the encoders are depressed.
+- Firmware builds prior to 9th June have issues with the bottom right key `p` not functioning correctly.
 - Some rotary encoders output flipped signals (clockwise instead of counterclockwise), if after assembly your encoders appear to be sending the wrong signals, comment in line 84 in [config.h](Firmware/hub16/config.h), or alter the setting in your [software](Software).
 
-If you have any questions or comments please get in touch. I can be found on Discord as `_joshajohnson#9451`, [Twitter](https://twitter.com/_joshajohnson), email, or leave an issue or pull request on this repo.
+If you have any questions or comments please get in touch. Asking in the [No Sharp Corners Discord](nosharpcorners.com) Discord or opening an issue / pull request will result in the quickest response.

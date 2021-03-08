@@ -6,7 +6,7 @@ VIA is a great way to graphically configure your keyboard without going through 
 
 To use VIA, first [download and install](https://caniusevia.com/) the configuration software, and then plug in your keyboard. It should detect and show a graphic of Hub16 on your screen.
 
-**Note: As of October 2020 Hub16 ships with VIA by default, however if you have an earlier version of the board, or have flashed a custom firmware on it you will need to ensure a VIA compatible keymap is on your board before continuing.**
+**Note: There is a [bug](https://github.com/qmk/qmk_firmware/issues/11157) in QMK / VIA which results in keycodes such as LED control to be shifted by one. This results in layer one of the keyboard looking wrong. Until this is fixed, rolling back to [old firmware](../Firmware/binaries/hub16_via_old.hex) is the best workaround.**
 
 ## Configure Keys
 
