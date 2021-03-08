@@ -23,3 +23,5 @@ Unfortunately, due to limitations in VIA the encoders are not visible or configu
 - Locate the function `encoder_update_user`, and update the keycodes in `tap_code(KC_xxx)` to one from the [keycodes list](https://docs.qmk.fm/#/keycodes?id=basic-keycodes). If you use keycode not on the basic list, you may need to replace `tap_code` with `tap_code16`.
 - With the changes made, save your new keymap, build, and flash the keymap to Hub16 with `make hub16:via:flash` run from the `qmk_firmware` directory.
 - You should now see the encoders functioning as desired, and you can configure the remainder or your keyboard using VIA.
+
+There is also a [video](https://youtu.be/TTCaQ-STD-E) which walks you through the above steps.
