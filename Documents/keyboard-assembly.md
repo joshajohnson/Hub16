@@ -29,6 +29,8 @@ You will also require the following tools:
 * Soldering iron and solder
 * 1.5mm allen key
 
+Please ensure you remove the protective paper off all acrylic parts before starting.
+
 ![Parts Required](imgs/assembly-instructions/required-parts.JPG)
 
 ### Step 0: Check PCB
