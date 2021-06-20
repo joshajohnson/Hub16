@@ -18,7 +18,7 @@ Before assembling the board, ensure you have all of the required parts.
 * 2 * Rotary encoders (20mm recommended)
 * 2 * Rotary encoder knobs
 * 4 * 4mm M2 cap head bolts (bare-bones 8 * 4mm)
-* 4 * 8mm M2 cap head bolts
+* 4 * 8mm M2 cap head bolts (plus 2 * 10mm M2 if using bottom riser)
 * 4 * 8mm female threaded standoffs (bare-bones 10mm)
 * 4 * Rubber feet (optional)
 * 16 * Cherry MX Key Switches (not shown)
@@ -30,6 +30,7 @@ You will also require the following tools:
 * 1.5mm allen key
 
 Please ensure you remove the protective paper off all acrylic parts before starting.
+If there are rough edges on the PCB, feel free to smooth down with sandpaper or a file.
 
 ![Parts Required](imgs/assembly-instructions/required-parts.JPG)
 
@@ -65,7 +66,7 @@ With your encoders in nice and square, solder the rest of the pins. I'd suggest 
 
 ### Step 2: Assemble lower case
 
-With the PCB soldered, the next step is to thread the standoffs into the longer screws through the bottom plate, adding in the incline spacer if desired. Just do this up touch tight, a little bit of movement will help later.
+With the PCB soldered, the next step is to thread the standoffs into the screws through the bottom plate. If using the incline spacer, use the 10mm screws to the top, and 8mm at the bottom. Just do this up touch tight, a little bit of movement will help later.
 ![Bottom plate assembly](imgs/assembly-instructions/step-2.JPG)
 
 ### Step 3: Add "U" shaped spacer
