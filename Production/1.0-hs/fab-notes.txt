@@ -1,0 +1,18 @@
+PCB Fabrication
+
+PCB is two layers, FR4 material, finished thickness 1.6mm.
+Matte black soldermask, white silkscreen. All vias to be tented.
+Lead free HASL surface finish. 
+No manufacturer markings (logo / UL / date code / RoHS etc) are to be placed on the board. 
+All boards are to be 100% electically tested. 
+PCB's are to be panelised with mouse bites, in a way which ensures smooth edges on all sides after depanelisation.
+Production gerbers are to be approved by Josh before fabrication begins.
+
+Assembly Instructions
+
+PCBs are to be assembled using a lead free process. 
+BOM items with "DNP" are not to be purchased or assembled. 
+Substutions are allowed where noted on BOM, ensuring parts meet specifications.
+Boards are to be depanlised, edges smoothed, and placed individually in resealable ESD bags.
+
+If there are any discrepancies or questions during the process, please stop work and ask Josh.
